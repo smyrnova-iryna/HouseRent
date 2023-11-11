@@ -1,11 +1,9 @@
 import { gsap } from 'gsap';
 import { useRef, useLayoutEffect } from 'react';
 
-
 import React from 'react';
 
-
-
+// start
 const Main = ({data}) => {
 
     const comp = useRef();
