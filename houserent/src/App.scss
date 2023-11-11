@@ -1,0 +1,368 @@
+// $headerMenuColor: blue;
+// $backgroundColor: white;
+// $mainFontSize: 90%;
+$firstDetailsColor: #93384a;
+$secondDetailsColor: #ffd24d;
+$firstLightColor: #c6b8b8;
+$secondLightColor: #d6d5d5;
+$thirdLightColor: #fdfdfd;
+$darkColor: #333;
+// $headerHeight: 50px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    // font-size: $mainFontSize;
+  }
+  
+//   :root {
+//     /* --main-font: "Roboto", 'Open Sans', sans-serif; */
+//     --main-font-size: 90%;
+//     --first-details-color: #93384a;
+//     --second-details-color: #ffd24d;
+//     --first-light-color: #c6b8b8;
+//     --second-light-color: #d6d5d5;
+//     --third-light-color: #fdfdfd;
+//     --dark-color: #333;
+//   }
+
+// Mixins
+
+@mixin desctop-only-items {
+    display: none;     
+}
+
+@mixin inline-container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin standart-button-styles {
+    padding: 2px;
+    align-items: center;
+    cursor: pointer;
+}
+
+@mixin standart-flex-container {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+@mixin link-styles {
+    text-decoration: none;
+    color: $firstLightColor;
+    :hover {
+        color: $thirdLightColor;
+    }
+}
+
+@mixin standart-page {
+    padding: 90px 30px 30px 30px;
+    background-color: $thirdLightColor;
+    min-height: 100vh;
+}
+  
+// Header styles
+  
+  .App-header {
+    // width: 100%;
+
+    background-color: $firstDetailsColor;
+    // background-color: pink;
+    @include inline-container();
+    padding: 7px 15px;
+    color: $firstLightColor;
+    width: 100%;
+    height: 50px;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    // display: flex;
+    // flex-direction: row;
+    // align-items: center;
+    // justify-content: space-between;
+    // padding: 0 20px;
+    z-index: 90;
+  }
+  
+
+  .Header-nav-container , .Header-link-text {
+    @include desctop-only-items();
+  }
+
+  $navWidth: calc(100% - 50px);
+
+  .Full-page-nav {
+    background-color: $firstLightColor;
+    display: flex;
+    flex-direction: column;
+    height: $navWidth;
+    padding: 30px;
+    gap: 20px;
+    width: 100%;
+    position: fixed; 
+    left: 0; 
+    bottom: 0; 
+    z-index: 80;
+    bottom: 0;
+  }
+
+  .Nav-inner-link {
+    text-transform: uppercase;
+
+  }
+
+  .Header-right-content-container {
+    @include inline-container();
+    @include standart-flex-container();
+    flex-basis: 130px;
+    align-items: center;
+    
+  }
+
+  .Header-language-buttons-container {
+    @include inline-container();
+    width: 90px;
+  }
+
+  .Header-language-button {
+    @include standart-button-styles();
+    color: $firstLightColor;
+    background: none;
+    border: 1px solid $firstLightColor;
+  }
+
+  .Highlighted-button {
+    background-color: $firstLightColor;
+    color: $darkColor;
+    border: 1px solid $darkColor;
+  }
+
+  .Header-links-container {
+    @include inline-container();
+    width: 80px;
+  }
+
+  .Header-link {
+    @include inline-container();
+    @include link-styles()
+  }
+
+  .Invisible-nav {
+    @include desctop-only-items()
+  }
+
+  .Nav-Button {
+    @include inline-container();
+    background: none;
+    border: none;
+    color: $firstLightColor;
+  }
+
+  .Nav-inner-link {
+    @include link-styles();
+    color: $darkColor;
+  }
+
+  .Nav-link:hover {
+    // @include link-styles();
+    color: $thirdLightColor;
+  }
+
+
+
+
+  .swiper {
+    width: 90%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }
+  
+//   .swiper-slide img {
+//     display: block;
+//     width: 100%;
+//   }
+
+
+
+
+
+
+
+  @media screen and (min-width: 600px){
+    .Header-link-text , .Header-nav-container {
+        display: block;
+    }
+
+    .Header-nav-container {
+        width: 300px;
+        @include inline-container();
+        justify-content: space-between;
+        color: $firstLightColor;
+    }
+
+    .App-header {
+        height: 70px;
+    }
+    .Header-right-content-container {
+        flex-basis: 70%;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 5px;
+    }
+    .Header-links-container {
+        width: 400px;
+    }
+    .Nav-Button {
+        display: none;
+    }
+    
+  }
+
+//   Main styles
+
+.Main-Container , .Promotion-container, .Offices-container {
+  @include standart-page()
+}
+
+@mixin basic-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Main-Container {
+    background: url(./img/main_page_background.png);
+    background-size: cover;
+    background-position-x: 45%;
+    background-position-y: 55%;
+    gap: 20px;
+    @include basic-flex-container;
+    padding-left: 0;
+    // background-position-y: -300px;
+}
+
+// @media screen and (min-aspect-ratio: 25/15)and (max-height: 550px){
+//     .Main-Container {
+//         background-position-y: -300px;
+//        background-position-x: 1%;
+//     }
+//  }
+
+ .Main-description-container {
+    width: 100%;
+    min-height: 250px;
+    @include basic-flex-container;
+    // justify-content: space-around;
+    gap: 20px;
+    align-items: flex-start;
+ }
+
+.Main-carousel-container {
+   width: 80vw;
+   height: 60vw;
+   background-color: $thirdLightColor;
+   margin-left: 30px;
+}
+
+@mixin container-with-opacity {
+    background-color:#c6b8b88f;
+    color: $thirdLightColor;
+}
+
+.Main-description-block {
+    @include container-with-opacity();
+    font-weight: 900;
+    height: 90px;
+    // width: 150px;
+    @include inline-container();
+    padding: 5px;
+    font-size: 100%;
+    text-transform: uppercase;
+    width: 60vw;
+    // width: 150px;
+}
+
+@media screen and (min-width: 500px){
+    .Main-description-block {
+        font-size: 120%;
+        font-weight: 1000;
+    }
+}
+
+.Second-block {
+    // width: 200px;
+    width: 70vw;
+}
+
+.Third-block {
+    // width: 250px;
+    width: 80vw;
+}
+
+@media screen and (min-aspect-ratio: 1.2/1){
+    .Main-description-block {
+        width: 35vw;
+    }
+    .Second-block {
+        width: 40vw;
+    } 
+    .Third-block {
+        width: 45vw;
+    } 
+    .Main-Container {
+        flex-direction: row;
+    }
+    .Main-carousel-container {
+        width: 80vw;
+        max-height: 30vw;
+    }
+    .Main-description-container {
+        gap: 40px;
+     }
+}
+
+// @media screen and (max-aspect-ratio: 4/7.48){
+//     .Main-carousel-container {
+//         background-color: pink;
+//      }
+// }
+
+.Main-carousel-container {
+    position: relative;
+    @include container-with-opacity();
+    border: 5px solid $firstDetailsColor;
+}
+
+.Slider-image {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+// Footer styles
+
+.Footer-container {
+//   background-color: $firstLightColor;
+  background-color: $firstDetailsColor;
+//   color: $firstDetailsColor;
+  border: 2px solid $firstDetailsColor;
+  height: 500px;
+  color: red;
+}
+  
