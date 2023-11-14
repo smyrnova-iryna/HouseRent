@@ -13,13 +13,13 @@ const dataUkr = {
                     dataMessage: "Дані будуть використані тільки для контакту з Вами!"} 
             },
     menuPaths: 
-            {main: "/", 
-            offices: "/offices",
-            promotions: "/promotions", 
-            privacypolicy: "/privacypolicy", 
+            {main: "/HouseRent", 
+            offices: "/HouseRent/offices",
+            promotions: "/HouseRent/promotions", 
+            privacypolicy: "/HouseRent/privacypolicy", 
             error: "*"},
     menuItems: 
-            {main: "Головна", 
+            {main: "Головна",
             advantages: "Переваги", 
             offices: "Офіси", 
             promotions: "Акції", 
