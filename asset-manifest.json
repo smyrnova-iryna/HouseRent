@@ -1,25 +1,16 @@
 {
   "files": {
-    "main.css": "/HouseRent/static/css/main.808377b5.css",
-    "main.js": "/HouseRent/static/js/main.7ee36cea.js",
+    "main.css": "/HouseRent/static/css/main.32f33f7f.css",
+    "main.js": "/HouseRent/static/js/main.2a837c75.js",
     "static/js/787.0f787131.chunk.js": "/HouseRent/static/js/787.0f787131.chunk.js",
-    "static/media/main_page_background.png": "/HouseRent/static/media/main_page_background.e51809856043884eb32f.png",
-    "static/media/carousel_photo_6.jpg": "/HouseRent/static/media/carousel_photo_6.2f59d56356ad8dfb85f6.jpg",
-    "static/media/carousel_photo_5.jpg": "/HouseRent/static/media/carousel_photo_5.fc44c548249ddb7388c9.jpg",
-    "static/media/carousel_photo_4.jpg": "/HouseRent/static/media/carousel_photo_4.062452b8e0713ee76a98.jpg",
-    "static/media/carousel_photo_9.jpg": "/HouseRent/static/media/carousel_photo_9.4aeca82a9dce57034a61.jpg",
-    "static/media/carousel_photo_7.jpg": "/HouseRent/static/media/carousel_photo_7.8774ca210b90e2642b65.jpg",
-    "static/media/carousel_photo_8.jpg": "/HouseRent/static/media/carousel_photo_8.170effad67e68792efd3.jpg",
-    "static/media/carousel_photo_3.jpg": "/HouseRent/static/media/carousel_photo_3.fc561b552c51553f1169.jpg",
-    "static/media/carousel_photo_2.jpg": "/HouseRent/static/media/carousel_photo_2.63f0a847f265aaf768eb.jpg",
-    "static/media/carousel_photo_1.jpg": "/HouseRent/static/media/carousel_photo_1.dc7441253145412b9da6.jpg",
+    "static/media/main_page_background.jpg": "/HouseRent/static/media/main_page_background.c631bf90ee7f439ba59b.jpg",
     "index.html": "/HouseRent/index.html",
-    "main.808377b5.css.map": "/HouseRent/static/css/main.808377b5.css.map",
-    "main.7ee36cea.js.map": "/HouseRent/static/js/main.7ee36cea.js.map",
+    "main.32f33f7f.css.map": "/HouseRent/static/css/main.32f33f7f.css.map",
+    "main.2a837c75.js.map": "/HouseRent/static/js/main.2a837c75.js.map",
     "787.0f787131.chunk.js.map": "/HouseRent/static/js/787.0f787131.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.808377b5.css",
-    "static/js/main.7ee36cea.js"
+    "static/css/main.32f33f7f.css",
+    "static/js/main.2a837c75.js"
   ]
 }
