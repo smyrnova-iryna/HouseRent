@@ -2,11 +2,11 @@
 // $backgroundColor: white;
 // $mainFontSize: 90%;
 $firstDetailsColor: #93384a;
-$secondDetailsColor: #ffd24d;
-$firstLightColor: #c6b8b8;
+$secondDetailsColor: #f6e145;
+$firstLightColor: #2d3a4c;
 $secondLightColor: #d6d5d5;
-$thirdLightColor: #fdfdfd;
-$darkColor: #333;
+$thirdLightColor: #dfe8e8;
+$darkColor: #aebcc0;
 // $headerHeight: 50px;
 
 * {
@@ -59,7 +59,7 @@ $darkColor: #333;
     text-decoration: none;
     color: $firstLightColor;
     :hover {
-        color: $thirdLightColor;
+        color: $secondDetailsColor;
     }
 }
 
@@ -74,7 +74,7 @@ $darkColor: #333;
   .App-header {
     // width: 100%;
 
-    background-color: $firstDetailsColor;
+    background: none;
     // background-color: pink;
     @include inline-container();
     padding: 7px 15px;
@@ -90,6 +90,7 @@ $darkColor: #333;
     // justify-content: space-between;
     // padding: 0 20px;
     z-index: 90;
+    font-weight: 300
   }
   
 
@@ -173,7 +174,7 @@ $darkColor: #333;
 
   .Nav-link:hover {
     // @include link-styles();
-    color: $thirdLightColor;
+    color: $secondDetailsColor;
   }
 
 
@@ -245,13 +246,13 @@ $darkColor: #333;
 }
 
 .Main-Container {
-    background: url(./img/main_page_background.png);
+    background: url(./img/main_page_background.jpg);
     background-size: cover;
-    background-position-x: 45%;
-    background-position-y: 55%;
+    background-position: center;
     gap: 20px;
     @include basic-flex-container;
     padding-left: 0;
+    flex-direction: column;
     // background-position-y: -300px;
 }
 
@@ -271,6 +272,27 @@ $darkColor: #333;
     align-items: flex-start;
  }
 
+ .MainTitle {
+    text-align: center;
+    background: none;
+    color: $secondLightColor;
+    font-size: 350%;
+    width: 100%;
+    margin-left: 30px;
+    font-weight: 600;
+ }
+
+ @media screen and (min-width: 900px){
+    .MainTitle {
+        font-size: 500%;
+     }
+}
+
+.MainTitle-list {
+    @include inline-container();
+    justify-content: center;
+}
+
 .Main-carousel-container {
    width: 80vw;
    height: 60vw;
@@ -279,7 +301,7 @@ $darkColor: #333;
 }
 
 @mixin container-with-opacity {
-    background-color:#c6b8b88f;
+    background-color:#626c7481;
     color: $thirdLightColor;
 }
 
@@ -323,9 +345,9 @@ $darkColor: #333;
     .Third-block {
         width: 45vw;
     } 
-    .Main-Container {
-        flex-direction: row;
-    }
+    // .Main-Container {
+    //     flex-direction: row;
+    // }
     .Main-carousel-container {
         width: 80vw;
         max-height: 30vw;

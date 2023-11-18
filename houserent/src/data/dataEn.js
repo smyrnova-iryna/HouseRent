@@ -13,10 +13,10 @@ const dataEn = {
                     dataMessage: "The data will only be used to contact you!"} 
             },
     menuPaths: 
-            {main: "/", 
-            offices: "/offices",
-            promotions: "/promotions", 
-            privacypolicy: "/privacypolicy", 
+            {main: "/HouseRent", 
+            offices: "/HouseRent/offices",
+            promotions: "/HouseRent/promotions", 
+            privacypolicy: "/HouseRent/privacypolicy", 
             error: "*"},
     menuItems: 
             {main: "Main", 
@@ -25,10 +25,11 @@ const dataEn = {
             promotions: "Promotions", 
             contacts: "Contacts"},
     main: 
-        {mainInfo: 
-                ["Аренда офисов:", 
-                "от одного кабинета до целого этажа", 
-                "в центре города", 
+        {mainTitle: ["R", "E", "N", "T", "I", "N", "G"],
+        mainInfo: 
+                ["Offices renting:", 
+                "from one room to whole floor", 
+                "downtown", 
                 "кирпичное здание",
                 "удобный паркинг перед зданием",
                 "два ввода электроснабжения",

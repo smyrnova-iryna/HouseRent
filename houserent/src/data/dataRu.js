@@ -13,19 +13,20 @@ const dataRu = {
                     dataMessage: "Данные будут использованы только для контакта с Вами!"} 
             },
     menuPaths: 
-            {main: "/", 
-            offices: "/offices",
-            promotions: "/promotions", 
-            privacypolicy: "/privacypolicy",
+            {main: "/HouseRent", 
+            offices: "/HouseRent/offices",
+            promotions: "/HouseRent/promotions", 
+            privacypolicy: "/HouseRent/privacypolicy",
             error: "*"},
     menuItems: 
-            {main: "Головна", 
-            advantages: "Переваги", 
-            offices: "Офіси", 
-            promotions: "Акції", 
-            contacts: "Контакти"},
+            {main: "Главная", 
+            advantages: "Преимущества", 
+            offices: "Офисы", 
+            promotions: "Акции", 
+            contacts: "Контакты"},
     main: 
-        {mainInfo: 
+        {mainTitle: ["А", "Р", "Е", "Н", "Д", "А"],
+        mainInfo: 
                 ["Аренда офисов:", 
                 "от одного кабинета до целого этажа",
                 "в центре города", 

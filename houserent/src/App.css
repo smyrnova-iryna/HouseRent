@@ -13,7 +13,7 @@
 }
 
 .App-header {
-  background-color: #93384a;
+  background: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,13 +28,14 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 7px 15px;
-  color: #c6b8b8;
+  color: #2d3a4c;
   width: 100%;
   height: 50px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 90;
+  font-weight: 300;
 }
 
 .Header-nav-container, .Header-link-text {
@@ -42,7 +43,7 @@
 }
 
 .Full-page-nav {
-  background-color: #c6b8b8;
+  background-color: #2d3a4c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,15 +113,15 @@
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  color: #c6b8b8;
+  color: #2d3a4c;
   background: none;
-  border: 1px solid #c6b8b8;
+  border: 1px solid #2d3a4c;
 }
 
 .Highlighted-button {
-  background-color: #c6b8b8;
-  color: #333;
-  border: 1px solid #333;
+  background-color: #2d3a4c;
+  color: #aebcc0;
+  border: 1px solid #aebcc0;
 }
 
 .Header-links-container {
@@ -155,11 +156,11 @@
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-  color: #c6b8b8;
+  color: #2d3a4c;
 }
 
 .Header-link :hover {
-  color: #fdfdfd;
+  color: #f6e145;
 }
 
 .Invisible-nav {
@@ -182,21 +183,21 @@
           align-items: center;
   background: none;
   border: none;
-  color: #c6b8b8;
+  color: #2d3a4c;
 }
 
 .Nav-inner-link {
   text-decoration: none;
-  color: #c6b8b8;
-  color: #333;
+  color: #2d3a4c;
+  color: #aebcc0;
 }
 
 .Nav-inner-link :hover {
-  color: #fdfdfd;
+  color: #f6e145;
 }
 
 .Nav-link:hover {
-  color: #fdfdfd;
+  color: #f6e145;
 }
 
 .swiper {
@@ -230,7 +231,7 @@
         -ms-flex-align: center;
             align-items: center;
     justify-content: space-between;
-    color: #c6b8b8;
+    color: #2d3a4c;
   }
   .App-header {
     height: 70px;
@@ -257,15 +258,14 @@
 
 .Main-Container, .Promotion-container, .Offices-container {
   padding: 90px 30px 30px 30px;
-  background-color: #fdfdfd;
+  background-color: #dfe8e8;
   min-height: 100vh;
 }
 
 .Main-Container {
-  background: url(./img/main_page_background.png);
+  background: url(./img/main_page_background.jpg);
   background-size: cover;
-  background-position-x: 45%;
-  background-position-y: 55%;
+  background-position: center;
   gap: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -281,6 +281,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding-left: 0;
+  flex-direction: column;
 }
 
 .Main-description-container {
@@ -305,16 +306,51 @@
           align-items: flex-start;
 }
 
+.MainTitle {
+  text-align: center;
+  background: none;
+  color: #d6d5d5;
+  font-size: 350%;
+  width: 100%;
+  margin-left: 30px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 900px) {
+  .MainTitle {
+    font-size: 500%;
+  }
+}
+
+.MainTitle-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .Main-carousel-container {
   width: 80vw;
   height: 60vw;
-  background-color: #fdfdfd;
+  background-color: #dfe8e8;
   margin-left: 30px;
 }
 
 .Main-description-block {
-  background-color: #c6b8b88f;
-  color: #fdfdfd;
+  background-color: #626c7481;
+  color: #dfe8e8;
   font-weight: 900;
   height: 90px;
   display: -webkit-box;
@@ -361,12 +397,6 @@
   .Third-block {
     width: 45vw;
   }
-  .Main-Container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
   .Main-carousel-container {
     width: 80vw;
     max-height: 30vw;
@@ -378,8 +408,8 @@
 
 .Main-carousel-container {
   position: relative;
-  background-color: #c6b8b88f;
-  color: #fdfdfd;
+  background-color: #626c7481;
+  color: #dfe8e8;
   border: 5px solid #93384a;
 }
 

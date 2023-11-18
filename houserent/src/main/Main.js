@@ -21,13 +21,35 @@ const Main = ({data}) => {
           duration: 2.1,
           stagger: 0.8,
           x: -1000
-        }); 
+        });
+
   
       }, comp); 
       
       return () => ctx.revert(); 
       
     }, []);
+
+    useLayoutEffect(() => {
+  
+        let ctx = gsap.context(() => {
+          
+          let tl = gsap.timeline()
+  
+          tl.from(".MainTitle-item", 
+          { 
+            duration: 2.1,
+            stagger: 0.8,
+            opacity: 0,
+            delay: 0.5,
+          });
+  
+    
+        }, comp); 
+        
+        return () => ctx.revert(); 
+        
+      }, []);
 
     
       useLayoutEffect(() => {
@@ -57,12 +79,29 @@ const Main = ({data}) => {
 
     return (
         <div className="Main-Container" ref={comp}>
+             <h1 className="MainTitle MainTitle-list">
+                <p  className="MainTitle-item">{data.main.mainTitle[0]}</p>
+                <p  className="MainTitle-item">{data.main.mainTitle[1]}</p>
+                <p  className="MainTitle-item">{data.main.mainTitle[2]}</p>
+                <p  className="MainTitle-item">{data.main.mainTitle[3]}</p>
+                <p  className="MainTitle-item">{data.main.mainTitle[4]}</p>
+                <p  className="MainTitle-item">{data.main.mainTitle[5]}</p>
+                <p  className="MainTitle-item">{data.main.mainTitle[6]}</p>
+                {/* <ul className="MainTitle-list">
+                {data.main.mainTitle.map((item) => 
+                    <li key={item} className="MainTitle-item">
+                        {item}
+                    </li>
+                )}
+                </ul> */}
+
+                </h1>
             <div className="Main-description-container">
             <p className="Main-description-block First-block">{data.main.mainInfo[0]}</p>
             <p className="Main-description-block Second-block">{data.main.mainInfo[2]}</p>
             <p className="Main-description-block Third-block">{data.main.mainInfo[1]}</p>
-            </div>
-            <div className="Main-carousel-container">
+           </div>
+            {/* <div className="Main-carousel-container">
             <div className="mainPageContainer">
                    <div className="mainPageCertificatesContainer">
                         <img className='Slider-image Slider-image9' src={require("../data/carousel/carousel_photo_1.jpg")} alt="Carousel item 1" />
@@ -76,7 +115,7 @@ const Main = ({data}) => {
                         <img className='Slider-image Slider-image1' src={require("../data/carousel/carousel_photo_9.jpg")} alt="Carousel item 9" />
                     </div>
             </div>
-            </div>
+            </div> */}
         </div>
     )
 }
