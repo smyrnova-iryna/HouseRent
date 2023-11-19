@@ -36,10 +36,10 @@ const Main = ({data}) => {
           
           let tl = gsap.timeline()
   
-          tl.from(".MainTitle-item", 
+          tl.from(".Main-text", 
           { 
-            duration: 2.1,
-            stagger: 0.8,
+            duration: 4,
+            // stagger: 0.8,
             opacity: 0,
             delay: 0.5,
           });
@@ -79,7 +79,7 @@ const Main = ({data}) => {
 
     return (
         <div className="Main-Container" ref={comp}>
-             <h1 className="MainTitle MainTitle-list">
+            {/* <h1 className="MainTitle MainTitle-list">
                 <p  className="MainTitle-item">{data.main.mainTitle[0]}</p>
                 <p  className="MainTitle-item">{data.main.mainTitle[1]}</p>
                 <p  className="MainTitle-item">{data.main.mainTitle[2]}</p>
@@ -87,19 +87,17 @@ const Main = ({data}) => {
                 <p  className="MainTitle-item">{data.main.mainTitle[4]}</p>
                 <p  className="MainTitle-item">{data.main.mainTitle[5]}</p>
                 <p  className="MainTitle-item">{data.main.mainTitle[6]}</p>
-                {/* <ul className="MainTitle-list">
-                {data.main.mainTitle.map((item) => 
-                    <li key={item} className="MainTitle-item">
-                        {item}
-                    </li>
-                )}
-                </ul> */}
-
-                </h1>
+            </h1> */}
             <div className="Main-description-container">
             <p className="Main-description-block First-block">{data.main.mainInfo[0]}</p>
-            <p className="Main-description-block Second-block">{data.main.mainInfo[2]}</p>
-            <p className="Main-description-block Third-block">{data.main.mainInfo[1]}</p>
+            <p className="Main-description-block Second-block">{data.main.mainInfo[1]}</p>
+            <p className="Main-description-block Third-block">{data.main.mainInfo[2]}</p>
+            <p className="Main-description-block Fourth-block">{data.main.mainInfo[3]}</p>
+           </div>
+           <div className="Main-text-container">
+                <p className="Main-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus et numquam aperiam voluptatibus error omnis facilis distinctio, est consequatur earum consequuntur recusandae aspernatur ad nam perspiciatis natus rem iusto. Dolor eos expedita doloremque illo explicabo natus rerum fugit tempore rem voluptatibus, sapiente ad similique repellendus commodi beatae deleniti, at obcaecati optio, quae facilis? Dolorem error, eligendi incidunt consequuntur unde neque quaerat provident, voluptate aperiam, voluptatum dignissimos ipsa ullam animi maiores atque id perferendis eius? Quo, aut ab aperiam alias itaque quae error ipsa minima ad aspernatur doloribus numquam porro expedita blanditiis eum placeat, voluptas molestias in qui, asperiores atque quas. Animi magnam exercitationem sequi earum laudantium. Ratione ea minus laborum ab nulla est aperiam, sint et suscipit magni, omnis dolores autem. Culpa fugiat ratione sed voluptatum libero veritatis, molestiae natus atque, doloremque consequatur voluptatem. Nihil aperiam sint quam numquam exercitationem eum, officia, aliquam repellendus mollitia rem iure accusamus! Voluptatum, commodi.
+                </p>
            </div>
             {/* <div className="Main-carousel-container">
             <div className="mainPageContainer">

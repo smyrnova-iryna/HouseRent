@@ -256,17 +256,13 @@
   }
 }
 
-.Main-Container, .Promotion-container, .Offices-container {
+.Promotion-container, .Offices-container {
   padding: 90px 30px 30px 30px;
   background-color: #dfe8e8;
   min-height: 100vh;
 }
 
 .Main-Container {
-  background: url(./img/main_page_background.jpg);
-  background-size: cover;
-  background-position: center;
-  gap: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,7 +282,8 @@
 
 .Main-description-container {
   width: 100%;
-  min-height: 250px;
+  -ms-flex-preferred-size: 70vh;
+      flex-basis: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -300,16 +297,48 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: url(./img/main_page_background.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.Main-text-container {
+  background-color: #626c74;
+  color: #dfe8e8;
+  height: 30vh;
+  width: 100%;
+  font-size: 110%;
+  padding: 20px;
+  text-align: justify;
+}
+
+@media screen and (max-height: 650px) {
+  .Main-description-container {
+    -ms-flex-preferred-size: 450px;
+        flex-basis: 450px;
+  }
+  .Main-text-container {
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .Main-description-container {
+    padding-top: 70px;
+  }
 }
 
 .MainTitle {
   text-align: center;
   background: none;
-  color: #d6d5d5;
+  color: #626c74;
   font-size: 350%;
   width: 100%;
   margin-left: 30px;
@@ -387,6 +416,10 @@
   width: 80vw;
 }
 
+.Fourth-block {
+  width: 90vw;
+}
+
 @media screen and (min-aspect-ratio: 1.2 / 1) {
   .Main-description-block {
     width: 35vw;
@@ -396,6 +429,9 @@
   }
   .Third-block {
     width: 45vw;
+  }
+  .Fourth-block {
+    width: 50vw;
   }
   .Main-carousel-container {
     width: 80vw;

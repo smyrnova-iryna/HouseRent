@@ -4,7 +4,7 @@
 $firstDetailsColor: #93384a;
 $secondDetailsColor: #f6e145;
 $firstLightColor: #2d3a4c;
-$secondLightColor: #d6d5d5;
+$secondLightColor: #626c74;
 $thirdLightColor: #dfe8e8;
 $darkColor: #aebcc0;
 // $headerHeight: 50px;
@@ -234,7 +234,7 @@ $darkColor: #aebcc0;
 
 //   Main styles
 
-.Main-Container , .Promotion-container, .Offices-container {
+ .Promotion-container, .Offices-container {
   @include standart-page()
 }
 
@@ -246,10 +246,6 @@ $darkColor: #aebcc0;
 }
 
 .Main-Container {
-    background: url(./img/main_page_background.jpg);
-    background-size: cover;
-    background-position: center;
-    gap: 20px;
     @include basic-flex-container;
     padding-left: 0;
     flex-direction: column;
@@ -265,12 +261,45 @@ $darkColor: #aebcc0;
 
  .Main-description-container {
     width: 100%;
-    min-height: 250px;
+    // @include standart-flex-container;
+    flex-basis: 70vh;
     @include basic-flex-container;
-    // justify-content: space-around;
-    gap: 20px;
+    // gap: 20px;
     align-items: flex-start;
+    justify-content: space-around;
+    background: url(./img/main_page_background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
  }
+
+ .Main-text-container {
+    background-color: $secondLightColor;
+    color: $thirdLightColor;
+    height: 30vh;
+    width: 100%;
+    font-size: 110%;
+    padding: 20px;
+    text-align: justify;
+ }
+
+ @media screen and (max-height: 650px){
+    .Main-description-container {
+        flex-basis: 450px;
+    }
+    .Main-text-container {
+        height: 250px;
+     }
+}
+
+ @media screen and (min-width: 600px){
+    .Main-description-container {
+        padding-top: 70px;
+    }
+ }
+
+
 
  .MainTitle {
     text-align: center;
@@ -335,6 +364,11 @@ $darkColor: #aebcc0;
     width: 80vw;
 }
 
+.Fourth-block {
+    // width: 250px;
+    width: 90vw;
+}
+
 @media screen and (min-aspect-ratio: 1.2/1){
     .Main-description-block {
         width: 35vw;
@@ -345,6 +379,10 @@ $darkColor: #aebcc0;
     .Third-block {
         width: 45vw;
     } 
+    .Fourth-block {
+        // width: 250px;
+        width: 50vw;
+    }
     // .Main-Container {
     //     flex-direction: row;
     // }

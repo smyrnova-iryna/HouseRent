@@ -27,9 +27,10 @@ const dataEn = {
     main: 
         {mainTitle: ["R", "E", "N", "T", "I", "N", "G"],
         mainInfo: 
-                ["Offices renting:", 
-                "from one room to whole floor", 
+                ["Offices renting", 
                 "downtown", 
+                "нежитловий фонд", 
+                "from one room to whole floor", 
                 "кирпичное здание",
                 "удобный паркинг перед зданием",
                 "два ввода электроснабжения",
