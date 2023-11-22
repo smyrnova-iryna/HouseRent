@@ -1,16 +1,25 @@
 {
   "files": {
-    "main.css": "/HouseRent/static/css/main.01889c0f.css",
-    "main.js": "/HouseRent/static/js/main.f95a8580.js",
+    "main.css": "/HouseRent/static/css/main.4e61d7a3.css",
+    "main.js": "/HouseRent/static/js/main.2c1e0ceb.js",
     "static/js/787.0f787131.chunk.js": "/HouseRent/static/js/787.0f787131.chunk.js",
+    "static/media/carousel_photo_6.jpg": "/HouseRent/static/media/carousel_photo_6.2f59d56356ad8dfb85f6.jpg",
+    "static/media/carousel_photo_5.jpg": "/HouseRent/static/media/carousel_photo_5.fc44c548249ddb7388c9.jpg",
+    "static/media/carousel_photo_4.jpg": "/HouseRent/static/media/carousel_photo_4.062452b8e0713ee76a98.jpg",
+    "static/media/carousel_photo_9.jpg": "/HouseRent/static/media/carousel_photo_9.4aeca82a9dce57034a61.jpg",
+    "static/media/carousel_photo_7.jpg": "/HouseRent/static/media/carousel_photo_7.8774ca210b90e2642b65.jpg",
+    "static/media/carousel_photo_8.jpg": "/HouseRent/static/media/carousel_photo_8.170effad67e68792efd3.jpg",
+    "static/media/carousel_photo_3.jpg": "/HouseRent/static/media/carousel_photo_3.fc561b552c51553f1169.jpg",
+    "static/media/carousel_photo_2.jpg": "/HouseRent/static/media/carousel_photo_2.63f0a847f265aaf768eb.jpg",
+    "static/media/carousel_photo_1.jpg": "/HouseRent/static/media/carousel_photo_1.dc7441253145412b9da6.jpg",
     "static/media/main_page_background.jpg": "/HouseRent/static/media/main_page_background.c631bf90ee7f439ba59b.jpg",
     "index.html": "/HouseRent/index.html",
-    "main.01889c0f.css.map": "/HouseRent/static/css/main.01889c0f.css.map",
-    "main.f95a8580.js.map": "/HouseRent/static/js/main.f95a8580.js.map",
+    "main.4e61d7a3.css.map": "/HouseRent/static/css/main.4e61d7a3.css.map",
+    "main.2c1e0ceb.js.map": "/HouseRent/static/js/main.2c1e0ceb.js.map",
     "787.0f787131.chunk.js.map": "/HouseRent/static/js/787.0f787131.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.01889c0f.css",
-    "static/js/main.f95a8580.js"
+    "static/css/main.4e61d7a3.css",
+    "static/js/main.2c1e0ceb.js"
   ]
 }
