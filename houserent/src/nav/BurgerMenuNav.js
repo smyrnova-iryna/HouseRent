@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 
 const BurgerMenuNav = ({data, navClassName, hideBurgerMenuNav, navigateToTheTop}) => {
@@ -6,8 +7,10 @@ const BurgerMenuNav = ({data, navClassName, hideBurgerMenuNav, navigateToTheTop}
     return (
         <nav className={navClassName}>
             <Link className='Nav-inner-link' to={data.menuPaths.main} onClick={() => {hideBurgerMenuNav(); navigateToTheTop()}}>{data.menuItems.main}</Link>
+            <HashLink smooth to={data.menuPaths.advantages} className='Nav-inner-link' onClick={() => {hideBurgerMenuNav(); navigateToTheTop()}}>{data.menuItems.advantages}</HashLink>
             <Link className='Nav-inner-link' to={data.menuPaths.offices} onClick={() => {hideBurgerMenuNav(); navigateToTheTop()}}>{data.menuItems.offices}</Link>
             <Link className='Nav-inner-link' to={data.menuPaths.promotions} onClick={() => {hideBurgerMenuNav(); navigateToTheTop()}}>{data.menuItems.promotions}</Link>
+            <HashLink smooth to={data.menuPaths.contacts} className='Nav-inner-link' onClick={() => {hideBurgerMenuNav(); navigateToTheTop()}}>{data.menuItems.contacts}</HashLink>
         </nav>
     );
     }

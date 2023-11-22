@@ -7,7 +7,8 @@ $firstLightColor: #2d3a4c;
 $secondLightColor: #626c74;
 $thirdLightColor: #dfe8e8;
 $darkColor: #aebcc0;
-// $headerHeight: 50px;
+$opacityBlocksColor: #626c7481;
+$opacityHeaderColor: #dfe8e8c8;
 
 * {
     margin: 0;
@@ -64,7 +65,8 @@ $darkColor: #aebcc0;
 }
 
 @mixin standart-page {
-    padding: 90px 30px 30px 30px;
+    // padding: 90px 30px 30px 30px;
+    padding: 30px;
     background-color: $thirdLightColor;
     min-height: 100vh;
 }
@@ -81,7 +83,8 @@ $darkColor: #aebcc0;
     color: $firstLightColor;
     width: 100%;
     height: 50px;
-    position: fixed; 
+    // position: fixed;
+    position: absolute; 
     top: 0; 
     left: 0; 
     // display: flex;
@@ -93,6 +96,12 @@ $darkColor: #aebcc0;
     font-weight: 300
   }
   
+  .Visible-Header {
+   background-color: $opacityHeaderColor;
+   position: fixed;
+   top: 0;
+   left: 0;
+  }
 
   .Header-nav-container , .Header-link-text {
     @include desctop-only-items();
@@ -105,6 +114,7 @@ $darkColor: #aebcc0;
     display: flex;
     flex-direction: column;
     height: $navWidth;
+    // height: $navWidth;
     padding: 30px;
     gap: 20px;
     width: 100%;
@@ -172,13 +182,14 @@ $darkColor: #aebcc0;
     color: $darkColor;
   }
 
-  .Nav-link:hover {
-    // @include link-styles();
-    color: $secondDetailsColor;
+  .Nav-link {
+    @include link-styles();
   }
 
-
-
+  .Nav-link:hover {
+    color: $secondDetailsColor;
+    text-decoration: underline;
+  }
 
   .swiper {
     width: 90%;
@@ -196,19 +207,19 @@ $darkColor: #aebcc0;
 //     width: 100%;
 //   }
 
-
-
-
-
-
-
   @media screen and (min-width: 600px){
-    .Header-link-text , .Header-nav-container {
+   .Header-nav-container {
         display: block;
     }
 
+    .Header-link-text {
+        display: flex;
+        justify-content: center;
+        align-items: center
+      }
+
     .Header-nav-container {
-        width: 300px;
+        width: 360px;
         @include inline-container();
         justify-content: space-between;
         color: $firstLightColor;
@@ -229,8 +240,12 @@ $darkColor: #aebcc0;
     .Nav-Button {
         display: none;
     }
+    .Header-link-mobile-Icon {
+        display: none!important;
+    }    
     
   }
+
 
 //   Main styles
 
@@ -275,22 +290,97 @@ $darkColor: #aebcc0;
  }
 
  .Main-text-container {
-    background-color: $secondLightColor;
-    color: $thirdLightColor;
-    height: 30vh;
+    background-color: $thirdLightColor;
+    color: $firstLightColor;
+    // height: 30vh;
+    min-height: 30vh;
     width: 100%;
     font-size: 110%;
     padding: 20px;
     text-align: justify;
+    border-top: 3px solid $secondLightColor;
+    @include inline-container();
+    flex-direction: column;
+    // gap: 20px
  }
+
+ .Main-extra-title-container, .Main-extra-text-container {
+    @include inline-container();
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+ }
+
+ .Main-extra-title-container {
+    height: 30vh;
+    padding-bottom: 90px;
+ }
+
+ .Main-extra-text-container {
+    min-height: 15vh;
+    padding-top: 0;
+    font-size: 90%;
+ }
+
+//  Test!!!!!!!!!!!!!!!!!
+
+// .Main-extra-title-container, .Main-extra-text-container  {
+//     height: 15vh;
+//     font-size: 90%!important;
+//  }
+
+@media screen and (max-height: 650px){
+    .Main-extra-title-container {
+        min-height: 30vh;
+        padding-bottom: 30px;
+     } 
+}
+
+@media screen and (min-width: 1330px) and (min-height: 700px){
+   .Extra-line-div {
+    display: none;
+   }
+   .Main-text-container {
+    height: 30vh;
+   }
+   .Main-extra-title-container {
+    height: 7vh;
+   }
+   .Main-extra-text-container {
+    height: 23vh;
+   }
+   .Main-extra-title-container, .Main-extra-text-container {
+    padding-top: 0;
+    padding-bottom: 0;
+   }
+}
+
+// .Main-text-container {
+//     height: 30vh;
+// }
+// TEST!!!!!!!!!!!
+
+ @media screen and (max-height: 650px){
+    .Main-extra-title-container {
+        min-height: 30vh;
+        padding-bottom: 30px;
+     } 
+}
+
+ .Extra-line-div {
+    width: 70%;
+    height: 1.5px;
+    background-color: $firstLightColor;
+ }
+
 
  @media screen and (max-height: 650px){
     .Main-description-container {
         flex-basis: 450px;
     }
-    .Main-text-container {
-        height: 250px;
-     }
+    // .Main-text-container {
+    //     height: 250px;
+    //  }
 }
 
  @media screen and (min-width: 600px){
@@ -322,15 +412,22 @@ $darkColor: #aebcc0;
     justify-content: center;
 }
 
+.Main-text-title {
+    text-align: center;
+    font-weight: 600;
+}
+
 .Main-carousel-container {
    width: 80vw;
    height: 60vw;
    background-color: $thirdLightColor;
-   margin-left: 30px;
+//    margin-left: 30px;
 }
 
+
+
 @mixin container-with-opacity {
-    background-color:#626c7481;
+    background-color: $opacityBlocksColor;
     color: $thirdLightColor;
 }
 
@@ -401,10 +498,38 @@ $darkColor: #aebcc0;
 //      }
 // }
 
+//Advantages styles
+
+.Advantages-container {
+    @include inline-container();
+    @include standart-page();
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    background-color: $firstLightColor;
+}
+
+.Advantages-list {
+    color: $secondDetailsColor;
+}
+
+.Advantages-list-item {
+    list-style-type: square;
+    list-style-position: inside;
+    color: $thirdLightColor;
+}
+
+.Advantages-list-title {
+    color: $thirdLightColor;
+    margin-bottom: 20px; 
+}
+
 .Main-carousel-container {
     position: relative;
-    @include container-with-opacity();
-    border: 5px solid $firstDetailsColor;
+    background-color: $darkColor;
+    border: 2px solid $secondDetailsColor;
+    // @include container-with-opacity();
+    // border: 5px solid $firstDetailsColor;
 }
 
 .Slider-image {

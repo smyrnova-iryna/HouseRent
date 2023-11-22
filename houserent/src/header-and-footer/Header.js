@@ -13,7 +13,7 @@ import dataUkr from "../data/dataUkr";
 import BurgerMenuNav from '../nav/BurgerMenuNav';
 // import BurgerMenuNav from "../nav/BurgerMenuNav";
 
-const Header = ({data, changeLanguage, navigateToTheTop}) => {
+const Header = ({data, changeLanguage, navigateToTheTop, headerStyles}) => {
     const fullPhoneNumber = "tel:" + data.header.phoneNumber;
     const fullEmail = "mailto:" + data.header.email;
     
@@ -43,7 +43,7 @@ const Header = ({data, changeLanguage, navigateToTheTop}) => {
 
                                     
     return (
-        <header className="App-header">
+        <header className={`App-header ${headerStyles}`}>
             <div className='Header-language-buttons-container'>
                 <button className={`Header-language-button ${ukrButtonStyles}`} onClick={() => {changeLanguage(dataUkr); setEnButtonStyles(''); setRuButtonStyles(''); setUkrButtonStyles('Highlighted-button')}}>UA</button>
                 <button className={`Header-language-button ${enButtonStyles}`} onClick={() => {changeLanguage(dataEn); setEnButtonStyles('Highlighted-button'); setRuButtonStyles(''); setUkrButtonStyles('')}}>EN</button>
@@ -52,16 +52,16 @@ const Header = ({data, changeLanguage, navigateToTheTop}) => {
             <div className='Header-right-content-container'>
             <div className='Header-links-container'>
                 <a className="Header-link" href={fullPhoneNumber} target="_blank" rel="noopener noreferrer">
-                    <PhoneIcon className="Header-link-Icon"/>
-                    <span className="Header-link-text">{data.header.phoneNumber}</span>
+                    <PhoneIcon className="Header-link-mobile-Icon"/>
+                    <span className="Header-link-text"><PhoneIcon className="Header-link-Icon"/>{data.header.phoneNumber}</span>
                 </a>
                 <a className="Header-link" href={fullEmail} target="_blank" rel="noopener noreferrer">
-                    <EmailIcon className="Header-link-Icon"/>
-                    <span className="Header-link-text">{data.header.email}</span>
+                    <EmailIcon className="Header-link-Icon Header-link-mobile-Icon"/>
+                    <span className="Header-link-text"><EmailIcon className="Header-link-Icon"/>{data.header.email}</span>
                 </a>
                 <a className="Header-link" href={fullPhoneNumber} target="_blank" rel="noopener noreferrer">
-                    <PhoneCallbackIcon className="Header-link-Icon"/>
-                    <span className="Header-link-text">{data.header.callback.text}</span>
+                    <PhoneCallbackIcon className="Header-link-Icon Header-link-mobile-Icon"/>
+                    <span className="Header-link-text"><PhoneCallbackIcon className="Header-link-Icon"/>{data.header.callback.text}</span>
                 </a>
             </div>
             <button className='Nav-Button' onClick={() => {handleBurgerMenuButton()}}>

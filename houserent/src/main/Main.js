@@ -3,7 +3,10 @@ import { useRef, useLayoutEffect } from 'react';
 
 import React from 'react';
 
-// start
+
+import Advantages from './Advantages';
+import Contacts from './Contacts';
+
 const Main = ({data}) => {
 
     const comp = useRef();
@@ -78,6 +81,7 @@ const Main = ({data}) => {
 
 
     return (
+        <>
         <div className="Main-Container" ref={comp}>
             {/* <h1 className="MainTitle MainTitle-list">
                 <p  className="MainTitle-item">{data.main.mainTitle[0]}</p>
@@ -95,9 +99,13 @@ const Main = ({data}) => {
             <p className="Main-description-block Fourth-block">{data.main.mainInfo[3]}</p>
            </div>
            <div className="Main-text-container">
-                <p className="Main-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus et numquam aperiam voluptatibus error omnis facilis distinctio, est consequatur earum consequuntur recusandae aspernatur ad nam perspiciatis natus rem iusto. Dolor eos expedita doloremque illo explicabo natus rerum fugit tempore rem voluptatibus, sapiente ad similique repellendus commodi beatae deleniti, at obcaecati optio, quae facilis? Dolorem error, eligendi incidunt consequuntur unde neque quaerat provident, voluptate aperiam, voluptatum dignissimos ipsa ullam animi maiores atque id perferendis eius? Quo, aut ab aperiam alias itaque quae error ipsa minima ad aspernatur doloribus numquam porro expedita blanditiis eum placeat, voluptas molestias in qui, asperiores atque quas. Animi magnam exercitationem sequi earum laudantium. Ratione ea minus laborum ab nulla est aperiam, sint et suscipit magni, omnis dolores autem. Culpa fugiat ratione sed voluptatum libero veritatis, molestiae natus atque, doloremque consequatur voluptatem. Nihil aperiam sint quam numquam exercitationem eum, officia, aliquam repellendus mollitia rem iure accusamus! Voluptatum, commodi.
-                </p>
+                <div className='Main-extra-title-container'>
+                  <div className='Extra-line-div'></div>
+                  <p className="Main-text Main-text-title">{data.main.mainTextHeader}</p>
+                </div>
+                <div className='Main-extra-text-container'>
+                  <p className="Main-text">{data.main.mainText}</p>
+                </div>
            </div>
             {/* <div className="Main-carousel-container">
             <div className="mainPageContainer">
@@ -115,6 +123,9 @@ const Main = ({data}) => {
             </div>
             </div> */}
         </div>
+        <Advantages data={data}/>  
+        <Contacts data={data}/>  
+        </>
     )
 }
 

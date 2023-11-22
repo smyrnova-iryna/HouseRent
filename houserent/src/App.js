@@ -12,6 +12,7 @@ import Header from './header-and-footer/Header';
 import PrivacyPolicy from './header-and-footer/Privacypolicy';
 import Offices from './offices/Offices';
 import Promotions from './promotions/Promotions';
+import { useEffect } from "react";
 
 
 function App() {
@@ -23,10 +24,34 @@ function App() {
     window.scrollTo({top: 0})
   }
 
+  // && window.pageYOffset > window.innerHeight
+
+  const [headerStyles, setHeaderStyles] = useState("");
+  
+
+  useEffect(() => {
+    let lastScrollTop = window.pageYOffset;
+    const handleScroll = event => {
+        
+        var st = window.pageYOffset || document.documentElement.scrollTop; 
+        if (st < lastScrollTop && window.pageYOffset > window.innerHeight) {
+          setHeaderStyles("Visible-Header");
+          // console.log("Scroll up detected!")
+        } else if (st > lastScrollTop) {
+          setHeaderStyles("");
+          // console.log("Scroll down detected!")
+        }
+        lastScrollTop = st <= 0 ? 0 : st;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('load', handleScroll);
+  })
+
 
   return (
     <div className="App">
-      <Header changeLanguage={changeLanguage} data={data} navigateToTheTop={navigateToTheTop}/>
+      <Header changeLanguage={changeLanguage} data={data} navigateToTheTop={navigateToTheTop} headerStyles={headerStyles}/>
       {/* <Main /> */}
       <Routes> 
         <Route path={data.menuPaths.main} element={<Main data={data}/>} />
