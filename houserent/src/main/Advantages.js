@@ -40,15 +40,15 @@ const Advantages = ({data}) => {
           let tl = gsap.timeline({ repeat: -1 });
   
                       let ctx = gsap.context(() => {
-                          tl.to(".Slider-image1", { duration: 5, opacity: 0, delay: 5 });
-                          tl.to(".Slider-image2", { duration: 5, opacity: 0, delay: 5 });
-                          tl.to(".Slider-image3", { duration: 5, opacity: 0, delay: 5 });
-                          tl.to(".Slider-image4", { duration: 5, opacity: 0, delay: 5 });
-                          tl.to(".Slider-image5", { duration: 5, opacity: 0, delay: 5 });
-                          tl.to(".Slider-image6", { duration: 5, opacity: 0, delay: 5 });
-                          tl.to(".Slider-image7", { duration: 5, opacity: 0, delay: 5 });
-                          tl.to(".Slider-image8", { duration: 5, opacity: 0, delay: 5 });
-                          tl.to(".Slider-image9", { duration: 5, opacity: 0, delay: 5 });
+                          tl.to(".Slider-image1", { duration: 3, opacity: 0, delay: 3 });
+                          tl.to(".Slider-image2", { duration: 3, opacity: 0, delay: 3 });
+                          tl.to(".Slider-image3", { duration: 3, opacity: 0, delay: 3 });
+                          tl.to(".Slider-image4", { duration: 3, opacity: 0, delay: 3 });
+                          tl.to(".Slider-image5", { duration: 3, opacity: 0, delay: 3 });
+                          tl.to(".Slider-image6", { duration: 3, opacity: 0, delay: 3 });
+                          tl.to(".Slider-image7", { duration: 3, opacity: 0, delay: 3 });
+                          tl.to(".Slider-image8", { duration: 3, opacity: 0, delay: 3 });
+                          tl.to(".Slider-image9", { duration: 3, opacity: 0, delay: 3 });
                       }, comp);
                           
                       
