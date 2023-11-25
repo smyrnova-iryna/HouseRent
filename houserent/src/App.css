@@ -12,6 +12,10 @@
   scroll-behavior: smooth;
 }
 
+.Loading-Slider {
+  visibility: hidden;
+}
+
 .App-header {
   background: none;
   display: -webkit-box;

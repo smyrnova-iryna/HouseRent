@@ -1,5 +1,5 @@
 import { gsap } from 'gsap';
-import { useRef, useLayoutEffect } from 'react';
+import { useRef, useLayoutEffect, useState } from 'react';
 
 import React from 'react';
 
@@ -29,11 +29,14 @@ const Advantages = ({data}) => {
         
     //   }, []);
 
+    const [sliderVisibility, setSliderVisibility] = useState("Loading-Slider");
+
 
 
     useLayoutEffect(() => {
         const onPageLoad = () => {
           console.log('page loaded');
+          setSliderVisibility("")
           let tl = gsap.timeline({ repeat: -1 });
   
                       let ctx = gsap.context(() => {
@@ -101,14 +104,14 @@ const Advantages = ({data}) => {
             <div className="Main-carousel-container">
             {/* <div> */}
                    {/* <div className="Main-carousel-inner-container"> */}
-                        <img className='Slider-image Slider-image9' src={require("../data/carousel/carousel_photo_1.jpg")} alt="Carousel item 1" />
-                        <img className='Slider-image Slider-image8' src={require("../data/carousel/carousel_photo_2.jpg")} alt="Carousel item 2" />
-                        <img className='Slider-image Slider-image7' src={require("../data/carousel/carousel_photo_3.jpg")} alt="Carousel item 3" />
-                        <img className='Slider-image Slider-image6' src={require("../data/carousel/carousel_photo_4.jpg")} alt="Carousel item 4" />
-                        <img className='Slider-image Slider-image5' src={require("../data/carousel/carousel_photo_5.jpg")} alt="Carousel item 5" />
-                        <img className='Slider-image Slider-image4' src={require("../data/carousel/carousel_photo_6.jpg")} alt="Carousel item 6" />
-                        <img className='Slider-image Slider-image3' src={require("../data/carousel/carousel_photo_7.jpg")} alt="Carousel item 7" />
-                        <img className='Slider-image Slider-image2' src={require("../data/carousel/carousel_photo_8.jpg")} alt="Carousel item 8" />
+                        <img className={`Slider-image Slider-image9 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_1.jpg")} alt="Carousel item 1" />
+                        <img className={`Slider-image Slider-image8 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_2.jpg")} alt="Carousel item 2" />
+                        <img className={`Slider-image Slider-image7 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_3.jpg")} alt="Carousel item 3" />
+                        <img className={`Slider-image Slider-image6 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_4.jpg")} alt="Carousel item 4" />
+                        <img className={`Slider-image Slider-image5 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_5.jpg")} alt="Carousel item 5" />
+                        <img className={`Slider-image Slider-image4 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_6.jpg")} alt="Carousel item 6" />
+                        <img className={`Slider-image Slider-image3 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_7.jpg")} alt="Carousel item 7" />
+                        <img className={`Slider-image Slider-image2 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_8.jpg")} alt="Carousel item 8" />
                         <img className='Slider-image Slider-image1' src={require("../data/carousel/carousel_photo_9.jpg")} alt="Carousel item 9" />
                     {/* </div> */}
             {/* </div> */}
