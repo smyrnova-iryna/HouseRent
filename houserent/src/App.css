@@ -13,7 +13,7 @@
 }
 
 .Loading-Slider {
-  visibility: hidden;
+  visibility: hidden !important;
 }
 
 .App-header {
