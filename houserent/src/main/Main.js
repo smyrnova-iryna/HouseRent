@@ -55,27 +55,27 @@ const Main = ({data}) => {
       }, []);
 
     
-      useLayoutEffect(() => {
+      // useLayoutEffect(() => {
 
 
-          let tl = gsap.timeline({ repeat: -1 });
+      //     let tl = gsap.timeline({ repeat: -1 });
   
-        let ctx = gsap.context(() => {
-            tl.to(".Slider-image1", { duration: 5, opacity: 0, delay: 5 });
-            tl.to(".Slider-image2", { duration: 5, opacity: 0, delay: 5 });
-            tl.to(".Slider-image3", { duration: 5, opacity: 0, delay: 5 });
-            tl.to(".Slider-image4", { duration: 5, opacity: 0, delay: 5 });
-            tl.to(".Slider-image5", { duration: 5, opacity: 0, delay: 5 });
-            tl.to(".Slider-image6", { duration: 5, opacity: 0, delay: 5 });
-            tl.to(".Slider-image7", { duration: 5, opacity: 0, delay: 5 });
-            tl.to(".Slider-image8", { duration: 5, opacity: 0, delay: 5 });
-            tl.to(".Slider-image9", { duration: 5, opacity: 0, delay: 5 });
-        }, comp);
+      //   let ctx = gsap.context(() => {
+      //       tl.to(".Slider-image1", { duration: 5, opacity: 0, delay: 5 });
+      //       tl.to(".Slider-image2", { duration: 5, opacity: 0, delay: 5 });
+      //       tl.to(".Slider-image3", { duration: 5, opacity: 0, delay: 5 });
+      //       tl.to(".Slider-image4", { duration: 5, opacity: 0, delay: 5 });
+      //       tl.to(".Slider-image5", { duration: 5, opacity: 0, delay: 5 });
+      //       tl.to(".Slider-image6", { duration: 5, opacity: 0, delay: 5 });
+      //       tl.to(".Slider-image7", { duration: 5, opacity: 0, delay: 5 });
+      //       tl.to(".Slider-image8", { duration: 5, opacity: 0, delay: 5 });
+      //       tl.to(".Slider-image9", { duration: 5, opacity: 0, delay: 5 });
+      //   }, comp);
             
           
-          return () => ctx.revert();  
+      //     return () => ctx.revert();  
         
-      }, []);
+      // }, []);
 
   
 
