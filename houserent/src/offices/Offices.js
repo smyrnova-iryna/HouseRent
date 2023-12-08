@@ -1,6 +1,10 @@
-const Offices = () => {
+import FourthFloor from "./FourthFloor";
+
+const Offices = ({data}) => {
     return (
-        <div className="Offices-container">Offices</div>
+        <div className="Offices-container">
+        <FourthFloor data={data}/>
+        </div>
     )
 }
 

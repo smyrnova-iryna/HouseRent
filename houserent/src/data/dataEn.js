@@ -19,6 +19,11 @@ const dataEn = {
             promotions: "/HouseRent/promotions", 
             contacts: "/HouseRent#contacts",
             privacypolicy: "/HouseRent/privacypolicy", 
+            floorPages: {
+                secondFloor: "/HouseRent/offices/second_floor",
+                thirdFloor: "/HouseRent/offices/third_floor",
+                fourthFloor: "/HouseRent/offices/fourth_floor",
+            },
             error: "*"},
     menuItems: 
             {main: "Main", 
@@ -64,7 +69,17 @@ const dataEn = {
                     "работа с любыми категориями арендаторов",
                     "доступ с 08:00 до 20:00, в субботу до 16:00, в воскресенье по договоренности"]},
     offices: 
-            {},
+            {
+                secondFloor: {
+                   
+                },
+                thirdFloor: {
+                        
+                },
+                fourthFloor: {
+                    title: "Fourth floor"    
+                },
+            },
     promotions: 
             {},
     contacts: 

@@ -5,6 +5,7 @@ import React from 'react';
 
 
 import Advantages from './Advantages';
+import Offices from '../offices/Offices';
 import Contacts from './Contacts';
 
 const Main = ({data}) => {
@@ -107,23 +108,9 @@ const Main = ({data}) => {
                   <p className="Main-text">{data.main.mainText}</p>
                 </div>
            </div>
-            {/* <div className="Main-carousel-container">
-            <div className="mainPageContainer">
-                   <div className="mainPageCertificatesContainer">
-                        <img className='Slider-image Slider-image9' src={require("../data/carousel/carousel_photo_1.jpg")} alt="Carousel item 1" />
-                        <img className='Slider-image Slider-image8' src={require("../data/carousel/carousel_photo_2.jpg")} alt="Carousel item 2" />
-                        <img className='Slider-image Slider-image7' src={require("../data/carousel/carousel_photo_3.jpg")} alt="Carousel item 3" />
-                        <img className='Slider-image Slider-image6' src={require("../data/carousel/carousel_photo_4.jpg")} alt="Carousel item 4" />
-                        <img className='Slider-image Slider-image5' src={require("../data/carousel/carousel_photo_5.jpg")} alt="Carousel item 5" />
-                        <img className='Slider-image Slider-image4' src={require("../data/carousel/carousel_photo_6.jpg")} alt="Carousel item 6" />
-                        <img className='Slider-image Slider-image3' src={require("../data/carousel/carousel_photo_7.jpg")} alt="Carousel item 7" />
-                        <img className='Slider-image Slider-image2' src={require("../data/carousel/carousel_photo_8.jpg")} alt="Carousel item 8" />
-                        <img className='Slider-image Slider-image1' src={require("../data/carousel/carousel_photo_9.jpg")} alt="Carousel item 9" />
-                    </div>
-            </div>
-            </div> */}
         </div>
         <Advantages data={data}/>  
+        <Offices data={data} />
         <Contacts data={data}/>  
         </>
     )

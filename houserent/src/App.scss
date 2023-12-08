@@ -71,6 +71,12 @@ $opacityHeaderColor: #dfe8e8c8;
     min-height: 100vh;
 }
 
+@mixin icon-positioning {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
 .Loading-Slider {
     visibility: hidden!important;
 }
@@ -253,7 +259,7 @@ $opacityHeaderColor: #dfe8e8c8;
 
 //   Main styles
 
- .Promotion-container, .Offices-container {
+ .Promotion-container {
   @include standart-page()
 }
 
@@ -554,9 +560,85 @@ $opacityHeaderColor: #dfe8e8c8;
 }
 
 
-// .Main-carousel-inner-container {
-//     min-height: 50vh;
-// }
+// Offices styles
+
+.Floor-container {
+  @include basic-flex-container();
+  // padding: 0
+}
+
+.Floor-title-container {
+  @include basic-flex-container();
+  flex-direction: row;
+  gap: 10px;
+  background-color: $darkColor;
+  width: 100vw;
+  justify-content: center;
+  padding: 20px 10px 0 10px;
+}
+
+.Floor-title-icon-container {
+  position: relative;
+  height: 200px;
+  @include standart-flex-container();
+  flex-basis: 80px;
+  // height: 170px;
+}
+
+.House-icon {
+  @include icon-positioning();
+  // width: 130px;
+}
+
+.House-window-icon {
+  @include icon-positioning();
+  top: 34px;
+  left: 15px;
+  width: 32px;
+  // display: none;
+}
+
+.Floor-title {
+  font-weight: 600;
+  font-size: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: $firstLightColor;
+}
+
+@media screen and (min-width: 500px){
+  .Floor-title {
+    font-size: 200%;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .Floor-title {
+    font-size: 300%;
+    margin-left: 20px;
+  }
+}
+
+.Floor-Plan-Link {
+  // border-bottom: 1px solid $darkColor;
+  // border-top: 1px solid $darkColor;
+  margin: 30px 0;
+  padding: 30px 0;
+  // margin: 0 30px;
+}
+
+.Floor-Plan-Image {
+  // border-bottom: 1px solid $darkColor;
+  // border-top: 1px solid $darkColor;
+  // transform: rotate(-90deg);
+  // filter: contrast(200%)
+}
+
+.Floor-Plan-Image:hover {
+  filter: contrast(150%)
+}
+
+
 
 // Footer styles
 

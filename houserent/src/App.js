@@ -11,6 +11,7 @@ import Header from './header-and-footer/Header';
 // import Footer from './header-and-footer/Footer';
 import PrivacyPolicy from './header-and-footer/Privacypolicy';
 import Offices from './offices/Offices';
+import FourthFloorDetails from "./offices/offices-details/FourthFloorDetails";
 import Promotions from './promotions/Promotions';
 import { useEffect } from "react";
 
@@ -58,6 +59,7 @@ function App() {
         <Route path={data.menuPaths.offices} element={<Offices data={data}/>} />
         <Route path={data.menuPaths.promotions} element={<Promotions data={data}/>} />
         <Route path={data.menuPaths.privacypolicy} element={<PrivacyPolicy data={data} />} />
+        <Route path={data.menuPaths.floorPages.fourthFloor} element={<FourthFloorDetails data={data} />} />
         <Route path={data.errorPath} element={<Error data={data} />} />
       </Routes>
       {/* <TopScroll />  */}

@@ -35,7 +35,7 @@ const Advantages = ({data}) => {
 
     useLayoutEffect(() => {
         const onPageLoad = () => {
-          console.log('page loaded');
+          // console.log('page loaded');
           setSliderVisibility("")
           let tl = gsap.timeline({ repeat: -1 });
   
