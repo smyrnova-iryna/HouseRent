@@ -15,7 +15,7 @@ const dataEn = {
     menuPaths: 
             {main: "/HouseRent", 
             advantages: "/HouseRent#advantages",
-            offices: "/HouseRent/offices",
+            offices: "/HouseRent#offices",
             promotions: "/HouseRent/promotions", 
             contacts: "/HouseRent#contacts",
             privacypolicy: "/HouseRent/privacypolicy", 
