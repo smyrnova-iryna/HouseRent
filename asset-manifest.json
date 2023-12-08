@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/HouseRent/static/css/main.0c39179e.css",
-    "main.js": "/HouseRent/static/js/main.965780e2.js",
+    "main.css": "/HouseRent/static/css/main.d8ccebbc.css",
+    "main.js": "/HouseRent/static/js/main.e575b281.js",
     "static/js/787.0f787131.chunk.js": "/HouseRent/static/js/787.0f787131.chunk.js",
     "static/media/carousel_photo_6.jpg": "/HouseRent/static/media/carousel_photo_6.2f59d56356ad8dfb85f6.jpg",
     "static/media/carousel_photo_5.jpg": "/HouseRent/static/media/carousel_photo_5.fc44c548249ddb7388c9.jpg",
@@ -13,13 +13,15 @@
     "static/media/carousel_photo_2.jpg": "/HouseRent/static/media/carousel_photo_2.63f0a847f265aaf768eb.jpg",
     "static/media/carousel_photo_1.jpg": "/HouseRent/static/media/carousel_photo_1.dc7441253145412b9da6.jpg",
     "static/media/main_page_background.jpg": "/HouseRent/static/media/main_page_background.c631bf90ee7f439ba59b.jpg",
+    "static/media/house_icon.png": "/HouseRent/static/media/house_icon.bedf53ff1d890adb588a.png",
+    "static/media/fourth_floor_outer.png": "/HouseRent/static/media/fourth_floor_outer.18d934f6e4ddf3a3e51e.png",
     "index.html": "/HouseRent/index.html",
-    "main.0c39179e.css.map": "/HouseRent/static/css/main.0c39179e.css.map",
-    "main.965780e2.js.map": "/HouseRent/static/js/main.965780e2.js.map",
+    "main.d8ccebbc.css.map": "/HouseRent/static/css/main.d8ccebbc.css.map",
+    "main.e575b281.js.map": "/HouseRent/static/js/main.e575b281.js.map",
     "787.0f787131.chunk.js.map": "/HouseRent/static/js/787.0f787131.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c39179e.css",
-    "static/js/main.965780e2.js"
+    "static/css/main.d8ccebbc.css",
+    "static/js/main.e575b281.js"
   ]
 }
