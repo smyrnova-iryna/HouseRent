@@ -40,7 +40,7 @@ const FourthFloor = ({data}) => {
                 <h2 className="Floor-title">{data.offices.fourthFloor.title}</h2>
             </div>
             <Link className='Floor-Plan-Link' to={data.menuPaths.floorPages.fourthFloor}>
-                <img className="Floor-Plan-Image" src={require("../data/floors_plans/fourth_floor_outer.png")} alt="Fourth floor plan"></img>
+                <img className="Floor-Plan-Image Main-Image Floor-Plan-Hover-Image" src={require("../data/floors_plans/fourth_floor_outer.png")} alt="Fourth floor plan"></img>
             </Link>
         </div>
     )

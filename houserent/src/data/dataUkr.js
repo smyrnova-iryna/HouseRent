@@ -74,7 +74,7 @@ const dataUkr = {
                    
                 },
                 thirdFloor: {
-                        
+                    title: "Третій поверх" 
                 },
                 fourthFloor: {
                     title: "Четвертий поверх"    

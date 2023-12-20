@@ -627,14 +627,136 @@ $opacityHeaderColor: #dfe8e8c8;
   // margin: 0 30px;
 }
 
-.Floor-Plan-Image {
-  // border-bottom: 1px solid $darkColor;
-  // border-top: 1px solid $darkColor;
-  // transform: rotate(-90deg);
-  // filter: contrast(200%)
+.Floor-Plan-Extra-Container {
+  position: relative;
 }
 
-.Floor-Plan-Image:hover {
+.Main-Image {
+  width: 270px;
+}
+
+.First-Part, .Second-Part, .Third-Part, .Fourth-Part, .Fifth-Part, .Sixth-Part {
+  position: absolute;
+}
+
+.First-Part {
+  width: 61px;
+  top: 4.06px;
+  left: 12px;
+}
+
+.Second-Part {
+  width: 18.5px;
+  top: 4.06px;
+  left: 73.7px;
+}
+
+.Third-Part {
+  width: 39px;
+  top: 4.06px;
+  left: 92px;
+}
+
+.Fourth-Part {
+  width: 130px;
+  top: 4.06px;
+  left: 130px;
+}
+
+.Fifth-Part {
+  width: 63px;
+  top: 46.5px;
+  left: 10.6px;
+}
+
+.Sixth-Part {
+  width: 80px;
+  top: 49px;
+  left: 70px;
+}
+
+@media screen and (min-width: 500px){
+  .Main-Image {
+    width: 490px;
+  }
+  .First-Part {
+    width: 111px;
+    top: 8px;
+    left: 22.5px;
+  }
+  .Second-Part {
+    width: 33.5px;
+    top: 8px;
+    left: 133px;
+  }
+  .Third-Part {
+    width: 70.34px;
+    top: 8px;
+    left: 166px;
+  }
+  
+  .Fourth-Part {
+    width: 232.5px;
+    top: 8px;
+    left: 238px;
+  }
+  
+  .Fifth-Part {
+    width: 114px;
+    top: 84px;
+    left: 20.5px;
+  }
+  
+  .Sixth-Part {
+    width: 145px;
+    top: 88px;
+    left: 129px;
+  }
+  
+}
+
+@media screen and (min-width: 900px){
+  .Main-Image {
+    width: 890px;
+  }
+  .First-Part {
+    width: 201px;
+    top: 14px;
+    left: 41px;
+  }
+  .Second-Part {
+    width: 60.4px;
+    top: 14.5px;
+    left: 244px;
+  }
+  .Third-Part {
+    width: 127px;
+    top: 14px;
+    left: 305px;
+  }
+  
+  .Fourth-Part {
+    width: 418px;
+    top: 14.5px;
+    left: 430px;
+  }
+  
+  .Fifth-Part {
+    width: 205px;
+    top: 152px;
+    left: 37px;
+  }
+  
+  .Sixth-Part {
+    width: 255px;
+    top: 162px;
+    left: 240px;
+  }
+}
+
+
+
+.Floor-Plan-Hover-Image:hover {
   filter: contrast(150%)
 }
 

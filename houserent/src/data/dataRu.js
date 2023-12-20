@@ -74,7 +74,7 @@ const dataRu = {
                    
                 },
                 thirdFloor: {
-                        
+                    title: "Третий этаж"     
                 },
                 fourthFloor: {
                     title: "Четвертый этаж"    

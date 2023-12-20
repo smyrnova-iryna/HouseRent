@@ -74,7 +74,7 @@ const dataEn = {
                    
                 },
                 thirdFloor: {
-                        
+                    title: "Third floor"       
                 },
                 fourthFloor: {
                     title: "Fourth floor"    
