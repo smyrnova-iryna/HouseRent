@@ -77,6 +77,16 @@ $opacityHeaderColor: #dfe8e8c8;
   right: 0;
 }
 
+@mixin flex-adaptive-gaps {
+  gap: 30px;
+  @media screen and (min-width: 600px){
+    gap: 60px;
+  }
+  @media screen and (min-width: 1000px){
+    gap: 90px;
+  }
+}
+
 .Loading-Slider {
     visibility: hidden!important;
 }
@@ -592,10 +602,18 @@ $opacityHeaderColor: #dfe8e8c8;
 
 .House-window-icon {
   @include icon-positioning();
-  top: 34px;
   left: 15px;
   width: 32px;
   // display: none;
+}
+
+.Third-Floor-Window-Icon {
+  top: 68px;
+ 
+}
+
+.Fourth-Floor-Window-Icon {
+  top: 34px;
 }
 
 .Floor-title {
@@ -759,6 +777,111 @@ $opacityHeaderColor: #dfe8e8c8;
 .Floor-Plan-Hover-Image:hover {
   filter: contrast(150%)
 }
+
+
+// Floor details styles
+
+.Floor-Details-Main-Container {
+  @include standart-page();
+  @include inline-container();
+  @include flex-adaptive-gaps();
+  flex-direction: column;
+  padding-top: 60px;
+  // gap: 30px;
+  justify-content: flex-start;
+  @media screen and (min-width: 600px){
+    padding-top: 90px;
+    // gap: 60px;
+  }
+  @media screen and (min-width: 1000px){
+    padding-top: 120px;
+    // gap: 90px;
+  }
+}
+
+.Floor-Details-Title-Container {
+  @include inline-container();
+  flex-direction: column;
+  color: $firstLightColor;
+  gap: 10px;
+  background-color: $secondDetailsColor;
+  padding: 5px;
+  width: 100%;
+  @media screen and (min-width: 400px){
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1200px;
+  }
+}
+
+.Floor-Details-Title {
+  font-size: 130%;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 900px){
+  .Floor-Details-Title {
+    font-size: 200%;
+  }
+  .Floor-Details-Status {
+    font-size: 130%;
+  }
+}
+
+.Floor-Details-Content-Container {
+  @include inline-container();
+  @include flex-adaptive-gaps();
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  @media screen and (min-width: 600px){
+    flex-direction: row;
+    width: 1200px;
+  }
+  @media screen and (min-width: 850px){
+    font-size: 130%;
+  }
+}
+
+.Floor-Advantages-List-Item {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.Floor-Photo-List {
+  @include inline-container();
+  flex-direction: column;
+  @media screen and (min-width: 600px){
+    flex-direction: row;
+    width: 1200px;
+  }
+}
+
+.Floor-Photo-List-Item-Container {
+  @media screen and (min-width: 600px){
+    position: relative;
+    width: 230px;
+    height: 180px;
+  }
+  @media screen and (min-width: 1200px){
+    width: 300px;
+    height: 250px;
+  }
+}
+
+.Floor-Photo-List-Item {
+  width: 230px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 600px){
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  @media screen and (min-width: 1200px){
+   width: 300px;
+  }
+}
+
 
 
 

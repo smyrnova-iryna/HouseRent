@@ -1,4 +1,4 @@
-import ThirdFloor from "./ThirdFloor ";
+import ThirdFloor from "./ThirdFloor";
 import FourthFloor from "./FourthFloor";
 
 const Offices = ({data}) => {

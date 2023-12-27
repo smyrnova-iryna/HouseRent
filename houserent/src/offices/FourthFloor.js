@@ -35,7 +35,7 @@ const FourthFloor = ({data}) => {
             <div className="Floor-title-container">
                 <div className="Floor-title-icon-container">
                     <img className="House-icon" src={require("../data/icons/house_icon.png")} alt="House icon"></img>
-                    <img className="House-window-icon" src={require("../data/icons/house_window_icon.png")} alt="House window icon"></img>
+                    <img className="House-window-icon Fourth-Floor-Window-Icon" src={require("../data/icons/house_window_icon.png")} alt="House window icon"></img>
                 </div>
                 <h2 className="Floor-title">{data.offices.fourthFloor.title}</h2>
             </div>

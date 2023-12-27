@@ -21,7 +21,14 @@ const dataEn = {
             privacypolicy: "/HouseRent/privacypolicy", 
             floorPages: {
                 secondFloor: "/HouseRent/offices/second_floor",
-                thirdFloor: "/HouseRent/offices/third_floor",
+                thirdFloor: {
+                        firstPart: "/HouseRent/offices/third_floor/first_area",
+                        secondPart: "/HouseRent/offices/third_floor/second_area",
+                        thirdPart: "/HouseRent/offices/third_floor/third_area",
+                        fourthPart: "/HouseRent/offices/third_floor/fourth_area",
+                        fifthPart: "/HouseRent/offices/third_floor/fifth_area",
+                        sixthPart: "/HouseRent/offices/third_floor/sixth_area",
+                },
                 fourthFloor: "/HouseRent/offices/fourth_floor",
             },
             error: "*"},
@@ -74,7 +81,19 @@ const dataEn = {
                    
                 },
                 thirdFloor: {
-                    title: "Third floor"       
+                    title: "Third floor",
+                    firstArea: {
+                        title: "ОФИС № 30-31",
+                        statusTitle: "статус",
+                        advantages: ["площадь 39,5 м2", "3 этаж",
+                                "кондиционер",
+                                "высота потолков более 3-х метров",
+                                "большие окна – светлые кабинеты", 
+                                "покрытие пола – линолеум",
+                                "базовая офисная отделка / отделка после Арендатора",
+                                "широкий коридор"
+                        ] 
+                    }       
                 },
                 fourthFloor: {
                     title: "Fourth floor"    

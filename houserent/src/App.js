@@ -12,6 +12,7 @@ import Header from './header-and-footer/Header';
 import PrivacyPolicy from './header-and-footer/Privacypolicy';
 import Offices from './offices/Offices';
 import FourthFloorDetails from "./offices/offices-details/FourthFloorDetails";
+// import ThirdFloorDetails from "./offices/offices-details/ThirdFloorFirstPartDetails";
 import Promotions from './promotions/Promotions';
 import { useEffect } from "react";
 
@@ -60,6 +61,18 @@ function App() {
         <Route path={data.menuPaths.promotions} element={<Promotions data={data}/>} />
         <Route path={data.menuPaths.privacypolicy} element={<PrivacyPolicy data={data} />} />
         <Route path={data.menuPaths.floorPages.fourthFloor} element={<FourthFloorDetails data={data} />} />
+        <Route path={data.menuPaths.floorPages.thirdFloor.firstPart} element={<FourthFloorDetails data={data} 
+        details={data.offices.thirdFloor.firstArea} plan="firt_area_plan.png" 
+        photos={["first_area_photo1.JPG", "first_area_photo2.JPG", "first_area_photo3.JPG"]} />} />
+
+
+        {/* <Route path={data.menuPaths.floorPages.thirdFloor.secondPart} element={<ThirdFloorSecondPartDetails data={data} />} />
+        <Route path={data.menuPaths.floorPages.thirdFloor.thirdPart} element={<ThirdFloorThirdPartDetails data={data} />} />
+
+        <Route path={data.menuPaths.floorPages.thirdFloor.fourthPart} element={<ThirdFloorFourthPartDetails data={data} />} />
+        <Route path={data.menuPaths.floorPages.thirdFloor.fifthPart} element={<ThirdFloorFifthPartDetails data={data} />} />
+        <Route path={data.menuPaths.floorPages.thirdFloor.sixthPart} element={<ThirdFloorSixthPartDetails data={data} />} /> */}
+
         <Route path={data.errorPath} element={<Error data={data} />} />
       </Routes>
       {/* <TopScroll />  */}
