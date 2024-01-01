@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useRef, useLayoutEffect } from "react";
+import { useRef, useLayoutEffect, useState } from "react";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -29,6 +29,15 @@ const FourthFloor = ({data}) => {
         
     }, []);
 
+    const [currentPartClassname, setCurrentPartClassname] = useState("");
+
+    const startPartHoverReaction = () => {
+        setCurrentPartClassname("Fourth-Part-Hover");
+    }
+
+    const finishPartHoverReaction = () => {
+        setCurrentPartClassname("");
+    }
 
     return (
         <div className="Floor-container" ref={comp}>
@@ -39,9 +48,31 @@ const FourthFloor = ({data}) => {
                 </div>
                 <h2 className="Floor-title">{data.offices.fourthFloor.title}</h2>
             </div>
-            <Link className='Floor-Plan-Link' to={data.menuPaths.floorPages.fourthFloor}>
-                <img className="Floor-Plan-Image Main-Image Floor-Plan-Hover-Image" src={require("../data/floors_plans/fourth_floor_outer.png")} alt="Fourth floor plan"></img>
-            </Link>
+
+            
+            <div className='Floor-Plan-Link' to={data.menuPaths.floorPages.fourthFloor}>
+                <div className='Floor-Plan-Extra-Container'>
+                    <img className="Floor-Plan-Image Main-Image" src={require("../data/floors_plans/fourth_floor_outer.png")} alt="Fourth floor plan"></img>
+                    <Link to={data.menuPaths.floorPages.thirdFloor.fourthPart}>
+                        <img className={`Floor-Plan-Image Fourth-Part First-Third-Part ${currentPartClassname}`} 
+                        onMouseEnter={() => {startPartHoverReaction()}} onMouseLeave={() => {finishPartHoverReaction()}}
+                        src={require("../data/floors_plans/fourth_floor_outer_1.png")} alt="Fourth floor plan"></img>
+                    </Link>
+                    <Link to={data.menuPaths.floorPages.thirdFloor.fourthPart}>
+                        <img className={`Floor-Plan-Image Fourth-Part Second-Third-Part ${currentPartClassname}`}
+                        onMouseEnter={() => {startPartHoverReaction()}} onMouseLeave={() => {finishPartHoverReaction()}}
+                        src={require("../data/floors_plans/fourth_floor_outer_2.png")} alt="Fourth floor plan"></img>
+                    </Link>
+                    <Link to={data.menuPaths.floorPages.thirdFloor.fourthPart}>
+                        <img className={`Floor-Plan-Image Fourth-Part Third-Third-Part ${currentPartClassname}`}
+                        onMouseEnter={() => {startPartHoverReaction()}} onMouseLeave={() => {finishPartHoverReaction()}}
+                        src={require("../data/floors_plans/fourth_floor_outer_3.png")} alt="Fourth floor plan"></img>
+                    </Link>
+                </div>
+            </div>
+            {/* <Link className='Floor-Plan-Link' to={data.menuPaths.floorPages.fourthFloor}>
+                <img className="Floor-Plan-Image Main-Image Full-Image Floor-Plan-Hover-Image" src={require("../data/floors_plans/fourth_floor_outer.png")} alt="Fourth floor plan"></img>
+            </Link> */}
         </div>
     )
 }

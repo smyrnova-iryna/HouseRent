@@ -115,13 +115,69 @@ useLayoutEffect(() => {
     
   }, [animateThirdPhotoTo, animateThirdPhotoFrom]);
 
+  useLayoutEffect(() => {
+  
+
+    let ctx = gsap.context(() => {
+      
+      let tl = gsap.timeline()
+
+      tl.from(".Floor-Details-Status-Item", 
+      { 
+        duration: 1,
+        y: -50,
+        ease: "bounce.out",
+        stagger: 0.5,
+        repeat: -1
+      }); 
+
+
+    }, comp); 
+    
+    return () => ctx.revert(); 
+    
+  }, []);
+
+
+
+
+
+//9
   
 
     return (
         <div className="Floor-Details-Main-Container" ref={comp}>
             <div className="Floor-Details-Title-Container">
                 <p className="Floor-Details-Title">{details.title}</p>
-                <p className="Floor-Details-Status">{details.statusTitle}: available</p>
+                <ul className="Floor-Details-Status">
+                      <li className="Floor-Details-Status-Item">
+                          {details.statusTitle[0]}
+                      </li> 
+                      <li className="Floor-Details-Status-Item">
+                          {details.statusTitle[1]}
+                      </li> 
+                      <li className="Floor-Details-Status-Item">
+                          {details.statusTitle[2]}
+                      </li> 
+                      <li className="Floor-Details-Status-Item">
+                          {details.statusTitle[3]}
+                      </li> 
+                      <li className="Floor-Details-Status-Item">
+                          {details.statusTitle[4]}
+                      </li> 
+                      <li className="Floor-Details-Status-Item">
+                          {details.statusTitle[5]}
+                      </li> 
+                      <li className="Floor-Details-Status-Item">
+                          {details.statusTitle[6]}
+                      </li> 
+                      <li className="Floor-Details-Status-Item">
+                          {details.statusTitle[7]}
+                      </li> 
+                      <li className="Floor-Details-Status-Item">
+                          {details.statusTitle[8]}
+                      </li> 
+                </ul>
             </div>
             <div className="Floor-Details-Content-Container">
                 <img src={require(`../../data/floors_inner_plans/${plan}`)} alt="Floor plan"></img>
@@ -133,31 +189,34 @@ useLayoutEffect(() => {
                       )}
                 </ul>
             </div>
-            <ul className="Floor-Photo-List">
-                {/* {photos.map((item) => 
-                      <li key={item} className="Floor-Photo-List-Item-Container">
-                         <img onMouseEnter={() => {setAnimateWebsiteLinkTo(true); setAnimateWebsiteLinkFrom(false)}} onMouseLeave={() => {setAnimateWebsiteLinkFrom(true); setAnimateWebsiteLinkTo(false)}} className="Floor-Photo-List-Item" src={require(`../../data/floors_inner_photoes/${item}`)} alt="Floor illustration"></img> 
-                      </li> 
-                      )} */}
-                      <li key={photos[0]} className="Floor-Photo-List-Item-Container">
-                         <img onMouseEnter={() => {setAnimateFirstPhotoTo(true); setAnimateFirstPhotoFrom(false)}} 
-                         onMouseLeave={() => {setAnimateFirstPhotoFrom(true); setAnimateFirstPhotoTo(false)}} 
+            <div className="Floor-Inner-Image-Extra-Container">
+                      <p className="Floor-Inner-Image Floor-Inner-Firt-Image" onMouseEnter={() => {setAnimateFirstPhotoTo(true); setAnimateFirstPhotoFrom(false)}} 
+                         onMouseLeave={() => {setAnimateFirstPhotoFrom(true); setAnimateFirstPhotoTo(false)}}>
+                         <img  
                          className="Floor-Photo-List-Item Floor-First-Photo" 
                          src={require(`../../data/floors_inner_photoes/${photos[0]}`)} alt="Floor illustration"></img> 
-                      </li> 
-                      <li key={photos[1]} className="Floor-Photo-List-Item-Container">
-                         <img onMouseEnter={() => {setAnimateSecondPhotoTo(true); setAnimateSecondPhotoFrom(false)}}
-                          onMouseLeave={() => {setAnimateSecondPhotoFrom(true); setAnimateSecondPhotoTo(false)}} 
-                          className="Floor-Photo-List-Item Floor-Second-Photo" 
-                          src={require(`../../data/floors_inner_photoes/${photos[1]}`)} alt="Floor illustration"></img> 
-                      </li> 
-                      <li key={photos[2]} className="Floor-Photo-List-Item-Container">
-                         <img onMouseEnter={() => {setAnimateThirdPhotoTo(true); setAnimateThirdPhotoFrom(false)}}
-                          onMouseLeave={() => {setAnimateThirdPhotoFrom(true); setAnimateThirdPhotoTo(false)}}
-                          className="Floor-Photo-List-Item Floor-Third-Photo" 
+                      </p> 
+                      <p className="Floor-Inner-Image Floor-Inner-Second-Image" onMouseEnter={() => {setAnimateSecondPhotoTo(true); setAnimateSecondPhotoFrom(false)}} 
+                         onMouseLeave={() => {setAnimateSecondPhotoFrom(true); setAnimateSecondPhotoTo(false)}}>
+                         <img  
+                         className="Floor-Photo-List-Item Floor-Second-Photo" 
+                         src={require(`../../data/floors_inner_photoes/${photos[1]}`)} alt="Floor illustration"></img> 
+                      </p> 
+                      <p className="Floor-Inner-Image Floor-Inner-Third-Image" onMouseEnter={() => {setAnimateThirdPhotoTo(true); setAnimateThirdPhotoFrom(false)}}
+                          onMouseLeave={() => {setAnimateThirdPhotoFrom(true); setAnimateThirdPhotoTo(false)}}>
+                         <img className="Floor-Photo-List-Item Floor-Third-Photo" 
                           src={require(`../../data/floors_inner_photoes/${photos[2]}`)} alt="Floor illustration"></img> 
+                      </p>
+            </div>
+            <div className="Floor-Extra-Advantages-Container">
+            <ul>
+                    {details.commonAdvantages.map((item) => 
+                      <li className="Floor-Advantages-List-Item" key={item}>
+                          {item}
                       </li> 
-            </ul>
+                      )}
+                </ul>
+            </div>
         </div>
     )
 }

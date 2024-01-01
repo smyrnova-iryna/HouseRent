@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useRef, useLayoutEffect } from "react";
+import { useRef, useLayoutEffect, useState } from "react";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -29,6 +29,15 @@ const ThirdFloor = ({data}) => {
         
     }, []);
 
+    const [currentFourthPartClassname, setCurrentFourthPartClassname] = useState("");
+
+    const startFourthPartHoverReaction = () => {
+        setCurrentFourthPartClassname("Fourth-Part-Hover");
+    }
+
+    const finishFourthPartHoverReaction = () => {
+        setCurrentFourthPartClassname("");
+    }
 
     return (
         <div className="Floor-container" ref={comp}>
@@ -43,22 +52,29 @@ const ThirdFloor = ({data}) => {
                 <div className='Floor-Plan-Extra-Container'>
                     <img className="Floor-Plan-Image Main-Image" src={require("../data/floors_plans/third_floor_outer.png")} alt="Fourth floor plan"></img>
                     <Link to={data.menuPaths.floorPages.thirdFloor.firstPart}>
-                        <img className="Floor-Plan-Image Floor-Plan-Hover-Image First-Part" src={require("../data/floors_plans/third_floor_1.png")} alt="Fourth floor plan"></img>
+                        <img className="Floor-Plan-Image Floor-Plan-Hover-Image First-Part" src={require("../data/floors_plans/third_floor_63.7.png")} alt="Fourth floor plan"></img>
                     </Link>
                     <Link to={data.menuPaths.floorPages.thirdFloor.secondPart}>
-                        <img className="Floor-Plan-Image Floor-Plan-Hover-Image Second-Part" src={require("../data/floors_plans/third_floor_2.png")} alt="Fourth floor plan"></img>
+                        <img className="Floor-Plan-Image Floor-Plan-Hover-Image Second-Part" src={require("../data/floors_plans/third_floor_18.3.png")} alt="Fourth floor plan"></img>
                     </Link>
                     <Link to={data.menuPaths.floorPages.thirdFloor.thirdPart}>
-                        <img className="Floor-Plan-Image Floor-Plan-Hover-Image Third-Part" src={require("../data/floors_plans/third_floor_3.png")} alt="Fourth floor plan"></img>
+                        <img className="Floor-Plan-Image Floor-Plan-Hover-Image Third-Part" src={require("../data/floors_plans/third_floor_40.9.png")} alt="Fourth floor plan"></img>
                     </Link>
                     <Link to={data.menuPaths.floorPages.thirdFloor.fourthPart}>
-                        <img className="Floor-Plan-Image Floor-Plan-Hover-Image Fourth-Part" src={require("../data/floors_plans/third_floor_4.png")} alt="Fourth floor plan"></img>
+                        <img className={`Floor-Plan-Image Fourth-Part Main-Fourth-Part ${currentFourthPartClassname}`} 
+                        onMouseEnter={() => {startFourthPartHoverReaction()}} onMouseLeave={() => {finishFourthPartHoverReaction()}}
+                        src={require("../data/floors_plans/third_floor_136.7_1.png")} alt="Fourth floor plan"></img>
+                    </Link>
+                    <Link to={data.menuPaths.floorPages.thirdFloor.fourthPart}>
+                        <img className={`Floor-Plan-Image Fourth-Part Extra-Fourth-Part ${currentFourthPartClassname}`}
+                        onMouseEnter={() => {startFourthPartHoverReaction()}} onMouseLeave={() => {finishFourthPartHoverReaction()}}
+                        src={require("../data/floors_plans/third_floor_136.7_2.png")} alt="Fourth floor plan"></img>
                     </Link>
                     <Link to={data.menuPaths.floorPages.thirdFloor.fifthPart}>
-                        <img className="Floor-Plan-Image Floor-Plan-Hover-Image Fifth-Part" src={require("../data/floors_plans/third_floor_5.png")} alt="Fourth floor plan"></img>
+                        <img className="Floor-Plan-Image Floor-Plan-Hover-Image Fifth-Part" src={require("../data/floors_plans/third_floor_61.2.png")} alt="Fourth floor plan"></img>
                     </Link>
-                    <Link to={data.menuPaths.floorPages.thirdFloor.sixthPart}>
-                        <img className="Floor-Plan-Image Floor-Plan-Hover-Image Sixth-Part" src={require("../data/floors_plans/third_floor_6.png")} alt="Fourth floor plan"></img>
+                    <Link to={data.menuPaths.floorPages.thirdFloor.firstPart}>
+                        <img className="Floor-Plan-Image Floor-Plan-Hover-Image Sixth-Part" src={require("../data/floors_plans/third_floor_39.5.png")} alt="Fourth floor plan"></img>
                     </Link>
                 </div>
             </div>
