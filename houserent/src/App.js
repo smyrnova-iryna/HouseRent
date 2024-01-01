@@ -57,7 +57,7 @@ function App() {
       {/* <Main /> */}
       <Routes> 
         <Route path={data.menuPaths.main} element={<Main data={data}/>} />
-        <Route path={data.menuPaths.offices} element={<Offices data={data}/>} />
+        <Route path={data.menuPaths.offices} element={<Offices data={data}/>} navigateToTheTop={navigateToTheTop} />
         <Route path={data.menuPaths.promotions} element={<Promotions data={data}/>} />
         <Route path={data.menuPaths.privacypolicy} element={<PrivacyPolicy data={data} />} />
         <Route path={data.menuPaths.floorPages.fourthFloor} element={<FourthFloorDetails data={data} />} />

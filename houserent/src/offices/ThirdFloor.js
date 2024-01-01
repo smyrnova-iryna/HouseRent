@@ -5,7 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ThirdFloor = ({data}) => {
+const ThirdFloor = ({data, navigateToTheTop}) => {
 
     const comp = useRef();
 
@@ -51,29 +51,29 @@ const ThirdFloor = ({data}) => {
             <div className='Floor-Plan-Link' to={data.menuPaths.floorPages.fourthFloor}>
                 <div className='Floor-Plan-Extra-Container'>
                     <img className="Floor-Plan-Image Main-Image" src={require("../data/floors_plans/third_floor_outer.png")} alt="Fourth floor plan"></img>
-                    <Link to={data.menuPaths.floorPages.thirdFloor.firstPart}>
+                    <Link to={data.menuPaths.floorPages.thirdFloor.firstPart} onClick={() => {window.scrollTo({top: 0})}}>
                         <img className="Floor-Plan-Image Floor-Plan-Hover-Image First-Part" src={require("../data/floors_plans/third_floor_63.7.png")} alt="Fourth floor plan"></img>
                     </Link>
-                    <Link to={data.menuPaths.floorPages.thirdFloor.secondPart}>
+                    <Link to={data.menuPaths.floorPages.thirdFloor.secondPart} onClick={() => {window.scrollTo({top: 0})}}>
                         <img className="Floor-Plan-Image Floor-Plan-Hover-Image Second-Part" src={require("../data/floors_plans/third_floor_18.3.png")} alt="Fourth floor plan"></img>
                     </Link>
-                    <Link to={data.menuPaths.floorPages.thirdFloor.thirdPart}>
+                    <Link to={data.menuPaths.floorPages.thirdFloor.thirdPart} onClick={() => {window.scrollTo({top: 0})}}>
                         <img className="Floor-Plan-Image Floor-Plan-Hover-Image Third-Part" src={require("../data/floors_plans/third_floor_40.9.png")} alt="Fourth floor plan"></img>
                     </Link>
-                    <Link to={data.menuPaths.floorPages.thirdFloor.fourthPart}>
+                    <Link to={data.menuPaths.floorPages.thirdFloor.fourthPart} onClick={() => {window.scrollTo({top: 0})}}>
                         <img className={`Floor-Plan-Image Fourth-Part Main-Fourth-Part ${currentFourthPartClassname}`} 
                         onMouseEnter={() => {startFourthPartHoverReaction()}} onMouseLeave={() => {finishFourthPartHoverReaction()}}
                         src={require("../data/floors_plans/third_floor_136.7_1.png")} alt="Fourth floor plan"></img>
                     </Link>
-                    <Link to={data.menuPaths.floorPages.thirdFloor.fourthPart}>
+                    <Link to={data.menuPaths.floorPages.thirdFloor.fourthPart} onClick={() => {window.scrollTo({top: 0})}}>
                         <img className={`Floor-Plan-Image Fourth-Part Extra-Fourth-Part ${currentFourthPartClassname}`}
                         onMouseEnter={() => {startFourthPartHoverReaction()}} onMouseLeave={() => {finishFourthPartHoverReaction()}}
                         src={require("../data/floors_plans/third_floor_136.7_2.png")} alt="Fourth floor plan"></img>
                     </Link>
-                    <Link to={data.menuPaths.floorPages.thirdFloor.fifthPart}>
+                    <Link to={data.menuPaths.floorPages.thirdFloor.fifthPart} onClick={() => {window.scrollTo({top: 0})}}>
                         <img className="Floor-Plan-Image Floor-Plan-Hover-Image Fifth-Part" src={require("../data/floors_plans/third_floor_61.2.png")} alt="Fourth floor plan"></img>
                     </Link>
-                    <Link to={data.menuPaths.floorPages.thirdFloor.firstPart}>
+                    <Link to={data.menuPaths.floorPages.thirdFloor.firstPart} onClick={() => {window.scrollTo({top: 0})}}>
                         <img className="Floor-Plan-Image Floor-Plan-Hover-Image Sixth-Part" src={require("../data/floors_plans/third_floor_39.5.png")} alt="Fourth floor plan"></img>
                     </Link>
                 </div>
