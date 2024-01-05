@@ -978,6 +978,7 @@
 @media screen and (min-width: 1000px) {
   .Floor-Details-Main-Container {
     padding-top: 120px;
+    gap: 50px;
   }
 }
 
@@ -1102,7 +1103,7 @@
 
 @media screen and (min-width: 850px) {
   .Floor-Advantages-List-Item {
-    font-size: 130%;
+    font-size: 110%;
   }
 }
 
@@ -1138,7 +1139,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 10px;
+  padding: 35px;
   height: 180px;
   width: 300px;
 }
@@ -1154,6 +1155,7 @@
     top: 0;
     height: 120px;
     width: 160px;
+    padding: 20px;
   }
   .Floor-Inner-Firt-Image {
     left: 0;
@@ -1169,11 +1171,12 @@
 @media screen and (min-width: 860px) {
   .Floor-Inner-Image-Extra-Container {
     width: 800px;
-    height: 170px;
+    height: 220px;
   }
   .Floor-Inner-Image {
-    height: 160px;
-    width: 253px;
+    height: 190px;
+    width: 260px;
+    padding: 45px;
   }
   .Floor-Inner-Firt-Image {
     left: 0;
@@ -1194,7 +1197,6 @@
   .Floor-Inner-Image {
     height: 260px;
     width: 386.5px;
-    padding: 30px;
   }
   .Floor-Inner-Firt-Image {
     left: 0;
@@ -1223,6 +1225,158 @@
           align-items: center;
   gap: 4px;
   font-weight: 700;
+}
+
+.Contacts-Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+  background-color: #dfe8e8;
+  min-height: 100vh;
+  gap: 30px;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #2d3a4c;
+}
+
+@media screen and (min-width: 600px) {
+  .Contacts-Container {
+    gap: 60px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .Contacts-Container {
+    gap: 90px;
+  }
+}
+
+.Contacts-Form-Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  border: 2px solid red;
+}
+
+.Contacts-Map-Container, .Contacts-Information-Container {
+  background-color: #aebcc0;
+  height: 300px;
+  width: 100%;
+}
+
+.Contacts-Form {
+  position: relative;
+  width: 220px;
+  height: 280px;
+  overflow: hidden !important;
+}
+
+.Contacts-Form-House-Icon, .Contacts-Form-Window-Icon, .Contacts-Form-Input {
+  position: absolute;
+  top: 10;
+  left: 0;
+}
+
+.Contacts-Form-House-Icon {
+  width: 217px;
+  height: 275px;
+}
+
+.Contacts-Form-Window-Icon {
+  width: 127px;
+  left: 29px;
+  visibility: hidden;
+}
+
+.Contacts-Form-Input {
+  width: 124px;
+  height: 60px;
+  left: 29px;
+  padding: 7px;
+  font-size: 70%;
+  background: none !important;
+  border: none !important;
+  color: #2d3a4c !important;
+  resize: none;
+}
+
+.Contacts-Form-Input:focus {
+  outline: none;
+  background: none;
+  color: #2d3a4c;
+  overflow-y: auto;
+}
+
+.Activated-Input {
+  visibility: visible;
+}
+
+.First-Window-Icon, .First-Form-Input {
+  top: 51px;
+}
+
+.Second-Window-Icon, .Second-Form-Input {
+  top: 122px;
+}
+
+.Third-Window-Icon, .Third-Form-Input {
+  top: 192px;
+}
+
+@media screen and (min-width: 430px) {
+  .Contacts-Form {
+    width: 340px;
+    height: 420px;
+  }
+  .Contacts-Form-House-Icon {
+    width: 337px;
+    height: 420px;
+  }
+  .Contacts-Form-Window-Icon {
+    width: 190px;
+    left: 47px;
+  }
+  .Contacts-Form-Input {
+    height: 82px;
+    width: 190px;
+    left: 49px;
+    padding: 10px;
+    font-size: 80%;
+  }
+  .First-Window-Icon, .First-Form-Input {
+    top: 80px;
+  }
+  .Second-Window-Icon, .Second-Form-Input {
+    top: 184px;
+  }
+  .Third-Window-Icon, .Third-Form-Input {
+    top: 290px;
+  }
 }
 
 .Footer-container {

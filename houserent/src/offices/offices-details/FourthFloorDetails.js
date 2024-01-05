@@ -17,6 +17,7 @@ const [animateThirdPhotoTo, setAnimateThirdPhotoTo] = useState(false);
 
 const [animateThirdPhotoFrom, setAnimateThirdPhotoFrom] = useState(false);
 
+
 const comp = useRef();
 
 useLayoutEffect(() => {
@@ -26,7 +27,7 @@ useLayoutEffect(() => {
         gsap.to(".Floor-First-Photo", 
         { 
           duration: 1,
-          scale: 1.1
+          scale: 1.5
         }); 
 
       }, comp); 
@@ -39,7 +40,7 @@ useLayoutEffect(() => {
         gsap.from(".Floor-First-Photo", 
         { 
           duration: 1,
-          scale: 1.1
+          scale: 1.5
         }); 
 
       }, comp); 
@@ -58,7 +59,7 @@ useLayoutEffect(() => {
         gsap.to(".Floor-Second-Photo", 
         { 
           duration: 1,
-          scale: 1.1
+          scale: 1.5
         }); 
 
       }, comp); 
@@ -71,7 +72,7 @@ useLayoutEffect(() => {
         gsap.from(".Floor-Second-Photo", 
         { 
           duration: 1,
-          scale: 1.1
+          scale: 1.5
         }); 
 
       }, comp); 
@@ -91,7 +92,7 @@ useLayoutEffect(() => {
         gsap.to(".Floor-Third-Photo", 
         { 
           duration: 1,
-          scale: 1.1
+          scale: 1.5
         }); 
 
       }, comp); 
@@ -104,7 +105,7 @@ useLayoutEffect(() => {
         gsap.from(".Floor-Third-Photo", 
         { 
           duration: 1,
-          scale: 1.1
+          scale: 1.5
         }); 
 
       }, comp); 
@@ -208,7 +209,7 @@ useLayoutEffect(() => {
                           src={require(`../../data/floors_inner_photoes/${photos[2]}`)} alt="Floor illustration"></img> 
                       </p>
             </div>
-            <div className="Floor-Extra-Advantages-Container">
+            {/* <div className="Floor-Extra-Advantages-Container">
             <ul>
                     {details.commonAdvantages.map((item) => 
                       <li className="Floor-Advantages-List-Item" key={item}>
@@ -216,7 +217,7 @@ useLayoutEffect(() => {
                       </li> 
                       )}
                 </ul>
-            </div>
+            </div> */}
         </div>
     )
 }

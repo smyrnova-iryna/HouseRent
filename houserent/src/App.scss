@@ -881,13 +881,14 @@ $opacityHeaderColor: #dfe8e8c8;
   padding-top: 60px;
   // gap: 30px;
   justify-content: flex-start;
+  // background-color: red;
   @media screen and (min-width: 600px){
     padding-top: 90px;
     // gap: 60px;
   }
   @media screen and (min-width: 1000px){
     padding-top: 120px;
-    // gap: 90px;
+    gap: 50px;
   }
 }
 
@@ -951,7 +952,7 @@ $opacityHeaderColor: #dfe8e8c8;
   list-style-type: disc;
   list-style-position: inside;
   @media screen and (min-width: 850px){
-    font-size: 130%;
+    font-size: 110%;
   }
 }
 
@@ -965,7 +966,7 @@ $opacityHeaderColor: #dfe8e8c8;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding: 10px;
+  padding: 35px;
   height: 180px;
   width: 300px;
 }
@@ -979,11 +980,11 @@ $opacityHeaderColor: #dfe8e8c8;
   }
   
   .Floor-Inner-Image {
-
     position: absolute;
     top: 0;
     height: 120px;
     width: 160px;
+    padding: 20px;
   }
   
   .Floor-Inner-Firt-Image {
@@ -1005,12 +1006,13 @@ $opacityHeaderColor: #dfe8e8c8;
   
   .Floor-Inner-Image-Extra-Container {
     width: 800px;
-    height: 170px;
+    height: 220px;
   }
   
   .Floor-Inner-Image {
-    height: 160px;
-    width: 253px;
+    height: 190px;
+    width: 260px;
+    padding: 45px
   }
   
   .Floor-Inner-Firt-Image {
@@ -1038,7 +1040,6 @@ $opacityHeaderColor: #dfe8e8c8;
   .Floor-Inner-Image {
     height: 260px;
     width: 386.5px;
-    padding: 30px;
   }
   
   .Floor-Inner-Firt-Image {
@@ -1062,6 +1063,132 @@ $opacityHeaderColor: #dfe8e8c8;
 }
 
 
+
+// Contacts styles
+
+.Contacts-Container {
+  @include inline-container();
+  @include standart-page();
+  @include flex-adaptive-gaps();
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: $firstLightColor;
+}
+
+.Contacts-Form-Container {
+  @include inline-container();
+  flex-direction: column;
+  border: 2px solid red;
+}
+
+.Contacts-Map-Container , .Contacts-Information-Container {
+  background-color: $darkColor;
+  height: 300px;
+  width: 100%;
+}
+
+.Contacts-Form {
+  position: relative;
+  width: 220px;
+  height: 280px;
+  overflow: hidden!important;
+}
+
+.Contacts-Form-House-Icon, .Contacts-Form-Window-Icon, .Contacts-Form-Input {
+  position: absolute;
+  top: 10;
+  left: 0;
+}
+
+.Contacts-Form-House-Icon {
+  width: 217px;
+  height: 275px;
+}
+
+.Contacts-Form-Window-Icon {
+  width: 127px;
+  left: 29px;
+  visibility: hidden;
+}
+
+.Contacts-Form-Input {
+  width: 124px;
+  height: 60px;
+  left: 29px;
+  padding: 7px;
+  font-size: 70%;
+  background: none!important;
+  border: none!important;
+  color: $firstLightColor!important;
+  resize: none;
+}
+
+.Contacts-Form-Input:focus {
+  outline: none;
+  background: none;
+  color: $firstLightColor;
+  overflow-y: auto;
+}
+
+.Activated-Input {
+  visibility: visible;
+}
+
+.First-Window-Icon, .First-Form-Input {
+  top: 51px;
+}
+
+.Second-Window-Icon, .Second-Form-Input {
+  top: 122px;
+}
+
+.Third-Window-Icon, .Third-Form-Input {
+  top: 192px;
+}
+
+
+
+@media screen and (min-width: 430px) {
+  .Contacts-Form {
+    width: 340px;
+    height: 420px;
+  }
+  
+  // .Contacts-Form-House-Icon, .Contacts-Form-Window-Icon, .Contacts-Form-Input {
+  //   top: 10;
+  // }
+  
+  .Contacts-Form-House-Icon {
+    width: 337px;
+    height: 420px;
+  }
+  
+  .Contacts-Form-Window-Icon {
+    width: 190px;
+    left: 47px;
+  }
+  
+  .Contacts-Form-Input {
+    height: 82px;
+    width: 190px;
+    left: 49px;
+    padding: 10px;
+    font-size: 80%;
+  }
+
+  .First-Window-Icon, .First-Form-Input {
+    top: 80px;
+  }
+  
+  .Second-Window-Icon, .Second-Form-Input {
+    top: 184px;
+  }
+  
+  .Third-Window-Icon, .Third-Form-Input {
+    top: 290px;
+  }
+  
+}
 
 
 // Footer styles
