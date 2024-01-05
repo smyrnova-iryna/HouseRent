@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/HouseRent/static/css/main.5f1095c1.css",
-    "main.js": "/HouseRent/static/js/main.29b37f9e.js",
+    "main.css": "/HouseRent/static/css/main.06136daf.css",
+    "main.js": "/HouseRent/static/js/main.676bb732.js",
     "static/js/787.0f787131.chunk.js": "/HouseRent/static/js/787.0f787131.chunk.js",
     "static/media/first_area_photo3.JPG": "/HouseRent/static/media/first_area_photo3.493385957f16465e3377.JPG",
     "static/media/carousel_photo_6.jpg": "/HouseRent/static/media/carousel_photo_6.2f59d56356ad8dfb85f6.jpg",
@@ -17,6 +17,7 @@
     "static/media/carousel_photo_1.jpg": "/HouseRent/static/media/carousel_photo_1.dc7441253145412b9da6.jpg",
     "static/media/main_page_background.jpg": "/HouseRent/static/media/main_page_background.c631bf90ee7f439ba59b.jpg",
     "static/media/third_floor_outer.png": "/HouseRent/static/media/third_floor_outer.c7898547e1f6e14818e3.png",
+    "static/media/house_contacts_icon.png": "/HouseRent/static/media/house_contacts_icon.f5a1e1b327a87b4e4e3f.png",
     "static/media/fourth_floor_outer.png": "/HouseRent/static/media/fourth_floor_outer.8e5cad4b5a886b815b3e.png",
     "static/media/house_icon.png": "/HouseRent/static/media/house_icon.bedf53ff1d890adb588a.png",
     "static/media/third_floor_136.7_1.png": "/HouseRent/static/media/third_floor_136.7_1.13182e83839c69ffe85b.png",
@@ -26,12 +27,12 @@
     "static/media/fourth_floor_outer_1.png": "/HouseRent/static/media/fourth_floor_outer_1.fdabdd82b16e62e1dbe0.png",
     "static/media/third_floor_63.7.png": "/HouseRent/static/media/third_floor_63.7.d1b9813db95d4986a499.png",
     "index.html": "/HouseRent/index.html",
-    "main.5f1095c1.css.map": "/HouseRent/static/css/main.5f1095c1.css.map",
-    "main.29b37f9e.js.map": "/HouseRent/static/js/main.29b37f9e.js.map",
+    "main.06136daf.css.map": "/HouseRent/static/css/main.06136daf.css.map",
+    "main.676bb732.js.map": "/HouseRent/static/js/main.676bb732.js.map",
     "787.0f787131.chunk.js.map": "/HouseRent/static/js/787.0f787131.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f1095c1.css",
-    "static/js/main.29b37f9e.js"
+    "static/css/main.06136daf.css",
+    "static/js/main.676bb732.js"
   ]
 }
