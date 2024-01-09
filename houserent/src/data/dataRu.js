@@ -112,24 +112,27 @@ const dataRu = {
     promotions: 
             {},    
     contacts: 
-            {address: 
-                    {heading: 'Контакты UAB "FerroMetals":', 
-                    text: `Лайсвес пр. 60-1107,
-    LT-05120 Вильнюс, Литва`, 
-                    detailsHeading: "Наши реквизиты:", 
-                    details: `Paysera LT, UAB
-    Пилайтес пр. 16, Вильнюс, LT-04352, Литва
-    SWIFT-код: EVIULT2VXXX
-    IBAN: LT173500010015992602`}, 
+            {phoneNumber: "+380503426079",
+            secondPhoneNumber: "+380978720744",
+            address: "Украина, г. Днепр, ул. Гоголя, д. 15, 2 этаж, оф. 25",
+            email: "Tkirillova75@gmail.com",
+//                 address: 
+//                     {heading: 'Контакты UAB "FerroMetals":', 
+//                     text: `Лайсвес пр. 60-1107,
+//     LT-05120 Вильнюс, Литва`, 
+//                     detailsHeading: "Наши реквизиты:", 
+//                     details: `Paysera LT, UAB
+//     Пилайтес пр. 16, Вильнюс, LT-04352, Литва
+//     SWIFT-код: EVIULT2VXXX
+//     IBAN: LT173500010015992602`}, 
                     feedback: 
-                            {adaptiveButtonText: "Обратная связь",
-                            heading: "Форма обратной связи", 
+                            {buttonText: "ОТПРАВИТЬ",
+                            heading: "Связаться с нами", 
                             description: "Мы свяжемся с Вами как можно скорее!", 
                             nameInputText: "Ваше имя", 
                             contactsInputText: "Ваши контакты",  
                             messageInputText: "Текст сообщения",
                             bottomText: "Данные будут использованы только для контакта с Вами!", 
-                            buttonText: "ОТПРАВИТЬ",
                             loadingText: "Отправка...",
                             resultText: "Ваше сообщение успешно отправлено!",
                             errorText: "Что-то пошло не так! Пожалуйста, попробуйте снова!"}

@@ -5,7 +5,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneCallbackIcon from '@mui/icons-material/PhoneCallback';
+// import CallbackButton from "./CallbackButton"
 import ClearIcon from '@mui/icons-material/Clear';
+import { HashLink } from 'react-router-hash-link';
 // import Callback from './Callback';
 import dataRu from "../data/dataRu";
 import dataEn from "../data/dataEn";
@@ -14,8 +16,8 @@ import BurgerMenuNav from '../nav/BurgerMenuNav';
 // import BurgerMenuNav from "../nav/BurgerMenuNav";
 
 const Header = ({data, changeLanguage, navigateToTheTop, headerStyles}) => {
-    const fullPhoneNumber = "tel:" + data.header.phoneNumber;
-    const fullEmail = "mailto:" + data.header.email;
+    const fullPhoneNumber = "tel:" + data.contacts.phoneNumber;
+    const fullEmail = "mailto:" + data.contacts.email;
     
     const [ukrButtonStyles, setUkrButtonStyles] = useState("Highlighted-button");
     const [enButtonStyles, setEnButtonStyles] = useState("");
@@ -53,16 +55,20 @@ const Header = ({data, changeLanguage, navigateToTheTop, headerStyles}) => {
             <div className='Header-links-container'>
                 <a className="Header-link" href={fullPhoneNumber} target="_blank" rel="noopener noreferrer">
                     <PhoneIcon className="Header-link-mobile-Icon"/>
-                    <span className="Header-link-text"><PhoneIcon className="Header-link-Icon"/>{data.header.phoneNumber}</span>
+                    <span className="Header-link-text"><PhoneIcon className="Header-link-Icon"/>{data.contacts.phoneNumber}</span>
                 </a>
                 <a className="Header-link" href={fullEmail} target="_blank" rel="noopener noreferrer">
                     <EmailIcon className="Header-link-Icon Header-link-mobile-Icon"/>
-                    <span className="Header-link-text"><EmailIcon className="Header-link-Icon"/>{data.header.email}</span>
+                    <span className="Header-link-text"><EmailIcon className="Header-link-Icon"/>{data.contacts.email}</span>
                 </a>
-                <a className="Header-link" href={fullPhoneNumber} target="_blank" rel="noopener noreferrer">
+                <HashLink smooth to={data.menuPaths.contacts} className="Header-link">
                     <PhoneCallbackIcon className="Header-link-Icon Header-link-mobile-Icon"/>
                     <span className="Header-link-text"><PhoneCallbackIcon className="Header-link-Icon"/>{data.header.callback.text}</span>
-                </a>
+                </HashLink>
+                {/* <a className="Header-link" href={fullPhoneNumber} target="_blank" rel="noopener noreferrer">
+                    <PhoneCallbackIcon className="Header-link-Icon Header-link-mobile-Icon"/>
+                    <span className="Header-link-text"><PhoneCallbackIcon className="Header-link-Icon"/>{data.header.callback.text}</span>
+                </a> */}
             </div>
             <button className='Nav-Button' onClick={() => {handleBurgerMenuButton()}}>
                 {navCurrentIcon}

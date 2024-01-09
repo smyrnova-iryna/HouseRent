@@ -51,9 +51,11 @@ function App() {
   })
 
 
+
+
   return (
     <div className="App">
-      <Header changeLanguage={changeLanguage} data={data} navigateToTheTop={navigateToTheTop} headerStyles={headerStyles}/>
+      <Header changeLanguage={changeLanguage} data={data} navigateToTheTop={navigateToTheTop} headerStyles={headerStyles} />
       {/* <Main /> */}
       <Routes> 
         <Route path={data.menuPaths.main} element={<Main data={data}/>} />
