@@ -11,7 +11,8 @@ import Header from './header-and-footer/Header';
 // import Footer from './header-and-footer/Footer';
 import PrivacyPolicy from './header-and-footer/Privacypolicy';
 import Offices from './offices/Offices';
-import FourthFloorDetails from "./offices/offices-details/FourthFloorDetails";
+import FloorDetails from "./offices/offices-details/FloorDetails";
+import FloorDatailsExtended from "./offices/offices-details/FloorDatailsExtended";
 // import ThirdFloorDetails from "./offices/offices-details/ThirdFloorFirstPartDetails";
 import Promotions from './promotions/Promotions';
 import { useEffect } from "react";
@@ -51,8 +52,6 @@ function App() {
   })
 
 
-
-
   return (
     <div className="App">
       <Header changeLanguage={changeLanguage} data={data} navigateToTheTop={navigateToTheTop} headerStyles={headerStyles} />
@@ -62,18 +61,21 @@ function App() {
         <Route path={data.menuPaths.offices} element={<Offices data={data}/>} navigateToTheTop={navigateToTheTop} />
         <Route path={data.menuPaths.promotions} element={<Promotions data={data}/>} />
         <Route path={data.menuPaths.privacypolicy} element={<PrivacyPolicy data={data} />} />
-        <Route path={data.menuPaths.floorPages.fourthFloor} element={<FourthFloorDetails data={data} />} />
-        <Route path={data.menuPaths.floorPages.thirdFloor.firstPart} element={<FourthFloorDetails data={data} 
-        details={data.offices.thirdFloor.firstArea} plan="firt_area_plan.png" 
-        photos={["first_area_photo1.JPG", "first_area_photo2.JPG", "first_area_photo3.JPG"]} />} />
+        <Route path={data.menuPaths.floorPages.fourthFloor} element={<FloorDetails data={data} />} />
 
-
-        {/* <Route path={data.menuPaths.floorPages.thirdFloor.secondPart} element={<ThirdFloorSecondPartDetails data={data} />} />
-        <Route path={data.menuPaths.floorPages.thirdFloor.thirdPart} element={<ThirdFloorThirdPartDetails data={data} />} />
-
-        <Route path={data.menuPaths.floorPages.thirdFloor.fourthPart} element={<ThirdFloorFourthPartDetails data={data} />} />
-        <Route path={data.menuPaths.floorPages.thirdFloor.fifthPart} element={<ThirdFloorFifthPartDetails data={data} />} />
-        <Route path={data.menuPaths.floorPages.thirdFloor.sixthPart} element={<ThirdFloorSixthPartDetails data={data} />} /> */}
+        
+        <Route path={data.menuPaths.floorPages.thirdFloor.area_30_31} element={<FloorDatailsExtended data={data} 
+        details={data.offices.thirdFloor.area_30_31} />} />
+        <Route path={data.menuPaths.floorPages.thirdFloor.area_32_35} element={<FloorDatailsExtended data={data} 
+        details={data.offices.thirdFloor.area_32_35} />} />
+        <Route path={data.menuPaths.floorPages.thirdFloor.area_40} element={<FloorDatailsExtended data={data} 
+        details={data.offices.thirdFloor.area_40} />} />
+        <Route path={data.menuPaths.floorPages.thirdFloor.area_43_50} element={<FloorDatailsExtended data={data} 
+        details={data.offices.thirdFloor.area_43_50} />} />
+        <Route path={data.menuPaths.floorPages.thirdFloor.area_37_39} element={<FloorDatailsExtended data={data} 
+        details={data.offices.thirdFloor.area_37_39} />} />
+        <Route path={data.menuPaths.floorPages.thirdFloor.area_41_42} element={<FloorDatailsExtended data={data} 
+        details={data.offices.thirdFloor.area_41_42} />} />
 
         <Route path={data.errorPath} element={<Error data={data} />} />
       </Routes>
