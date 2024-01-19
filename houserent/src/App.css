@@ -1323,6 +1323,7 @@
           align-items: center;
   -ms-flex-direction: column;
       flex-direction: column;
+  gap: 20px;
 }
 
 .Contacts-Map-Container {
@@ -1379,17 +1380,18 @@
 }
 
 .Contacts-Form-Window-Icon {
-  width: 127px;
-  left: 29px;
+  width: 149px;
+  left: 33px;
   visibility: hidden;
 }
 
 .Contacts-Form-Input {
-  width: 124px;
+  width: 149px;
   height: 60px;
   left: 29px;
-  padding: 7px;
-  font-size: 70%;
+  padding: 9px;
+  margin-top: 9px;
+  font-size: 65%;
   background: none !important;
   border: none !important;
   color: #2d3a4c !important;
@@ -1408,15 +1410,15 @@
 }
 
 .First-Window-Icon, .First-Form-Input {
-  top: 51px;
+  top: 13px;
 }
 
 .Second-Window-Icon, .Second-Form-Input {
-  top: 122px;
+  top: 94px;
 }
 
 .Third-Window-Icon, .Third-Form-Input {
-  top: 192px;
+  top: 182px;
 }
 
 @media screen and (min-width: 430px) {
@@ -1429,24 +1431,24 @@
     height: 420px;
   }
   .Contacts-Form-Window-Icon {
-    width: 190px;
-    left: 47px;
+    width: 223px;
+    left: 49px;
   }
   .Contacts-Form-Input {
     height: 82px;
-    width: 190px;
+    width: 223px;
     left: 49px;
     padding: 10px;
     font-size: 80%;
   }
   .First-Window-Icon, .First-Form-Input {
-    top: 80px;
+    top: 18px;
   }
   .Second-Window-Icon, .Second-Form-Input {
-    top: 184px;
+    top: 150px;
   }
   .Third-Window-Icon, .Third-Form-Input {
-    top: 290px;
+    top: 280px;
   }
 }
 
