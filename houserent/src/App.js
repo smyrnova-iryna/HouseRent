@@ -11,8 +11,9 @@ import Header from './header-and-footer/Header';
 // import Footer from './header-and-footer/Footer';
 import PrivacyPolicy from './header-and-footer/Privacypolicy';
 import Offices from './offices/Offices';
-import FloorDetails from "./offices/offices-details/FloorDetails";
+// import FloorDetails from "./offices/offices-details/FloorDetails";
 import FloorDatailsExtended from "./offices/offices-details/FloorDatailsExtended";
+import FourthFloorDetails from "./offices/offices-details/FourthFloorDetails";
 // import ThirdFloorDetails from "./offices/offices-details/ThirdFloorFirstPartDetails";
 import Promotions from './promotions/Promotions';
 import { useEffect } from "react";
@@ -60,10 +61,7 @@ function App() {
         <Route path={data.menuPaths.main} element={<Main data={data}/>} />
         <Route path={data.menuPaths.offices} element={<Offices data={data}/>} navigateToTheTop={navigateToTheTop} />
         <Route path={data.menuPaths.promotions} element={<Promotions data={data}/>} />
-        <Route path={data.menuPaths.privacypolicy} element={<PrivacyPolicy data={data} />} />
-        <Route path={data.menuPaths.floorPages.fourthFloor} element={<FloorDetails data={data} />} />
-
-        
+        <Route path={data.menuPaths.privacypolicy} element={<PrivacyPolicy data={data} />} />       
         <Route path={data.menuPaths.floorPages.thirdFloor.area_30_31} element={<FloorDatailsExtended data={data} 
         details={data.offices.thirdFloor.area_30_31} />} />
         <Route path={data.menuPaths.floorPages.thirdFloor.area_32_35} element={<FloorDatailsExtended data={data} 
@@ -76,6 +74,10 @@ function App() {
         details={data.offices.thirdFloor.area_37_39} />} />
         <Route path={data.menuPaths.floorPages.thirdFloor.area_41_42} element={<FloorDatailsExtended data={data} 
         details={data.offices.thirdFloor.area_41_42} />} />
+
+        <Route path={data.menuPaths.floorPages.fourthFloor} element={<FourthFloorDetails data={data} 
+        details={data.offices.fourthFloor.details} />} />
+        
 
         <Route path={data.errorPath} element={<Error data={data} />} />
       </Routes>

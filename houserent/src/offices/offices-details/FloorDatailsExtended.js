@@ -283,7 +283,7 @@ useLayoutEffect(() => {
                           src={require(`../../data/floors_inner_photos/${details.photos[2]}`)} alt="Floor illustration"></img> 
                       </p>
             </div>
-            { details.photos[3] ? 
+            {/* { details.photos[3] ? 
             <div className="Floor-Inner-Image-Extra-Container Floor-Second-Inner-Image-Extra-Container">
                       <p className="Floor-Inner-Image Floor-Inner-Firt-Image" onMouseEnter={() => {setAnimateFourthPhotoTo(true); setAnimateFourthPhotoFrom(false)}} 
                          onMouseLeave={() => {setAnimateFourthPhotoFrom(true); setAnimateFourthPhotoTo(false)}}>
@@ -302,7 +302,7 @@ useLayoutEffect(() => {
                         : <p></p>
                       }
             </div> : <p></p>
-            }
+            } */}
         </div>
     )
 }

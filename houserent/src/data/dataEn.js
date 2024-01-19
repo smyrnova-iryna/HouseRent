@@ -204,7 +204,30 @@ const dataEn = {
                        
                 },
                 fourthFloor: {
-                    title: "Fourth floor"    
+                        title: "Fourth floor",
+                        details: {
+                                title: "OFFICE (rooms № 1-18)",
+                                photos: ["fourth_floor_1.JPG", "fourth_floor_2.JPG", "fourth_floor_3.JPG", "fourth_floor_4.JPG", "fourth_floor_5.JPG",
+                                        "fourth_floor_6.JPG", "fourth_floor_7.JPG", "fourth_floor_8.JPG", "fourth_floor_9.JPG"],
+                                plan: "fourth_floor_plan.png",
+                                statusTitle: ["R", "E", "N", "T", "E", "D"],
+                                advantages: ["apartment size 446,66 sqr. m.", "4 floor",
+                                        "the whole floor for rent",
+                                        "air conditioner",
+                                        "ceiling height from 3 meters",
+                                        "big windows / light offices", 
+                                        "wide hallway",
+                                        "quality repair",
+                                        "floor covering – ceramic granite",
+                                        "furnished kitchen-dining room",
+                                        "four bathroom units equipped with accessories and boiler",
+                                        "network computer wiring",
+                                        "independent gas heating inside the building",
+                                        "two electricity supply entries inside the building",
+                                        "round-the-clock access",
+                                        "working with all hirer`s categories",
+                                ]
+                        }  
                 },
             },
     promotions: 
