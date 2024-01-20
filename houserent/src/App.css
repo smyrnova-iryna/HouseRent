@@ -1514,10 +1514,196 @@
   }
 }
 
-.Footer-container {
-  background-color: #93384a;
-  border: 2px solid #93384a;
-  height: 500px;
-  color: red;
+.Footer-Container {
+  background-color: #aebcc0;
+  min-height: 200px;
+  color: #dfe8e8;
+  width: 100%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  gap: 15px;
+}
+
+.Footer-Contacts-Container, .Footer-Menu-Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.Footer-Contact-Link {
+  color: #dfe8e8;
+  height: 30px;
+}
+
+.Footer-Contact-Link:hover {
+  border-bottom: 2px solid #f6e145;
+}
+
+.Footer-Contact-Nav-Link, .Footer-Contact-Item {
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-top: 10px;
+}
+
+.Footer-Contact-Nav-Link {
+  color: #2d3a4c;
+}
+
+.Footer-Buttons-Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  gap: 10px;
+}
+
+.Footer-Link-Button {
+  text-decoration: none;
+  color: #2d3a4c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #f6e145;
+  padding: 5px;
+  height: 60px;
+  color: #f6e145;
+}
+
+.Footer-Link-Button :hover {
+  color: #f6e145;
+}
+
+.Footer-Link-Button:hover {
+  background-color: #2d3a4c;
+}
+
+.First-Link-Button {
+  width: 180px;
+}
+
+.Second-Link-Button {
+  width: 200px;
+}
+
+.Third-Link-Button {
+  width: 220px;
+}
+
+@media screen and (min-width: 630px) {
+  .Footer-Container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .Footer-Contacts-Container {
+    min-width: 220px;
+  }
+  .Footer-Buttons-Container {
+    min-width: 220px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .Footer-Container {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .Footer-Contacts-Container {
+    width: 230px;
+    height: 100%;
+  }
+  .Footer-Buttons-Container {
+    width: 220px;
+  }
+  .Footer-Menu-Container {
+    width: 220px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Footer-Buttons-Container {
+    width: 380px;
+  }
+  .Footer-Contacts-Container {
+    width: 350px;
+  }
+  .First-Link-Button {
+    width: 300px;
+  }
+  .Second-Link-Button {
+    width: 340px;
+  }
+  .Third-Link-Button {
+    width: 380px;
+  }
+}
+
+.Footer-Site-Developer {
+  text-decoration: underline;
+}
+
+.Site-Developer-Link:hover {
+  color: #f6e145;
 }
 /*# sourceMappingURL=App.css.map */

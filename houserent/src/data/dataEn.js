@@ -18,6 +18,9 @@ const dataEn = {
             offices: "/HouseRent#offices",
             promotions: "/HouseRent/promotions", 
             contacts: "/HouseRent#contacts",
+            secondFloor: "/HouseRent#second_floor",
+            thirdFloor: "/HouseRent#third_floor",
+            fourthFloor: "/HouseRent#fourth_floor",
             privacypolicy: "/HouseRent/privacypolicy", 
             floorPages: {
                 secondFloor: "/HouseRent/offices/second_floor",
@@ -36,6 +39,9 @@ const dataEn = {
             {main: "Main", 
             advantages: "Advantages", 
             offices: "Offices", 
+            secondFloor: "Rent second floor",
+            thirdFloor: "Rent third floor",
+            fourthFloor: "Rent fourth floor",
             promotions: "Promotions", 
             contacts: "Contacts"},
     main: 
@@ -263,7 +269,8 @@ const dataEn = {
     returnMessage: "Return Main",
     footer: {copyright: '© 2023, _____________________', 
             privacyPolicy: "Privacy policy", 
-            siteDeveloper: ["Site developer: ", "Iryna Smyrnova"], 
+            siteDeveloper: ["Site development: ", "Iryna Smyrnova"], 
+            portfolioLink: "https://smyrnova-iryna.github.io/portfolio",
             address: `Laisvės pr. 60-1107,
 LT-05120 Vilnius, Lithuania`},
             privacyPolicy: `PRIVACY POLICY

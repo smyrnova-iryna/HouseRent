@@ -8,7 +8,7 @@ import dataUkr from "./data/dataUkr";
 import Main from './main/Main';
 import Error from './error/Error';
 import Header from './header-and-footer/Header';
-// import Footer from './header-and-footer/Footer';
+import Footer from './header-and-footer/Footer';
 import PrivacyPolicy from './header-and-footer/Privacypolicy';
 import Offices from './offices/Offices';
 // import FloorDetails from "./offices/offices-details/FloorDetails";
@@ -82,7 +82,7 @@ function App() {
         <Route path={data.errorPath} element={<Error data={data} />} />
       </Routes>
       {/* <TopScroll />  */}
-      {/* <Footer data={data} /> */}
+      <Footer data={data} />
     </div>
   );
 }

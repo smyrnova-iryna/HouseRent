@@ -18,14 +18,14 @@ const [animateThirdPhotoTo, setAnimateThirdPhotoTo] = useState(false);
 const [animateThirdPhotoFrom, setAnimateThirdPhotoFrom] = useState(false);
 
 
-const [animateFourthPhotoTo, setAnimateFourthPhotoTo] = useState(false);
+// const [animateFourthPhotoTo, setAnimateFourthPhotoTo] = useState(false);
 
-const [animateFourthPhotoFrom, setAnimateFourthPhotoFrom] = useState(false);
+// const [animateFourthPhotoFrom, setAnimateFourthPhotoFrom] = useState(false);
 
 
-const [animateFifthPhotoTo, setAnimateFifthPhotoTo] = useState(false);
+// const [animateFifthPhotoTo, setAnimateFifthPhotoTo] = useState(false);
 
-const [animateFifthPhotoFrom, setAnimateFifthPhotoFrom] = useState(false);
+// const [animateFifthPhotoFrom, setAnimateFifthPhotoFrom] = useState(false);
 
 
 const comp = useRef();
@@ -127,68 +127,68 @@ useLayoutEffect(() => {
   }, [animateThirdPhotoTo, animateThirdPhotoFrom]);
 
     
-  useLayoutEffect(() => {
-    if (animateFourthPhotoTo === true) {
-      let ctxTo = gsap.context(() => {
+  // useLayoutEffect(() => {
+  //   if (animateFourthPhotoTo === true) {
+  //     let ctxTo = gsap.context(() => {
 
-        gsap.to(".Floor-Fourth-Photo", 
-        { 
-          duration: 1,
-          scale: 1.5
-        }); 
+  //       gsap.to(".Floor-Fourth-Photo", 
+  //       { 
+  //         duration: 1,
+  //         scale: 1.5
+  //       }); 
 
-      }, comp); 
+  //     }, comp); 
 
-      return () => ctxTo.revert(); 
+  //     return () => ctxTo.revert(); 
 
-    } else if (animateFourthPhotoFrom === true) {
-      let ctxFrom = gsap.context(() => {
+  //   } else if (animateFourthPhotoFrom === true) {
+  //     let ctxFrom = gsap.context(() => {
 
-        gsap.from(".Floor-Fourth-Photo", 
-        { 
-          duration: 1,
-          scale: 1.5
-        }); 
+  //       gsap.from(".Floor-Fourth-Photo", 
+  //       { 
+  //         duration: 1,
+  //         scale: 1.5
+  //       }); 
 
-      }, comp); 
+  //     }, comp); 
 
-      return () => ctxFrom.revert(); 
+  //     return () => ctxFrom.revert(); 
 
-    }
+  //   }
     
-  }, [animateFourthPhotoTo, animateFourthPhotoFrom]);
+  // }, [animateFourthPhotoTo, animateFourthPhotoFrom]);
 
     
-  useLayoutEffect(() => {
-    if (animateFifthPhotoTo === true) {
-      let ctxTo = gsap.context(() => {
+  // useLayoutEffect(() => {
+  //   if (animateFifthPhotoTo === true) {
+  //     let ctxTo = gsap.context(() => {
 
-        gsap.to(".Floor-Fifth-Photo", 
-        { 
-          duration: 1,
-          scale: 1.5
-        }); 
+  //       gsap.to(".Floor-Fifth-Photo", 
+  //       { 
+  //         duration: 1,
+  //         scale: 1.5
+  //       }); 
 
-      }, comp); 
+  //     }, comp); 
 
-      return () => ctxTo.revert(); 
+  //     return () => ctxTo.revert(); 
 
-    } else if (animateFifthPhotoFrom === true) {
-      let ctxFrom = gsap.context(() => {
+  //   } else if (animateFifthPhotoFrom === true) {
+  //     let ctxFrom = gsap.context(() => {
 
-        gsap.from(".Floor-Fifth-Photo", 
-        { 
-          duration: 1,
-          scale: 1.5
-        }); 
+  //       gsap.from(".Floor-Fifth-Photo", 
+  //       { 
+  //         duration: 1,
+  //         scale: 1.5
+  //       }); 
 
-      }, comp); 
+  //     }, comp); 
 
-      return () => ctxFrom.revert(); 
+  //     return () => ctxFrom.revert(); 
 
-    }
+  //   }
     
-  }, [animateFifthPhotoTo, animateFifthPhotoFrom]);
+  // }, [animateFifthPhotoTo, animateFifthPhotoFrom]);
 
   useLayoutEffect(() => {
   

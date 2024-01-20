@@ -40,7 +40,7 @@ const FourthFloor = ({data}) => {
     }
 
     return (
-        <div className="Floor-container" ref={comp}>
+        <div id="fourth_floor" className="Floor-container" ref={comp}>
             <div className="Floor-title-container">
                 <div className="Floor-title-icon-container">
                     <img className="House-icon" src={require("../data/icons/house_icon.png")} alt="House icon"></img>

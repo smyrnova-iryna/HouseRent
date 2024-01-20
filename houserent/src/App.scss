@@ -1283,15 +1283,162 @@ $opacityHeaderColor: #dfe8e8c8;
 
 // Footer styles
 
-.Footer-container {
-//   background-color: $firstLightColor;
-  background-color: $firstDetailsColor;
-//   color: $firstDetailsColor;
-  border: 2px solid $firstDetailsColor;
-  height: 500px;
-  color: red;
+.Footer-Container {
+  background-color: $darkColor;
+  min-height: 200px;
+  color: $thirdLightColor;
+  width: 100%;
+  padding: 20px;
+  @include inline-container();
+  flex-direction: column;
+  gap: 15px
 }
 
+.Footer-Contacts-Container , .Footer-Menu-Container {
+  @include inline-container();
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+
+.Footer-Contact-Link {
+  color: $thirdLightColor;
+  height: 30px;
+}
+
+.Footer-Contact-Link:hover {
+  border-bottom: 2px solid $secondDetailsColor;
+}
+
+.Footer-Contact-Nav-Link , .Footer-Contact-Item {
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-top: 10px;
+}
+
+.Footer-Contact-Nav-Link {
+  color: $firstLightColor
+}
+
+.Footer-Buttons-Container {
+  @include inline-container();
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 10px
+}
+
+.Footer-Link-Button {
+  @include link-styles();
+  @include inline-container();
+  border: 2px solid $secondDetailsColor;
+  padding: 5px;
+  height: 60px;
+  color: $secondDetailsColor;
+}
+
+.Footer-Link-Button:hover {
+  background-color: $firstLightColor;
+}
+
+.First-Link-Button {
+  width: 180px;
+}
+
+.Second-Link-Button {
+  width: 200px;
+}
+
+.Third-Link-Button {
+  width: 220px;
+}
+
+
+@media screen and (min-width: 630px) {
+  .Footer-Container {
+    flex-direction: row;
+  }
+  .Footer-Contacts-Container {
+    min-width: 220px;
+  }
+  .Footer-Buttons-Container {
+    min-width: 220px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .Footer-Container {
+    justify-content: space-evenly;
+    align-items: flex-start;
+    // padding: 10px 10%;
+  }
+  .Footer-Contacts-Container {
+    width: 230px;
+    height: 100%;
+  }
+  .Footer-Buttons-Container {
+    width: 220px;
+  }
+  .Footer-Menu-Container {
+    width: 220px;
+  }
+ 
+}
+
+@media screen and (min-width: 1200px) { 
+  .Footer-Buttons-Container {
+    width: 380px
+  }
+
+  .Footer-Contacts-Container {
+    width: 350px;
+  }
+  
+  .First-Link-Button {
+    width: 300px;
+  }
+  
+  .Second-Link-Button {
+    width: 340px;
+  }
+  
+  .Third-Link-Button {
+    width: 380px;
+  }
+}
+
+.Footer-Site-Developer {
+  text-decoration: underline;
+}
+
+.Site-Developer-Link:hover {
+  color: $secondDetailsColor;
+}
+
+// .Footer-First-Link {
+//   border-left: 40px solid $firstLightColor;
+  
+// }
+// .Footer-Second-Link {
+//   border-left: 60px solid $firstLightColor;
+// }
+// .Footer-Third-Link {
+//   border-left: 80px solid $firstLightColor;
+// }
+// .Footer-Fourth-Link {
+//   border-left: 100px solid $firstLightColor;
+// }
+// .Footer-Fifth-Link {
+//   border-left: 120px solid $firstLightColor;
+// }
+
+// .Footer-Menu-Container {
+//   @include inline-container();
+//   flex-direction: column;
+//   align-items: flex-start;
+// }
 
 
   

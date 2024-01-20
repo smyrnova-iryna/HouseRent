@@ -16,6 +16,9 @@ const dataRu = {
             {main: "/HouseRent", 
             advantages: "/HouseRent#advantages",
             offices: "/HouseRent#offices",
+            secondFloor: "/HouseRent#second_floor",
+            thirdFloor: "/HouseRent#third_floor",
+            fourthFloor: "/HouseRent#fourth_floor",
             promotions: "/HouseRent/promotions", 
             contacts: "/HouseRent#contacts", 
             privacypolicy: "/HouseRent/privacypolicy",
@@ -35,7 +38,10 @@ const dataRu = {
     menuItems: 
             {main: "Главная", 
             advantages: "Преимущества", 
-            offices: "Офисы", 
+            offices: "Офисы",
+            secondFloor: "Арендовать второй этаж",
+            thirdFloor: "Арендовать третий этаж",
+            fourthFloor: "Арендовать четвертый этаж", 
             promotions: "Акции", 
             contacts: "Контакты"},
     main: 
@@ -270,7 +276,8 @@ const dataRu = {
     footer:    
             {copyright: '© 2023, ___________________________', 
             privacyPolicy: "Политика конфиденциальности", 
-            siteDeveloper: ["Разработчик сайта: ", "Iryna Smyrnova"], 
+            siteDeveloper: ["Разработка сайта: ", "Iryna Smyrnova"],
+            portfolioLink: "https://smyrnova-iryna.github.io/portfolio", 
             address: `Лайсвес пр. 60-1107,
 LT-05120 Вильнюс, Литва`},
             privacyPolicy: `ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
