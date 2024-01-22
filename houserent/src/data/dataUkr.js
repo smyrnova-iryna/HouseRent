@@ -89,7 +89,7 @@ const dataUkr = {
                 thirdFloor: {
                     title: "Третій поверх",
                     area_30_31: {
-                        title: "ОФІС (каб. № 30-31)",
+                        title: "ОФІС (каб. № 30 - 31)",
                         photos: ["area_30_31_1.JPG", "area_30_31_2.JPG", "area_30_31_3.JPG"],
                         plan: "area_30_31_plan.png",
                         statusTitle: ["В", "І", "Л", "Ь", "Н", "И", "Й"],

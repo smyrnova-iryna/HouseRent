@@ -89,7 +89,7 @@ const dataRu = {
                 thirdFloor: {
                     title: "Третий этаж",
                     area_30_31: {
-                        title: "ОФИС (каб. № 30-31)",
+                        title: "ОФИС (каб. № 30 - 31)",
                         photos: ["area_30_31_1.JPG", "area_30_31_2.JPG", "area_30_31_3.JPG"],
                         plan: "area_30_31_plan.png",
                         statusTitle: ["С", "В", "О", "Б", "О", "Д", "Н", "Ы", "Й"],
@@ -173,7 +173,7 @@ const dataRu = {
                          
                     },
                     area_41_42: {
-                        title: "ОФИС (каб. № 41-42)",
+                        title: "ОФИС (каб. № 41 - 42)",
                         photos: ["area_41_42_1.JPG", "area_41_42_2.jpg", "area_41_42_3.jpg", "area_41_42_4.jpg", "area_41_42_5.jpg"],
                         plan: "area_41_42_plan.png",
                         statusTitle: ["С", "В", "О", "Б", "О", "Д", "Н", "Ы", "Й"],
