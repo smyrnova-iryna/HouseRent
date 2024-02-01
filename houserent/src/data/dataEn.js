@@ -16,7 +16,6 @@ const dataEn = {
             {main: "/HouseRent", 
             advantages: "/HouseRent#advantages",
             offices: "/HouseRent#offices",
-            promotions: "/HouseRent/promotions", 
             contacts: "/HouseRent#contacts",
             secondFloor: "/HouseRent#second_floor",
             thirdFloor: "/HouseRent#third_floor",
@@ -42,7 +41,6 @@ const dataEn = {
             secondFloor: "Rent second floor",
             thirdFloor: "Rent third floor",
             fourthFloor: "Rent fourth floor",
-            promotions: "Promotions", 
             contacts: "Contacts"},
     main: 
         {mainTitle: ["R", "E", "N", "T", "I", "N", "G"],
@@ -236,8 +234,6 @@ const dataEn = {
                         }  
                 },
             },
-    promotions: 
-            {},
     contacts: 
             {phoneNumber: "+380503426079",
            secondPhoneNumber: "+380978720744",

@@ -42,8 +42,6 @@ const Footer = ({data, handleToggle, navigateToTheTop, linkScroll}) => {
                     Footer-Contact-Nav-Link'>{data.menuItems.advantages}</HashLink>
                     <HashLink className='Contacts-item Contacts-link Footer-Contact-Link Footer-Contact-Nav-Link' to={data.menuPaths.offices}
                      onClick={navigateToTheTop}>{data.menuItems.offices}</HashLink>
-                    <Link className='Contacts-item Contacts-link Footer-Contact-Link Footer-Contact-Nav-Link' to={data.menuPaths.promotions}
-                     onClick={navigateToTheTop}>{data.menuItems.promotions}</Link>
                     <HashLink smooth to={data.menuPaths.contacts} className='Contacts-item Contacts-link Footer-Contact-Link 
                     Footer-Contact-Nav-Link'>{data.menuItems.contacts}</HashLink>
             </div>  

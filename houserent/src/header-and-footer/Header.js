@@ -4,10 +4,10 @@ import Nav from '../nav/Nav';
 import MenuIcon from '@mui/icons-material/Menu';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
-import PhoneCallbackIcon from '@mui/icons-material/PhoneCallback';
+// import PhoneCallbackIcon from '@mui/icons-material/PhoneCallback';
 // import CallbackButton from "./CallbackButton"
 import ClearIcon from '@mui/icons-material/Clear';
-import { HashLink } from 'react-router-hash-link';
+// import { HashLink } from 'react-router-hash-link';
 // import Callback from './Callback';
 import dataRu from "../data/dataRu";
 import dataEn from "../data/dataEn";
@@ -61,10 +61,10 @@ const Header = ({data, changeLanguage, navigateToTheTop, headerStyles}) => {
                     <EmailIcon className="Header-link-Icon Header-link-mobile-Icon"/>
                     <span className="Header-link-text"><EmailIcon className="Header-link-Icon"/>{data.contacts.email}</span>
                 </a>
-                <HashLink smooth to={data.menuPaths.contacts} className="Header-link">
+                {/* <HashLink smooth to={data.menuPaths.contacts} className="Header-link">
                     <PhoneCallbackIcon className="Header-link-Icon Header-link-mobile-Icon"/>
                     <span className="Header-link-text"><PhoneCallbackIcon className="Header-link-Icon"/>{data.header.callback.text}</span>
-                </HashLink>
+                </HashLink> */}
                 {/* <a className="Header-link" href={fullPhoneNumber} target="_blank" rel="noopener noreferrer">
                     <PhoneCallbackIcon className="Header-link-Icon Header-link-mobile-Icon"/>
                     <span className="Header-link-text"><PhoneCallbackIcon className="Header-link-Icon"/>{data.header.callback.text}</span>

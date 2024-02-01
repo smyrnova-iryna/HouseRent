@@ -2,6 +2,8 @@ import { useState } from 'react';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import RoomIcon from '@mui/icons-material/Room';
+// import TelegramIcon from '@mui/icons-material/Telegram';
+// import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import React from 'react';
 // import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet';
 // import 'leaflet/dist/leaflet.css';
@@ -30,9 +32,16 @@ const Contacts = ({data}) => {
                     <a className="Contacts-item Contacts-link" href={fullPhoneNumber} target="_blank" rel="noopener noreferrer">
                         <span className="Contacts-link-text"><PhoneIcon className="Contacts-link-Icon"/>{data.contacts.phoneNumber}</span>
                     </a>
+                    <span className="Contacts-item Contacts-link-text">(Viber, Telegram, WhatsApp)</span>
                     <a className="Contacts-item Contacts-link" href={secondFullPhoneNumber} target="_blank" rel="noopener noreferrer">
                         <span className="Contacts-link-text"><PhoneIcon className="Contacts-link-Icon"/>{data.contacts.secondPhoneNumber}</span>
                     </a>
+                    {/* <a className="Contacts-item Contacts-link" href={fullPhoneNumber} target="_blank" rel="noopener noreferrer">
+                        <span className="Contacts-link-text"><TelegramIcon className="Contacts-link-Icon"/>{data.contacts.phoneNumber}</span>
+                    </a>
+                    <a className="Contacts-item Contacts-link" href={fullPhoneNumber} target="_blank" rel="noopener noreferrer">
+                        <span className="Contacts-link-text"><WhatsAppIcon className="Contacts-link-Icon"/>{data.contacts.phoneNumber}</span>
+                    </a> */}
                     <a className="Contacts-item Contacts-link" href={fullEmail} target="_blank" rel="noopener noreferrer">
                         <span className="Contacts-link-text"><EmailIcon className="Contacts-link-Icon"/>{data.contacts.email}</span>
                     </a>

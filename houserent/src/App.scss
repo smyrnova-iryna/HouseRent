@@ -256,7 +256,7 @@ $opacityHeaderColor: #dfe8e8c8;
         gap: 5px;
     }
     .Header-links-container {
-        width: 500px;
+        width: 380px;
     }
     .Nav-Button {
         display: none;
@@ -1242,7 +1242,8 @@ $opacityHeaderColor: #dfe8e8c8;
 
 .Contacts-Information-Container {
   @include inline-container();
-  height: 230px;
+  min-height: 230px;
+  // height: 100%;
   width: 100%;
   flex-direction: column;
   justify-content: flex-start;

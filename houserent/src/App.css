@@ -281,7 +281,7 @@
     gap: 5px;
   }
   .Header-links-container {
-    width: 500px;
+    width: 380px;
   }
   .Nav-Button {
     display: none;
@@ -1466,7 +1466,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 230px;
+  min-height: 230px;
   width: 100%;
   -ms-flex-direction: column;
       flex-direction: column;

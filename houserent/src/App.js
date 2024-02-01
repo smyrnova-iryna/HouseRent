@@ -15,7 +15,6 @@ import Offices from './offices/Offices';
 import FloorDatailsExtended from "./offices/offices-details/FloorDatailsExtended";
 import FourthFloorDetails from "./offices/offices-details/FourthFloorDetails";
 // import ThirdFloorDetails from "./offices/offices-details/ThirdFloorFirstPartDetails";
-import Promotions from './promotions/Promotions';
 import { useEffect } from "react";
 
 
@@ -60,7 +59,6 @@ function App() {
       <Routes> 
         <Route path={data.menuPaths.main} element={<Main data={data}/>} />
         <Route path={data.menuPaths.offices} element={<Offices data={data}/>} navigateToTheTop={navigateToTheTop} />
-        <Route path={data.menuPaths.promotions} element={<Promotions data={data}/>} />
         <Route path={data.menuPaths.privacypolicy} element={<PrivacyPolicy data={data} />} />       
         <Route path={data.menuPaths.floorPages.thirdFloor.area_30_31} element={<FloorDatailsExtended data={data} 
         details={data.offices.thirdFloor.area_30_31} />} />
