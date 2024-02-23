@@ -82,7 +82,7 @@ const dataRu = {
     offices: 
             {
                 secondFloor: {
-                   
+                    title: "Третий этаж",
                 },
                 thirdFloor: {
                     title: "Третий этаж",

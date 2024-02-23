@@ -82,7 +82,7 @@ const dataUkr = {
     offices: 
             {
                 secondFloor: {
-                   
+                        title: "Другий поверх",
                 },
                 thirdFloor: {
                     title: "Третій поверх",

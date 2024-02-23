@@ -82,7 +82,7 @@ const dataEn = {
     offices: 
             {
                 secondFloor: {
-                   
+                    title: "Second floor", 
                 },
                 thirdFloor: {
                     title: "Third floor",
