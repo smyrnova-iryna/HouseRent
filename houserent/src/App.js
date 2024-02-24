@@ -59,7 +59,8 @@ function App() {
       <Routes> 
         <Route path={data.menuPaths.main} element={<Main data={data}/>} />
         <Route path={data.menuPaths.offices} element={<Offices data={data}/>} navigateToTheTop={navigateToTheTop} />
-        <Route path={data.menuPaths.privacypolicy} element={<PrivacyPolicy data={data} />} />       
+        <Route path={data.menuPaths.privacypolicy} element={<PrivacyPolicy data={data} />} />   
+
         <Route path={data.menuPaths.floorPages.thirdFloor.area_30_31} element={<FloorDatailsExtended data={data} 
         details={data.offices.thirdFloor.area_30_31} />} />
         <Route path={data.menuPaths.floorPages.thirdFloor.area_32_35} element={<FloorDatailsExtended data={data} 
@@ -72,6 +73,30 @@ function App() {
         details={data.offices.thirdFloor.area_37_39} />} />
         <Route path={data.menuPaths.floorPages.thirdFloor.area_41_42} element={<FloorDatailsExtended data={data} 
         details={data.offices.thirdFloor.area_41_42} />} />
+
+        <Route path={data.menuPaths.floorPages.secondFloor.area_7_8} element={<FloorDatailsExtended data={data} 
+        details={data.offices.secondFloor.area_7_8} />} />
+        <Route path={data.menuPaths.floorPages.secondFloor.area_9} element={<FloorDatailsExtended data={data} 
+        details={data.offices.secondFloor.area_9} />} />
+        <Route path={data.menuPaths.floorPages.secondFloor.area_10} element={<FloorDatailsExtended data={data} 
+        details={data.offices.secondFloor.area_10} />} />
+        <Route path={data.menuPaths.floorPages.secondFloor.area_11_12_14} element={<FloorDatailsExtended data={data} 
+        details={data.offices.secondFloor.area_11_12_14} />} />
+        <Route path={data.menuPaths.floorPages.secondFloor.area_15} element={<FloorDatailsExtended data={data} 
+        details={data.offices.secondFloor.area_15} />} />
+        <Route path={data.menuPaths.floorPages.secondFloor.area_16} element={<FloorDatailsExtended data={data} 
+        details={data.offices.secondFloor.area_16} />} />
+        <Route path={data.menuPaths.floorPages.secondFloor.area_17} element={<FloorDatailsExtended data={data} 
+        details={data.offices.secondFloor.area_17} />} />
+        <Route path={data.menuPaths.floorPages.secondFloor.area_18} element={<FloorDatailsExtended data={data} 
+        details={data.offices.secondFloor.area_18} />} />
+        <Route path={data.menuPaths.floorPages.secondFloor.area_19_20} element={<FloorDatailsExtended data={data} 
+        details={data.offices.secondFloor.area_19_20} />} />
+        <Route path={data.menuPaths.floorPages.secondFloor.area_21} element={<FloorDatailsExtended data={data} 
+        details={data.offices.secondFloor.area_21} />} />
+        <Route path={data.menuPaths.floorPages.secondFloor.area_22_23} element={<FloorDatailsExtended data={data} 
+        details={data.offices.secondFloor.area_22_23} />} />
+        
 
         <Route path={data.menuPaths.floorPages.fourthFloor} element={<FourthFloorDetails data={data} 
         details={data.offices.fourthFloor.details} />} />
