@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/HouseRent/static/css/main.a9be7360.css",
-    "main.js": "/HouseRent/static/js/main.19d15c07.js",
+    "main.js": "/HouseRent/static/js/main.dc04a953.js",
     "static/js/787.0f787131.chunk.js": "/HouseRent/static/js/787.0f787131.chunk.js",
     "static/media/area_9_2.JPG": "/HouseRent/static/media/area_9_2.40f53e49d54a7c807731.JPG",
     "static/media/fourth_floor_8.JPG": "/HouseRent/static/media/fourth_floor_8.fda25c99ed00e60b533f.JPG",
@@ -17,22 +17,30 @@
     "static/media/area_30_31_2.JPG": "/HouseRent/static/media/area_30_31_2.7aebd62bbed053df1f5e.JPG",
     "static/media/area_11-12_14_2.JPG": "/HouseRent/static/media/area_11-12_14_2.1c16926a008fac879c85.JPG",
     "static/media/area_11-12_14_1.JPG": "/HouseRent/static/media/area_11-12_14_1.49298d83193688b0baa9.JPG",
+    "static/media/area_10_1.JPG": "/HouseRent/static/media/area_10_1.f0c560d9cc4e4a613937.JPG",
     "static/media/area_15_3.JPG": "/HouseRent/static/media/area_15_3.97c3468153061c707a9d.JPG",
     "static/media/area_40_1.JPG": "/HouseRent/static/media/area_40_1.5502f7dce1659325943c.JPG",
     "static/media/area_41_42_1.JPG": "/HouseRent/static/media/area_41_42_1.5502f7dce1659325943c.JPG",
     "static/media/area_37_39_1.JPG": "/HouseRent/static/media/area_37_39_1.c441480ad15dfa9d4f76.JPG",
     "static/media/area_15_2.JPG": "/HouseRent/static/media/area_15_2.9f67bdb2efefe511c903.JPG",
     "static/media/area_21_1.JPG": "/HouseRent/static/media/area_21_1.c634f5c1830af69bb2fb.JPG",
+    "static/media/area_17_3.JPG": "/HouseRent/static/media/area_17_3.f06362a10f2adc09fb68.JPG",
     "static/media/area_7_8_2.JPG": "/HouseRent/static/media/area_7_8_2.b67e99654308836afea5.JPG",
     "static/media/area_22_23_3.JPG": "/HouseRent/static/media/area_22_23_3.49696cb9a56a7b7ca5a8.JPG",
     "static/media/fourth_floor_6.JPG": "/HouseRent/static/media/fourth_floor_6.68b1bc205e687253e532.JPG",
+    "static/media/area_18_1.JPG": "/HouseRent/static/media/area_18_1.d2119da8a4e7d1b9f8bf.JPG",
+    "static/media/area_17_1.JPG": "/HouseRent/static/media/area_17_1.f5edb05e7572c5d4c007.JPG",
+    "static/media/area_19_20_1.JPG": "/HouseRent/static/media/area_19_20_1.f5edb05e7572c5d4c007.JPG",
     "static/media/area_30_31_1.JPG": "/HouseRent/static/media/area_30_31_1.db2ae4b69f9118cacf0f.JPG",
+    "static/media/area_18_2.JPG": "/HouseRent/static/media/area_18_2.ebf854a862c3e4b0d59a.JPG",
     "static/media/area_21_2.JPG": "/HouseRent/static/media/area_21_2.9e5ba292c4cef32995ac.JPG",
     "static/media/area_22_23_2.JPG": "/HouseRent/static/media/area_22_23_2.4979cbbba77bdd4e885b.JPG",
+    "static/media/area_10_2.JPG": "/HouseRent/static/media/area_10_2.3d29b2f44ac7b945be78.JPG",
     "static/media/area_11-12_14_3.JPG": "/HouseRent/static/media/area_11-12_14_3.3d29b2f44ac7b945be78.JPG",
     "static/media/area_9_3.JPG": "/HouseRent/static/media/area_9_3.3d29b2f44ac7b945be78.JPG",
     "static/media/carousel_photo_9.jpg": "/HouseRent/static/media/carousel_photo_9.4aeca82a9dce57034a61.jpg",
     "static/media/fourth_floor_2.JPG": "/HouseRent/static/media/fourth_floor_2.4aeca82a9dce57034a61.JPG",
+    "static/media/area_17_2.JPG": "/HouseRent/static/media/area_17_2.4b73a32a42f8627609aa.JPG",
     "static/media/area_15_1.JPG": "/HouseRent/static/media/area_15_1.ca947494fc08356c4ee2.JPG",
     "static/media/area_16_3.JPG": "/HouseRent/static/media/area_16_3.ca947494fc08356c4ee2.JPG",
     "static/media/fourth_floor_3.JPG": "/HouseRent/static/media/fourth_floor_3.ecf4034acd1dcd26f506.JPG",
@@ -54,6 +62,8 @@
     "static/media/area_22_23_1.JPG": "/HouseRent/static/media/area_22_23_1.ad0981651783779fb61d.JPG",
     "static/media/main_page_background.jpg": "/HouseRent/static/media/main_page_background.c631bf90ee7f439ba59b.jpg",
     "static/media/area_21_3.JPG": "/HouseRent/static/media/area_21_3.61c607174a03ca82cd1b.JPG",
+    "static/media/area_10_3.JPG": "/HouseRent/static/media/area_10_3.c79141780f7e950e9f2c.JPG",
+    "static/media/area_18_3.JPG": "/HouseRent/static/media/area_18_3.c79141780f7e950e9f2c.JPG",
     "static/media/area_40_3.jpg": "/HouseRent/static/media/area_40_3.0af6304b436fd45e6621.jpg",
     "static/media/area_41_42_5.jpg": "/HouseRent/static/media/area_41_42_5.66e80ab10f576f5e083e.jpg",
     "static/media/area_43_50_2.jpg": "/HouseRent/static/media/area_43_50_2.429320a55cb857b27105.jpg",
@@ -96,11 +106,11 @@
     "static/media/area_9_plan.png": "/HouseRent/static/media/area_9_plan.adb754b89974c7624bca.png",
     "index.html": "/HouseRent/index.html",
     "main.a9be7360.css.map": "/HouseRent/static/css/main.a9be7360.css.map",
-    "main.19d15c07.js.map": "/HouseRent/static/js/main.19d15c07.js.map",
+    "main.dc04a953.js.map": "/HouseRent/static/js/main.dc04a953.js.map",
     "787.0f787131.chunk.js.map": "/HouseRent/static/js/787.0f787131.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a9be7360.css",
-    "static/js/main.19d15c07.js"
+    "static/js/main.dc04a953.js"
   ]
 }
