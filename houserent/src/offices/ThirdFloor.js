@@ -51,29 +51,29 @@ const ThirdFloor = ({data, navigateToTheTop}) => {
             <div className='Floor-Plan-Link' to={data.menuPaths.floorPages.fourthFloor}>
                 <div className='Floor-Plan-Extra-Container'>
                     <img className="Floor-Plan-Image Main-Image" src={require("../data/floors_plans/third_floor_outer.png")} alt="Fourth floor plan"></img>
-                    <Link to={data.menuPaths.floorPages.thirdFloor.area_37_39} onClick={() => {document.getElementById("scroll-top").scrollTop = 0}}>
+                    <Link to={data.menuPaths.floorPages.thirdFloor.area_37_39} onClick={() => {window.scrollTo({top: 0})}}>
                         <img className="Floor-Plan-Image Floor-Plan-Hover-Image First-Part" src={require("../data/floors_plans/third_floor_63.7.png")} alt="Fourth floor plan"></img>
                     </Link>
-                    <Link to={data.menuPaths.floorPages.thirdFloor.area_40} onClick={() => {document.getElementById("scroll-top").scrollTop = 0}}>
+                    <Link to={data.menuPaths.floorPages.thirdFloor.area_40} onClick={() => {window.scrollTo({top: 0})}}>
                         <img className="Floor-Plan-Image Floor-Plan-Hover-Image Second-Part" src={require("../data/floors_plans/third_floor_18.3.png")} alt="Fourth floor plan"></img>
                     </Link>
-                    <Link to={data.menuPaths.floorPages.thirdFloor.area_41_42} onClick={() => {document.getElementById("scroll-top").scrollTop = 0}}>
+                    <Link to={data.menuPaths.floorPages.thirdFloor.area_41_42} onClick={() => {window.scrollTo({top: 0})}}>
                         <img className="Floor-Plan-Image Floor-Plan-Hover-Image Third-Part" src={require("../data/floors_plans/third_floor_40.9.png")} alt="Fourth floor plan"></img>
                     </Link>
-                    <Link to={data.menuPaths.floorPages.thirdFloor.area_43_50} onClick={() => {document.getElementById("scroll-top").scrollTop = 0}}>
+                    <Link to={data.menuPaths.floorPages.thirdFloor.area_43_50} onClick={() => {window.scrollTo({top: 0})}}>
                         <img className={`Floor-Plan-Image Fourth-Part Main-Fourth-Part ${currentFourthPartClassname}`} 
                         onMouseEnter={() => {startFourthPartHoverReaction()}} onMouseLeave={() => {finishFourthPartHoverReaction()}}
                         src={require("../data/floors_plans/third_floor_136.7_1.png")} alt="Fourth floor plan"></img>
                     </Link>
-                    <Link to={data.menuPaths.floorPages.thirdFloor.area_43_50} onClick={() => {document.getElementById("scroll-top").scrollTop = 0}}>
+                    <Link to={data.menuPaths.floorPages.thirdFloor.area_43_50} onClick={() => {window.scrollTo({top: 0})}}>
                         <img className={`Floor-Plan-Image Fourth-Part Extra-Fourth-Part ${currentFourthPartClassname}`}
                         onMouseEnter={() => {startFourthPartHoverReaction()}} onMouseLeave={() => {finishFourthPartHoverReaction()}}
                         src={require("../data/floors_plans/third_floor_136.7_2.png")} alt="Fourth floor plan"></img>
                     </Link>
-                    <Link to={data.menuPaths.floorPages.thirdFloor.area_32_35} onClick={() => {document.getElementById("scroll-top").scrollTop = 0}}>
+                    <Link to={data.menuPaths.floorPages.thirdFloor.area_32_35} onClick={() => {window.scrollTo({top: 0})}}>
                         <img className="Floor-Plan-Image Floor-Plan-Hover-Image Fifth-Part" src={require("../data/floors_plans/third_floor_61.2.png")} alt="Fourth floor plan"></img>
                     </Link>
-                    <Link to={data.menuPaths.floorPages.thirdFloor.area_30_31} onClick={() => {document.getElementById("scroll-top").scrollTop = 0}}>
+                    <Link to={data.menuPaths.floorPages.thirdFloor.area_30_31} onClick={() => {window.scrollTo({top: 0})}}>
                         <img className="Floor-Plan-Image Floor-Plan-Hover-Image Sixth-Part" src={require("../data/floors_plans/third_floor_39.5.png")} alt="Fourth floor plan"></img>
                     </Link>
                 </div>

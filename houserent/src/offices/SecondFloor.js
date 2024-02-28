@@ -51,38 +51,38 @@ const SecondFloor = ({data, navigateToTheTop}) => {
             <div className='Floor-Plan-Link' to={data.menuPaths.floorPages.fourthFloor}>
                 <div className='Floor-Plan-Extra-Container'>
                     <img className="Floor-Plan-Image Main-Image" src={require("../data/floors_plans/second_floor_outer.png")} alt="Fourth floor plan"></img>
-                    <Link to={data.menuPaths.floorPages.secondFloor.area_11_12_14} onClick={() => {document.getElementById("scroll-top").scrollTop = 0}}>
+                    <Link to={data.menuPaths.floorPages.secondFloor.area_11_12_14} onClick={() => {window.scrollTo({top: 0})}}>
                         <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_61_2" src={require("../data/floors_plans/second_floor_61.2.png")} alt="Fourth floor plan"></img>
                     </Link>
-                    <Link to={data.menuPaths.floorPages.secondFloor.area_15} onClick={() => {document.getElementById("scroll-top").scrollTop = 0}}>
+                    <Link to={data.menuPaths.floorPages.secondFloor.area_15} onClick={() => {window.scrollTo({top: 0})}}>
                         <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_22_0" src={require("../data/floors_plans/second_floor_22.0.png")} alt="Fourth floor plan"></img>
                     </Link>
-                    <Link to={data.menuPaths.floorPages.secondFloor.area_16} onClick={() => {document.getElementById("scroll-top").scrollTop = 0}}>
+                    <Link to={data.menuPaths.floorPages.secondFloor.area_16} onClick={() => {window.scrollTo({top: 0})}}>
                         <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_21_2" src={require("../data/floors_plans/second_floor_21.2.png")} alt="Fourth floor plan"></img>
                     </Link>
-                    <Link to={data.menuPaths.floorPages.secondFloor.area_17} onClick={() => {document.getElementById("scroll-top").scrollTop = 0}}>
+                    <Link to={data.menuPaths.floorPages.secondFloor.area_17} onClick={() => {window.scrollTo({top: 0})}}>
                         <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_19_6" src={require("../data/floors_plans/second_floor_19.6.png")} alt="Fourth floor plan"></img>
                     </Link>
-                    <Link to={data.menuPaths.floorPages.secondFloor.area_18} onClick={() => {document.getElementById("scroll-top").scrollTop = 0}}>
+                    <Link to={data.menuPaths.floorPages.secondFloor.area_18} onClick={() => {window.scrollTo({top: 0})}}>
                         <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_21_0" src={require("../data/floors_plans/second_floor_21.0.png")} alt="Fourth floor plan"></img>
                     </Link>
-                    <Link to={data.menuPaths.floorPages.secondFloor.area_19_20} onClick={() => {document.getElementById("scroll-top").scrollTop = 0}}>
+                    <Link to={data.menuPaths.floorPages.secondFloor.area_19_20} onClick={() => {window.scrollTo({top: 0})}}>
                         <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_41_0" src={require("../data/floors_plans/second_floor_41.0.png")} alt="Fourth floor plan"></img>
                     </Link>
-                    <Link to={data.menuPaths.floorPages.secondFloor.area_21} onClick={() => {document.getElementById("scroll-top").scrollTop = 0}}>
+                    <Link to={data.menuPaths.floorPages.secondFloor.area_21} onClick={() => {window.scrollTo({top: 0})}}>
                         <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_22_9" src={require("../data/floors_plans/second_floor_22.9.png")} alt="Fourth floor plan"></img>
                     </Link>
-                    <Link to={data.menuPaths.floorPages.secondFloor.area_22_23} onClick={() => {document.getElementById("scroll-top").scrollTop = 0}}>
+                    <Link to={data.menuPaths.floorPages.secondFloor.area_22_23} onClick={() => {window.scrollTo({top: 0})}}>
                         <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_40_0" src={require("../data/floors_plans/second_floor_40.0.png")} alt="Fourth floor plan"></img>
                     </Link>
                     <img className="Floor-Plan-Image Part_Extra" src={require("../data/floors_plans/second_floor_extra_part.png")} alt="Fourth floor plan"></img>
-                    <Link to={data.menuPaths.floorPages.secondFloor.area_7_8} onClick={() => {document.getElementById("scroll-top").scrollTop = 0}}>
+                    <Link to={data.menuPaths.floorPages.secondFloor.area_7_8} onClick={() => {window.scrollTo({top: 0})}}>
                         <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_39_5" src={require("../data/floors_plans/second_floor_39.5.png")} alt="Fourth floor plan"></img>
                     </Link>
-                    <Link to={data.menuPaths.floorPages.secondFloor.area_9} onClick={() => {document.getElementById("scroll-top").scrollTop = 0}}>
+                    <Link to={data.menuPaths.floorPages.secondFloor.area_9} onClick={() => {window.scrollTo({top: 0})}}>
                         <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_21_1" src={require("../data/floors_plans/second_floor_21.1.png")} alt="Fourth floor plan"></img>
                     </Link>
-                    <Link to={data.menuPaths.floorPages.secondFloor.area_10} onClick={() => {document.getElementById("scroll-top").scrollTop = 0}}>
+                    <Link to={data.menuPaths.floorPages.secondFloor.area_10} onClick={() => {window.scrollTo({top: 0})}}>
                         <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_22_0_2" src={require("../data/floors_plans/second_floor_22.0_2.png")} alt="Fourth floor plan"></img>
                     </Link>
                 </div>
