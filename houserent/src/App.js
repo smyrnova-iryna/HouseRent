@@ -31,7 +31,7 @@ function App() {
 
   const [headerStyles, setHeaderStyles] = useState("");
 
-  // document.querySelector("html").style.scrollBehavior = "auto";
+  document.querySelector("html").style.scrollBehavior = "auto";
 
   // if (navigator.userAgent.indexOf("Firefox") === -1 || Object.values(data.menuPaths.floorPages.secondFloor).includes(window.location.href.substring(21)) === true) {
   //   document.querySelector("html").style.scrollBehavior = "smooth";
