@@ -46,11 +46,11 @@ const Footer = ({data, handleToggle, navigateToTheTop, linkScroll}) => {
                     Footer-Contact-Nav-Link'>{data.menuItems.contacts}</HashLink>
             </div>  
             <div className='Footer-Buttons-Container'>
-                <HashLink className='Footer-Link-Button First-Link-Button' to={data.menuPaths.secondFloor} onClick={navigateToTheTop}>{data.menuItems.secondFloor}
+                <HashLink smooth className='Footer-Link-Button First-Link-Button' to={data.menuPaths.secondFloor} onClick={navigateToTheTop}>{data.menuItems.secondFloor}
                 <ArrowForwardIcon className="Footer-link-Icon"/></HashLink>
-                <HashLink className='Footer-Link-Button Second-Link-Button' to={data.menuPaths.thirdFloor}onClick={navigateToTheTop}>{data.menuItems.thirdFloor}
+                <HashLink smooth className='Footer-Link-Button Second-Link-Button' to={data.menuPaths.thirdFloor}onClick={navigateToTheTop}>{data.menuItems.thirdFloor}
                 <ArrowForwardIcon className="Footer-link-Icon"/></HashLink>
-                <HashLink className='Footer-Link-Button Third-Link-Button' to={data.menuPaths.fourthFloor} onClick={navigateToTheTop}>{data.menuItems.fourthFloor}
+                <HashLink smooth className='Footer-Link-Button Third-Link-Button' to={data.menuPaths.fourthFloor} onClick={navigateToTheTop}>{data.menuItems.fourthFloor}
                 <ArrowForwardIcon className="Footer-link-Icon"/></HashLink>
             </div> 
         </footer>

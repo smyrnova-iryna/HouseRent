@@ -30,6 +30,19 @@ function App() {
   // && window.pageYOffset > window.innerHeight
 
   const [headerStyles, setHeaderStyles] = useState("");
+
+  // document.querySelector("html").style.scrollBehavior = "auto";
+
+  // if (navigator.userAgent.indexOf("Firefox") === -1 || Object.values(data.menuPaths.floorPages.secondFloor).includes(window.location.href.substring(21)) === true) {
+  //   document.querySelector("html").style.scrollBehavior = "smooth";
+  //   console.log(window.location.href.substring(21));
+  //   console.log(Object.values(data.menuPaths.floorPages.secondFloor).includes(window.location.href.substring(21)));
+  // } else {
+  //   document.querySelector("html").style.scrollBehavior = "auto";
+  //   console.log("auto");
+  //   console.log(window.location.href.substring(21));
+  //   console.log(Object.values(data.menuPaths.floorPages.secondFloor).includes(window.location.href.substring(21)));
+  // }
   
 
   useEffect(() => {
