@@ -249,8 +249,17 @@ useLayoutEffect(() => {
                       <li className="Floor-Details-Status-Item">
                           {details.statusTitle[7]}
                       </li> 
-                      <li className="Floor-Details-Status-Item">
+                       <li className="Floor-Details-Status-Item">
                           {details.statusTitle[8]}
+                      </li> 
+                       <li className="Floor-Details-Status-Item">
+                          {details.statusTitle[9]}
+                      </li> 
+                       <li className="Floor-Details-Status-Item">
+                          {details.statusTitle[10]}
+                      </li> 
+                       <li className="Floor-Details-Status-Item">
+                          {details.statusTitle[11]}
                       </li> 
                 </ul>
             </div>

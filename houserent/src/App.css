@@ -9,7 +9,6 @@
           user-select: none;
   max-width: 100%;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 .Loading-Slider {
