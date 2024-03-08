@@ -137,7 +137,7 @@ const dataEn = {
                         title: "OFFICE (room № 10)",
                         photos: ["area_10_1.JPG", "area_10_2.JPG", "area_10_3.JPG"],
                         plan: "area_10_plan.png",
-                        statusTitle: ["A", "V", "A", "I", "L", "A", "B", "L", "E" ],
+                        statusTitle: ["R", "E", "N", "T", "E", "D"],
                         advantages: ["apartment size 22,0 sqr m", "2 floor",
                         "renting with furniture available",
                         "ceiling height from 3 meters",

@@ -1216,15 +1216,12 @@
 
 .Floor-Details-Title {
   font-size: 130%;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 3px;
   text-align: center;
 }
 
 @media screen and (min-width: 900px) {
-  .Floor-Details-Title {
-    font-size: 200%;
-  }
   .Floor-Details-Status {
     font-size: 130%;
   }
@@ -1343,6 +1340,7 @@
   padding: 35px;
   height: 180px;
   width: 300px;
+  overflow: visible;
 }
 
 @media screen and (min-width: 600px) {
@@ -1381,6 +1379,7 @@
   }
   .Floor-Inner-Firt-Image {
     left: 0;
+    overflow: visible !important;
   }
   .Floor-Inner-Second-Image {
     left: 273px;
@@ -1393,7 +1392,8 @@
 @media screen and (min-width: 1260px) {
   .Floor-Inner-Image-Extra-Container {
     width: 1200px;
-    height: 270px;
+    height: 300px;
+    overflow: visible;
   }
   .Floor-Inner-Image {
     height: 260px;
