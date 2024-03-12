@@ -29,7 +29,7 @@ useLayoutEffect(() => {
           gsap.to(".Floor-First-Photo", 
           { 
             duration: 1,
-            scale: 2.2
+            scale: 2.1
           }); 
           // gsap.to(".Floor-Inner-Firt-Image", 
           // { 
@@ -56,7 +56,7 @@ useLayoutEffect(() => {
           gsap.from(".Floor-First-Photo", 
           { 
             duration: 1,
-            scale: 2.2
+            scale: 2.1
           });
         } else {
           gsap.from(".Floor-First-Photo", 
@@ -83,7 +83,7 @@ useLayoutEffect(() => {
             gsap.to(".Floor-Second-Photo", 
           { 
             duration: 1,
-            scale: 2.2
+            scale: 2.1
           }); 
         } else {
             gsap.to(".Floor-Second-Photo", 

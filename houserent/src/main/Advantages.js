@@ -49,6 +49,13 @@ const Advantages = ({data}) => {
                           tl.to(".Slider-image7", { duration: 1, opacity: 0, delay: 1 });
                           tl.to(".Slider-image8", { duration: 1, opacity: 0, delay: 1 });
                           tl.to(".Slider-image9", { duration: 1, opacity: 0, delay: 1 });
+                          tl.to(".Slider-image10", { duration: 1, opacity: 0, delay: 1 });
+                          tl.to(".Slider-image11", { duration: 1, opacity: 0, delay: 1 });
+                          tl.to(".Slider-image12", { duration: 1, opacity: 0, delay: 1 });
+                          tl.to(".Slider-image13", { duration: 1, opacity: 0, delay: 1 });
+                          tl.to(".Slider-image14", { duration: 1, opacity: 0, delay: 1 });
+                          tl.to(".Slider-image15", { duration: 1, opacity: 0, delay: 1 });
+                          tl.to(".Slider-image16", { duration: 1, opacity: 0, delay: 1 });
                       }, comp);
                           
                       
@@ -104,8 +111,8 @@ const Advantages = ({data}) => {
             <div className="Main-carousel-container">
             {/* <div> */}
                    {/* <div className="Main-carousel-inner-container"> */}
-                        <img className={`Slider-image Slider-image18 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_18.JPG")} alt="Carousel item 18" />
-                        <img className={`Slider-image Slider-image17 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_17.JPG")} alt="Carousel item 17" />
+                        {/* <img className={`Slider-image Slider-image18 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_18.JPG")} alt="Carousel item 18" />
+                        <img className={`Slider-image Slider-image17 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_17.JPG")} alt="Carousel item 17" /> */}
                         <img className={`Slider-image Slider-image16 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_16.JPG")} alt="Carousel item 16" />
                         <img className={`Slider-image Slider-image15 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_15.JPG")} alt="Carousel item 15" />
                         <img className={`Slider-image Slider-image14 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_14.JPG")} alt="Carousel item 14" />
@@ -116,7 +123,7 @@ const Advantages = ({data}) => {
                         <img className={`Slider-image Slider-image9 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_9.JPG")} alt="Carousel item 9" />
                         <img className={`Slider-image Slider-image8 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_8.JPG")} alt="Carousel item 8" />
                         <img className={`Slider-image Slider-image7 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_7.JPG")} alt="Carousel item 7" />
-                        <img className={`Slider-image Slider-image6 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_6.jpg")} alt="Carousel item 6" />
+                        <img className={`Slider-image Slider-image6 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_6.JPG")} alt="Carousel item 6" />
                         <img className={`Slider-image Slider-image5 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_5.jpg")} alt="Carousel item 5" />
                         <img className={`Slider-image Slider-image4 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_4.JPG")} alt="Carousel item 4" />
                         <img className={`Slider-image Slider-image3 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_3.jpg")} alt="Carousel item 3" />
