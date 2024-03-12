@@ -1452,7 +1452,7 @@
   background-color: #2d3a4c;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1076px) {
   .Contacts-Container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1627,7 +1627,7 @@
     height: 420px;
   }
   .Contacts-Form-Window-Icon {
-    width: 223px;
+    width: 235px;
     left: 49px;
   }
   .Contacts-Form-Input {
@@ -1707,6 +1707,9 @@
   }
   .Contacts-Information-Container {
     width: 400px;
+  }
+  .Contacts-Form-Window-Icon {
+    width: 223px;
   }
 }
 

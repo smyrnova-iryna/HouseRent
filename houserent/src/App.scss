@@ -1312,7 +1312,7 @@ $opacityHeaderColor: #dfe8e8c8;
   gap: 50px;
   justify-content: space-between;
   background-color: $firstLightColor;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1076px) {
     flex-direction: row;
     min-height: min-content;
     padding: 60px;
@@ -1444,7 +1444,8 @@ $opacityHeaderColor: #dfe8e8c8;
   }
   
   .Contacts-Form-Window-Icon {
-    width: 223px;
+    // width: 223px;
+    width: 235px;
     left: 49px;
   }
   
@@ -1506,6 +1507,11 @@ $opacityHeaderColor: #dfe8e8c8;
   }
   .Contacts-Information-Container {
     width: 400px;
+  }
+
+  .Contacts-Form-Window-Icon {
+    width: 223px;
+    // width: 227px;
   }
 }
 
