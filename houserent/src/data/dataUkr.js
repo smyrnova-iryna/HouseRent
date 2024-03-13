@@ -461,6 +461,7 @@ const dataUkr = {
             secondPhoneNumber: "+380978720744",
             address: "Україна, м.Дніпро, вул.Гоголя, буд. 15, 2 поверх, оф. 25",
             email: "Tkirillova75@gmail.com",
+            mapUrl: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d661.4913370089777!2d35.052300669625936!3d48.45719439820505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDjCsDI3JzI1LjkiTiAzNcKwMDMnMTAuNiJF!5e0!3m2!1suk!2sua!4v1710254533035!5m2!1suk!2sua",
 //                 address: 
 //                     {heading: 'Контакты UAB "FerroMetals":', 
 //                     text: `Лайсвес пр. 60-1107,
