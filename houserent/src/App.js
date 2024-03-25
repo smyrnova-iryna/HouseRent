@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from 'react';
+import { useState, isLoaded } from 'react';
 // , useEffect, useLayoutEffect
 import { Routes, Route } from 'react-router-dom';
 import dataUkr from "./data/dataUkr";
@@ -17,15 +17,32 @@ import FourthFloorDetails from "./offices/offices-details/FourthFloorDetails";
 // import ThirdFloorDetails from "./offices/offices-details/ThirdFloorFirstPartDetails";
 import { useEffect } from "react";
 
+// const Offices = lazy(() => import('./offices/Offices.js'));
+// const Offices = lazy(() => import('./offices/Offices'));
+
+import Loader from "./main/Loader";
+
 
 function App() {
   const [data, setData] = useState(dataUkr);
+  // const [loading, setLoading] = useState(true)
   const changeLanguage = (currentData) => {
     setData(currentData);
   }
   const navigateToTheTop = () => {
     window.scrollTo({top: 0})
   }
+  // const componentLoaded = () => {
+  //   if (componentIsLoaded === true) {
+  //     setPageLoaded(true);
+  //     console.log("LOADED")
+  //   } else {
+  //     console.log("NOT LOADED")
+  //   }
+
+   
+    
+    // }
 
   // && window.pageYOffset > window.innerHeight
 
@@ -43,6 +60,7 @@ function App() {
   //   console.log(window.location.href.substring(21));
   //   console.log(Object.values(data.menuPaths.floorPages.secondFloor).includes(window.location.href.substring(21)));
   // }
+
   
 
   useEffect(() => {
@@ -62,14 +80,28 @@ function App() {
 
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('load', handleScroll);
+    // window.addEventListener('load', (event) => {
+    //   console.log("page is fully loaded");
+    // });
+   
   })
 
+  
+  // componentDidMount() {
+  //   setPageLoaded(true);
+  // }
 
-  return (
+//   useEffect(() => {
+//     setTimeout(() => setLoading(false), 3300)
+// }, [])
+// if (loading) {
+//     return <Loader/>
+// }
+return (
     <div className="App">
       <Header changeLanguage={changeLanguage} data={data} navigateToTheTop={navigateToTheTop} headerStyles={headerStyles} />
-      {/* <Main /> */}
-      <Routes> 
+      {/* <Loader data={data}/> */}
+        <Routes> 
         <Route path={data.menuPaths.main} element={<Main data={data}/>} />
         <Route path={data.menuPaths.offices} element={<Offices data={data}/>} navigateToTheTop={navigateToTheTop} />
         <Route path={data.menuPaths.privacypolicy} element={<PrivacyPolicy data={data} />} />   
@@ -117,10 +149,15 @@ function App() {
 
         <Route path={data.errorPath} element={<Error data={data} />} />
       </Routes>
-      {/* <TopScroll />  */}
+        
+      
+    
       <Footer data={data} />
     </div>
   );
+// );
 }
+
+  
 
 export default App;

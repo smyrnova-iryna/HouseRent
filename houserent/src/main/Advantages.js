@@ -1,11 +1,18 @@
 import { gsap } from 'gsap';
-import { useRef, useLayoutEffect, useState } from 'react';
+import { useRef, useLayoutEffect, useState, useEffect } from 'react';
+import { Suspense} from 'react';
+import AdvantagesCarousel from "./AdvantagesCarousel";
 
 import React from 'react';
 
+import Loader from "./Loader";
+// const AdvantagesCarousel = lazy(() => import('./AdvantagesCarousel.js'));
+
+
 const Advantages = ({data}) => {
 
-    const comp = useRef();
+    
+    // const [loading, setLoading] = useState(true);
   
 
     // useLayoutEffect(() => {
@@ -29,49 +36,7 @@ const Advantages = ({data}) => {
         
     //   }, []);
 
-    const [sliderVisibility, setSliderVisibility] = useState("Loading-Slider");
-
-
-
-    useLayoutEffect(() => {
-        const onPageLoad = () => {
-          // console.log('page loaded');
-          setSliderVisibility("")
-          let tl = gsap.timeline({ repeat: -1 });
-  
-                      let ctx = gsap.context(() => {
-                          tl.to(".Slider-image1", { duration: 1, opacity: 0, delay: 1 });
-                          tl.to(".Slider-image2", { duration: 1, opacity: 0, delay: 1 });
-                          tl.to(".Slider-image3", { duration: 1, opacity: 0, delay: 1 });
-                          tl.to(".Slider-image4", { duration: 1, opacity: 0, delay: 1 });
-                          tl.to(".Slider-image5", { duration: 1, opacity: 0, delay: 1 });
-                          tl.to(".Slider-image6", { duration: 1, opacity: 0, delay: 1 });
-                          tl.to(".Slider-image7", { duration: 1, opacity: 0, delay: 1 });
-                          tl.to(".Slider-image8", { duration: 1, opacity: 0, delay: 1 });
-                          tl.to(".Slider-image9", { duration: 1, opacity: 0, delay: 1 });
-                          tl.to(".Slider-image10", { duration: 1, opacity: 0, delay: 1 });
-                          tl.to(".Slider-image11", { duration: 1, opacity: 0, delay: 1 });
-                          tl.to(".Slider-image12", { duration: 1, opacity: 0, delay: 1 });
-                          tl.to(".Slider-image13", { duration: 1, opacity: 0, delay: 1 });
-                          tl.to(".Slider-image14", { duration: 1, opacity: 0, delay: 1 });
-                          tl.to(".Slider-image15", { duration: 1, opacity: 0, delay: 1 });
-                          tl.to(".Slider-image16", { duration: 1, opacity: 0, delay: 1 });
-                      }, comp);
-                          
-                      
-                      return () => ctx.revert(); 
-        };
     
-        // Check if the page has already loaded
-        if (document.readyState === 'complete') {
-          onPageLoad();
-        } else {
-          window.addEventListener('load', onPageLoad, false);
-          // Remove the event listener when component unmounts
-          return () => window.removeEventListener('load', onPageLoad);
-        }
-      }, []);
-
 
 
     
@@ -101,18 +66,22 @@ const Advantages = ({data}) => {
       
 
   
+  //   if ( !this.data) {
+  //     return <div>No post!</div>
+  // } else {
 
-
-    return (
-        <div id="advantages" className="Advantages-container" ref={comp}>
+//   useEffect(() => {
+//     setTimeout(() => setLoading(false), 3300)
+// }, [])
+// if (loading) {
+//     return <Loader/>
+// }
+return (  
+        <div id="advantages" className="Advantages-container" >
             {/* <div style={{width: "100%", height: "100vh", backgroundColor: "#626c74"}}>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit odit iure nisi cum dolore beatae, laudantium veritatis fugiat, saepe accusantium odio qui debitis est, facere ea exercitationem delectus soluta minima a cumque? Laborum reprehenderit, perspiciatis fugit repellendus et necessitatibus tempore inventore blanditiis libero odio odit velit doloremque nesciunt commodi nobis quod voluptatum ex ipsa? Magni, nemo! Optio repellendus ea dolorum, omnis iusto ex, excepturi eaque magni iure quae harum veniam eum, vitae quo natus atque non culpa aut libero dicta necessitatibus magnam ullam commodi. Neque, maiores reiciendis? Cumque, suscipit magnam vero eveniet vel earum nobis doloribus dignissimos culpa, natus quia reiciendis neque optio et qui accusantium provident amet fugiat dolore recusandae! Possimus, cupiditate. Veniam, enim id tenetur dicta excepturi beatae dolorum reprehenderit in veritatis consectetur sunt! Sint, illo tempora dolor laboriosam odit tenetur reiciendis velit omnis accusamus? Atque officiis tenetur dolore corrupti voluptates mollitia blanditiis rerum libero odio, vero, perspiciatis similique maiores commodi cupiditate optio, soluta beatae accusamus minima explicabo. Sit quis enim nostrum, ad perspiciatis qui? Consectetur neque quasi illum enim rem nemo pariatur labore laudantium velit nam nostrum impedit libero, quae, aperiam unde, et harum dolore! Facere enim a eos pariatur officiis magnam quam veniam sint necessitatibus voluptatum?</p>
             </div> */}
-            <div className="Main-carousel-container">
-            {/* <div> */}
-                   {/* <div className="Main-carousel-inner-container"> */}
-                        {/* <img className={`Slider-image Slider-image18 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_18.JPG")} alt="Carousel item 18" />
-                        <img className={`Slider-image Slider-image17 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_17.JPG")} alt="Carousel item 17" /> */}
+            {/* <div className="Main-carousel-container">
                         <img className={`Slider-image Slider-image16 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_16.JPG")} alt="Carousel item 16" />
                         <img className={`Slider-image Slider-image15 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_15.JPG")} alt="Carousel item 15" />
                         <img className={`Slider-image Slider-image14 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_14.JPG")} alt="Carousel item 14" />
@@ -129,9 +98,10 @@ const Advantages = ({data}) => {
                         <img className={`Slider-image Slider-image3 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_3.jpg")} alt="Carousel item 3" />
                         <img className={`Slider-image Slider-image2 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_2.JPG")} alt="Carousel item 2" />
                         <img className='Slider-image Slider-image1' src={require("../data/carousel/carousel_photo_1.jpg")} alt="Carousel item 1" />
-                    {/* </div> */}
-            {/* </div> */}
-            </div>
+            </div> */}
+             <Suspense fallback={<Loader />}>
+              <AdvantagesCarousel data={data} />
+            </Suspense>
             <div>
                 <p className="Advantages-list-title">{data.advantages.mainTitle}</p>
                 <ul className="Advantages-list">
@@ -144,6 +114,7 @@ const Advantages = ({data}) => {
             </div>
         </div>
     )
-}
+  }
+// }
 
 export default Advantages;

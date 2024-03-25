@@ -10,9 +10,17 @@ import Contacts from './Contacts';
 
 const Main = ({data}) => {
 
+  // const [pageLoaded, setPageLoaded] = useState(false);
+
     const comp = useRef();
   
-   
+    // useEffect(() => {
+    //   console.log("isLoaded: " +isLoaded)
+    //   if(isLoaded !== undefined) {
+    //     console.log("loaded")
+    //   }
+    // }, [isLoaded])
+    
 
     useLayoutEffect(() => {
   
@@ -79,41 +87,45 @@ const Main = ({data}) => {
       // }, []);
 
   
-
-
+      if ( !data) {
+        return <div>No post!</div>
+    } else {
+      
     return (
-        <>
-        <div className="Main-Container" ref={comp}>
-            {/* <h1 className="MainTitle MainTitle-list">
-                <p  className="MainTitle-item">{data.main.mainTitle[0]}</p>
-                <p  className="MainTitle-item">{data.main.mainTitle[1]}</p>
-                <p  className="MainTitle-item">{data.main.mainTitle[2]}</p>
-                <p  className="MainTitle-item">{data.main.mainTitle[3]}</p>
-                <p  className="MainTitle-item">{data.main.mainTitle[4]}</p>
-                <p  className="MainTitle-item">{data.main.mainTitle[5]}</p>
-                <p  className="MainTitle-item">{data.main.mainTitle[6]}</p>
-            </h1> */}
-            <div className="Main-description-container">
-            <p className="Main-description-block First-block">{data.main.mainInfo[0]}</p>
-            <p className="Main-description-block Second-block">{data.main.mainInfo[1]}</p>
-            <p className="Main-description-block Third-block">{data.main.mainInfo[2]}</p>
-            <p className="Main-description-block Fourth-block">{data.main.mainInfo[3]}</p>
-           </div>
-           <div className="Main-text-container">
-                <div className='Main-extra-title-container'>
-                  <div className='Extra-line-div'></div>
-                  <p className="Main-text Main-text-title">{data.main.mainTextHeader}</p>
-                </div>
-                <div className='Main-extra-text-container'>
-                  <p className="Main-text">{data.main.mainText}</p>
-                </div>
-           </div>
-        </div>
-        <Advantages data={data}/>  
-        <Offices data={data} />
-        <Contacts data={data}/>  
-        </>
-    )
+      <>
+      <div className="Main-Container" ref={comp}>
+          {/* <h1 className="MainTitle MainTitle-list">
+              <p  className="MainTitle-item">{data.main.mainTitle[0]}</p>
+              <p  className="MainTitle-item">{data.main.mainTitle[1]}</p>
+              <p  className="MainTitle-item">{data.main.mainTitle[2]}</p>
+              <p  className="MainTitle-item">{data.main.mainTitle[3]}</p>
+              <p  className="MainTitle-item">{data.main.mainTitle[4]}</p>
+              <p  className="MainTitle-item">{data.main.mainTitle[5]}</p>
+              <p  className="MainTitle-item">{data.main.mainTitle[6]}</p>
+          </h1> */}
+          <div className="Main-description-container">
+          <p className="Main-description-block First-block">{data.main.mainInfo[0]}</p>
+          <p className="Main-description-block Second-block">{data.main.mainInfo[1]}</p>
+          <p className="Main-description-block Third-block">{data.main.mainInfo[2]}</p>
+          <p className="Main-description-block Fourth-block">{data.main.mainInfo[3]}</p>
+         </div>
+         <div className="Main-text-container">
+              <div className='Main-extra-title-container'>
+                <div className='Extra-line-div'></div>
+                <p className="Main-text Main-text-title">{data.main.mainTextHeader}</p>
+              </div>
+              <div className='Main-extra-text-container'>
+                <p className="Main-text">{data.main.mainText}</p>
+              </div>
+         </div>
+      </div>
+      <Advantages data={data}/>  
+      <Offices data={data} />
+      <Contacts data={data}/>  
+      </>
+  )
+    }
+
 }
 
 export default Main;
