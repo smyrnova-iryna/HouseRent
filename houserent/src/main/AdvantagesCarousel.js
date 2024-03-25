@@ -5,13 +5,14 @@ const AdvantagesCarousel = ({data}) => {
     
     
     const [sliderVisibility, setSliderVisibility] = useState("Loading-Slider");
+        
 
     const comp = useRef();
 
     useLayoutEffect(() => {
       
         const onPageLoad = () => {
-          // console.log('page loaded');
+    
           setSliderVisibility("")
           let tl = gsap.timeline({ repeat: -1 });
   
@@ -37,9 +38,12 @@ const AdvantagesCarousel = ({data}) => {
                       
                       return () => ctx.revert(); 
         };
-    
-        // Check if the page has already loaded
         onPageLoad();
+
+
+
+
+
         // if (document.readyState === 'complete') {
         //   onPageLoad();
         // } else {
@@ -47,7 +51,11 @@ const AdvantagesCarousel = ({data}) => {
           // Remove the event listener when component unmounts
         //   return () => window.removeEventListener('load', onPageLoad);
         // }
+
+
+
       }, []);
+   
     return (
         <div className="Main-carousel-container" ref={comp}>
                         <img className={`Slider-image Slider-image16 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_16.JPG")} alt="Carousel item 16" />

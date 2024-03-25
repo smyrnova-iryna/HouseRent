@@ -53,7 +53,6 @@ const Loader = ({data}) => {
     return (
         <div className="Loader-container" ref={comp}>
             {/* <div className="Loader-inner-container"> */}
-            jhjhjkhjkphjkhjklhjkhjklhjklhjkljhjkhkjlhjkhjkl
                 <div class="loader"></div>
                 {/* <img className="Loader-house-icon" src={require("../data/icons/house_icon.png")} alt="House icon"></img>
                 <img className="Loader-house-window-icon" src={require("../data/icons/house_window_icon.png")} alt="House window icon"></img>

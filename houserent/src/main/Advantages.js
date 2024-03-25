@@ -9,7 +9,7 @@ import React from 'react';
 
 import Loader from "./Loader";
 // const AdvantagesCarousel = lazy(() => import('./AdvantagesCarousel.js'));
-const AdvantagesCarousel = lazy(() => import('./AdvantagesCarousel.js'));
+const AdvantagesCarousel = lazy(() => delayForDemo(import('./AdvantagesCarousel.js')));
 
 
 const Advantages = ({data}) => {
@@ -79,6 +79,8 @@ const Advantages = ({data}) => {
 // if (loading) {
 //     return <Loader/>
 // }
+
+
 return (  
         <div id="advantages" className="Advantages-container" >
             {/* <div style={{width: "100%", height: "100vh", backgroundColor: "#626c74"}}>
@@ -119,5 +121,11 @@ return (
     )
   }
 // }
+function delayForDemo(promise) {
+  return new Promise(resolve => {
+    setTimeout(resolve, 2000);
+  }).then(() => promise);
+}
 
 export default Advantages;
+
