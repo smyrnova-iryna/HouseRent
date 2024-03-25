@@ -1,12 +1,15 @@
 import { gsap } from 'gsap';
 import { useRef, useLayoutEffect, useState, useEffect } from 'react';
 import { Suspense} from 'react';
-import AdvantagesCarousel from "./AdvantagesCarousel";
+// import AdvantagesCarousel from "./AdvantagesCarousel";
+import { lazy } from 'react';
+
 
 import React from 'react';
 
 import Loader from "./Loader";
 // const AdvantagesCarousel = lazy(() => import('./AdvantagesCarousel.js'));
+const AdvantagesCarousel = lazy(() => import('./AdvantagesCarousel.js'));
 
 
 const Advantages = ({data}) => {
