@@ -1170,6 +1170,26 @@ $opacityHeaderColor: #dfe8e8c8;
 
 // Floor details styles
 
+.Floor-Details-Back-Link {
+  @include inline-container();
+  gap: 5px;
+  text-decoration: none
+}
+
+.Floor-Details-Back-Link:hover {
+  color: $secondDetailsColor
+}
+
+.Floor-Details-Back-Link-Wrap {
+  width: 100%;
+  @include inline-container();
+  justify-content: flex-start;
+  width: 100%;
+  @media screen and (min-width: 700px){
+    width: 1200px;
+  }
+}
+
 .Floor-Details-Main-Container {
   @include standart-page();
   @include inline-container();

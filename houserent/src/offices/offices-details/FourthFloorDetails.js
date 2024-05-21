@@ -1,6 +1,9 @@
 import { useState, useLayoutEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 
+import { HashLink } from 'react-router-hash-link';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+
 const FourthFloorDetails = ({data, details}) => {
 
 const [animateFirstPhotoTo, setAnimateFirstPhotoTo] = useState(false);
@@ -58,7 +61,7 @@ useLayoutEffect(() => {
         gsap.to(".Floor-First-Photo", 
         { 
           duration: 1,
-          scale: 1.5
+          scale: 2.1
         }); 
 
       }, comp); 
@@ -90,7 +93,7 @@ useLayoutEffect(() => {
         gsap.to(".Floor-Second-Photo", 
         { 
           duration: 1,
-          scale: 1.5
+          scale: 2.1
         }); 
 
       }, comp); 
@@ -123,7 +126,7 @@ useLayoutEffect(() => {
         gsap.to(".Floor-Third-Photo", 
         { 
           duration: 1,
-          scale: 1.5
+          scale: 2.1
         }); 
 
       }, comp); 
@@ -155,7 +158,7 @@ useLayoutEffect(() => {
         gsap.to(".Floor-Fourth-Photo", 
         { 
           duration: 1,
-          scale: 1.5
+          scale: 2.1
         }); 
 
       }, comp); 
@@ -187,7 +190,7 @@ useLayoutEffect(() => {
         gsap.to(".Floor-Fifth-Photo", 
         { 
           duration: 1,
-          scale: 1.5
+          scale: 2.1
         }); 
 
       }, comp); 
@@ -219,7 +222,7 @@ useLayoutEffect(() => {
         gsap.to(".Floor-Sixth-Photo", 
         { 
           duration: 1,
-          scale: 1.5
+          scale: 2.1
         }); 
 
       }, comp); 
@@ -252,7 +255,7 @@ useLayoutEffect(() => {
         gsap.to(".Floor-Seventh-Photo", 
         { 
           duration: 1,
-          scale: 1.5
+          scale: 2.1
         }); 
 
       }, comp); 
@@ -284,7 +287,7 @@ useLayoutEffect(() => {
         gsap.to(".Floor-Eighth-Photo", 
         { 
           duration: 1,
-          scale: 1.5
+          scale: 2.1
         }); 
 
       }, comp); 
@@ -316,7 +319,7 @@ useLayoutEffect(() => {
         gsap.to(".Floor-Nineth-Photo", 
         { 
           duration: 1,
-          scale: 1.5
+          scale: 2.1
         }); 
 
       }, comp); 
@@ -371,6 +374,12 @@ useLayoutEffect(() => {
 
     return (
         <div className="Floor-Details-Main-Container" ref={comp}>
+          <div className="Floor-Details-Back-Link-Wrap">
+            <HashLink smooth className="Floor-Details-Back-Link" to={data.menuPaths.fourthFloor}>
+              <ArrowBackIcon/>
+              {data.offices.fourthFloor.backLinkText}
+            </HashLink>
+          </div>
             <div className="Floor-Details-Title-Container">
                 <p className="Floor-Details-Title">{details.title}</p>
                 <ul className="Floor-Details-Status">
@@ -400,6 +409,15 @@ useLayoutEffect(() => {
                       </li> 
                       <li className="Floor-Details-Status-Item">
                           {details.statusTitle[8]}
+                      </li>
+                      <li className="Floor-Details-Status-Item">
+                          {details.statusTitle[9]}
+                      </li> 
+                      <li className="Floor-Details-Status-Item">
+                          {details.statusTitle[10]}
+                      </li> 
+                      <li className="Floor-Details-Status-Item">
+                          {details.statusTitle[11]}
                       </li> 
                 </ul>
             </div>

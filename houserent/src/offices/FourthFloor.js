@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useRef, useLayoutEffect, useState } from "react";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Tooltip from '@mui/material/Tooltip';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -55,12 +56,16 @@ const FourthFloor = ({data}) => {
 
             
             <div className='Floor-Plan-Link' to={data.menuPaths.floorPages.fourthFloor}>
+           
                 <div className='Floor-Plan-Extra-Container'>
                     <img className="Floor-Plan-Image Main-Image" src={require("../data/floors_plans/fourth_floor_outer.png")} alt="Fourth floor plan"></img>
+                    <Tooltip title={data.offices.fourthFloor.details.tooltipStatusTitle} placement="top">
+                    <div>
                     <Link to={data.menuPaths.floorPages.fourthFloor} onClick={() => { window.scrollTo(0, 0)}}>
                         <img className={`Floor-Plan-Image Fourth-Part First-Third-Part ${currentPartClassname}`} 
                         onMouseEnter={() => {startPartHoverReaction()}} onMouseLeave={() => {finishPartHoverReaction()}}
                         src={require("../data/floors_plans/fourth_floor_outer_1.png")} alt="Fourth floor plan"></img>
+                       
                     </Link>
                     <Link to={data.menuPaths.floorPages.fourthFloor} onClick={() => {window.scrollTo(0, 0)}}>
                         <img className={`Floor-Plan-Image Fourth-Part Second-Third-Part ${currentPartClassname}`}
@@ -72,7 +77,10 @@ const FourthFloor = ({data}) => {
                         onMouseEnter={() => {startPartHoverReaction()}} onMouseLeave={() => {finishPartHoverReaction()}}
                         src={require("../data/floors_plans/fourth_floor_outer_3.png")} alt="Fourth floor plan"></img>
                     </Link>
+                    </div>
+                    </Tooltip>
                 </div>
+                
             </div>
             {/* <Link className='Floor-Plan-Link' to={data.menuPaths.floorPages.fourthFloor}>
                 <img className="Floor-Plan-Image Main-Image Full-Image Floor-Plan-Hover-Image" src={require("../data/floors_plans/fourth_floor_outer.png")} alt="Fourth floor plan"></img>

@@ -1,7 +1,9 @@
 import { useState, useLayoutEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+import { HashLink } from 'react-router-hash-link';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
-const FloorDatailsExtended = ({data, details}) => {
+const FloorDatailsExtended = ({data, details, backLinkText, backLink}) => {
 
 const [animateFirstPhotoTo, setAnimateFirstPhotoTo] = useState(false);
 
@@ -103,7 +105,7 @@ useLayoutEffect(() => {
           gsap.from(".Floor-Second-Photo", 
           { 
             duration: 1,
-            scale: 2.2
+            scale: 2.1
           }); 
         } else {
             gsap.from(".Floor-Second-Photo", 
@@ -131,7 +133,7 @@ useLayoutEffect(() => {
           gsap.to(".Floor-Third-Photo", 
           { 
             duration: 1,
-            scale: 2.2
+            scale: 2.1
           });
         } else {
             gsap.to(".Floor-Third-Photo", 
@@ -202,6 +204,12 @@ useLayoutEffect(() => {
 
     return (
         <div className="Floor-Details-Main-Container" ref={comp}>
+            <div className="Floor-Details-Back-Link-Wrap">
+              <HashLink smooth className="Floor-Details-Back-Link" to={backLink}>
+                <ArrowBackIcon/>
+                {backLinkText}
+              </HashLink>
+            </div>
             <div className="Floor-Details-Title-Container">
                 <p className="Floor-Details-Title">{details.title}</p>
                 <ul className="Floor-Details-Status">

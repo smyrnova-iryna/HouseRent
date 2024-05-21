@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useRef, useLayoutEffect} from "react";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Tooltip from '@mui/material/Tooltip';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -52,38 +53,60 @@ const SecondFloor = ({data, navigateToTheTop}) => {
                 <div className='Floor-Plan-Extra-Container'>
                     <img className="Floor-Plan-Image Main-Image" src={require("../data/floors_plans/second_floor_outer.png")} alt="Fourth floor plan"></img>
                     <Link to={data.menuPaths.floorPages.secondFloor.area_11_12_14} onClick={() => {window.scrollTo({top: 0})}}>
-                        <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_61_2" src={require("../data/floors_plans/second_floor_61.2.png")} alt="Fourth floor plan"></img>
+                        <Tooltip title={data.offices.secondFloor.area_11_12_14.tooltipStatusTitle} placement="top">
+                            <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_61_2" src={require("../data/floors_plans/second_floor_61.2.png")} alt="Fourth floor plan"></img>
+                        </Tooltip>
                     </Link>
                     <Link to={data.menuPaths.floorPages.secondFloor.area_15} onClick={() => {window.scrollTo({top: 0})}}>
-                        <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_22_0" src={require("../data/floors_plans/second_floor_22.0.png")} alt="Fourth floor plan"></img>
+                        <Tooltip title={data.offices.secondFloor.area_15.tooltipStatusTitle} placement="top">
+                            <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_22_0" src={require("../data/floors_plans/second_floor_22.0.png")} alt="Fourth floor plan"></img>
+                        </Tooltip>
                     </Link>
                     <Link to={data.menuPaths.floorPages.secondFloor.area_16} onClick={() => {window.scrollTo({top: 0})}}>
-                        <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_21_2" src={require("../data/floors_plans/second_floor_21.2.png")} alt="Fourth floor plan"></img>
+                        <Tooltip title={data.offices.secondFloor.area_16.tooltipStatusTitle} placement="top">
+                            <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_21_2" src={require("../data/floors_plans/second_floor_21.2.png")} alt="Fourth floor plan"></img>
+                        </Tooltip>
                     </Link>
                     <Link to={data.menuPaths.floorPages.secondFloor.area_17} onClick={() => {window.scrollTo({top: 0})}}>
-                        <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_19_6" src={require("../data/floors_plans/second_floor_19.6.png")} alt="Fourth floor plan"></img>
+                        <Tooltip title={data.offices.secondFloor.area_17.tooltipStatusTitle} placement="top">
+                            <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_19_6" src={require("../data/floors_plans/second_floor_19.6.png")} alt="Fourth floor plan"></img>
+                        </Tooltip>
                     </Link>
                     <Link to={data.menuPaths.floorPages.secondFloor.area_18} onClick={() => {window.scrollTo({top: 0})}}>
-                        <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_21_0" src={require("../data/floors_plans/second_floor_21.0.png")} alt="Fourth floor plan"></img>
+                        <Tooltip title={data.offices.secondFloor.area_18.tooltipStatusTitle} placement="top">
+                            <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_21_0" src={require("../data/floors_plans/second_floor_21.0.png")} alt="Fourth floor plan"></img>
+                        </Tooltip>
                     </Link>
                     <Link to={data.menuPaths.floorPages.secondFloor.area_19_20} onClick={() => {window.scrollTo({top: 0})}}>
-                        <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_41_0" src={require("../data/floors_plans/second_floor_41.0.png")} alt="Fourth floor plan"></img>
+                        <Tooltip title={data.offices.secondFloor.area_19_20.tooltipStatusTitle} placement="top">
+                            <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_41_0" src={require("../data/floors_plans/second_floor_41.0.png")} alt="Fourth floor plan"></img>
+                        </Tooltip>
                     </Link>
                     <Link to={data.menuPaths.floorPages.secondFloor.area_21} onClick={() => {window.scrollTo({top: 0})}}>
-                        <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_22_9" src={require("../data/floors_plans/second_floor_22.9.png")} alt="Fourth floor plan"></img>
+                        <Tooltip title={data.offices.secondFloor.area_21.tooltipStatusTitle} placement="top">
+                            <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_22_9" src={require("../data/floors_plans/second_floor_22.9.png")} alt="Fourth floor plan"></img>
+                        </Tooltip>
                     </Link>
                     <Link to={data.menuPaths.floorPages.secondFloor.area_22_23} onClick={() => {window.scrollTo({top: 0})}}>
-                        <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_40_0" src={require("../data/floors_plans/second_floor_40.0.png")} alt="Fourth floor plan"></img>
+                        <Tooltip title={data.offices.secondFloor.area_22_23.tooltipStatusTitle} placement="top">
+                            <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_40_0" src={require("../data/floors_plans/second_floor_40.0.png")} alt="Fourth floor plan"></img>
+                        </Tooltip>
                     </Link>
                     <img className="Floor-Plan-Image Part_Extra" src={require("../data/floors_plans/second_floor_extra_part.png")} alt="Fourth floor plan"></img>
                     <Link to={data.menuPaths.floorPages.secondFloor.area_7_8} onClick={() => {window.scrollTo({top: 0})}}>
-                        <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_39_5" src={require("../data/floors_plans/second_floor_39.5.png")} alt="Fourth floor plan"></img>
+                        <Tooltip title={data.offices.secondFloor.area_22_23.tooltipStatusTitle} placement="bottom">
+                            <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_39_5" src={require("../data/floors_plans/second_floor_39.5.png")} alt="Fourth floor plan"></img>
+                        </Tooltip>
                     </Link>
                     <Link to={data.menuPaths.floorPages.secondFloor.area_9} onClick={() => {window.scrollTo({top: 0})}}>
-                        <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_21_1" src={require("../data/floors_plans/second_floor_21.1.png")} alt="Fourth floor plan"></img>
+                        <Tooltip title={data.offices.secondFloor.area_22_23.tooltipStatusTitle} placement="bottom">
+                            <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_21_1" src={require("../data/floors_plans/second_floor_21.1.png")} alt="Fourth floor plan"></img>
+                        </Tooltip>
                     </Link>
                     <Link to={data.menuPaths.floorPages.secondFloor.area_10} onClick={() => {window.scrollTo({top: 0})}}>
-                        <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_22_0_2" src={require("../data/floors_plans/second_floor_22.0_2.png")} alt="Fourth floor plan"></img>
+                        <Tooltip title={data.offices.secondFloor.area_10.tooltipStatusTitle} placement="bottom">
+                            <img className="Floor-Plan-Image Floor-Plan-Hover-Image Part_22_0_2" src={require("../data/floors_plans/second_floor_22.0_2.png")} alt="Fourth floor plan"></img>
+                        </Tooltip>
                     </Link>
                 </div>
             </div>
@@ -92,3 +115,4 @@ const SecondFloor = ({data, navigateToTheTop}) => {
 }
 
 export default SecondFloor;
+// title="Add"
