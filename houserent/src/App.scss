@@ -645,51 +645,80 @@ $opacityHeaderColor: #dfe8e8c8;
 
 .Floor-container {
   @include basic-flex-container();
+
   // padding: 0
 }
 
 .Floor-title-container {
   @include basic-flex-container();
   flex-direction: row;
-  gap: 10px;
+  // gap: 10px;
   background-color: $darkColor;
   width: 100vw;
-  justify-content: center;
-  padding: 20px 10px 0 10px;
+  // justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  // padding: 0 60px;
+  padding: 10px 0 0 20px;
+
+  @media screen and (min-width: 540px){
+    padding: 20px 100px 0 100px;
+  }
 }
 
 .Floor-title-icon-container {
   position: relative;
-  height: 200px;
+  height: 100px;
   @include standart-flex-container();
   flex-basis: 80px;
   // height: 170px;
+  @media screen and (min-width: 500px){
+    height: 200px;
+  }
 }
 
 .House-icon {
   @include icon-positioning();
   // width: 130px;
+  height: 90px;
+  @media screen and (min-width: 500px){
+    height: auto;
+  }
 }
 
 .House-window-icon {
   @include icon-positioning();
-  left: 15px;
-  width: 32px;
+  left: 7px;
+  width: 17px;
+  top: 0;
+  @media screen and (min-width: 500px){
+    // height: auto;
+    width: 32px;
+    left: 15px;
+  }
   // display: none;
 }
 
 .Third-Floor-Window-Icon {
-  top: 68px;
+  top: 35px;
+  @media screen and (min-width: 500px){
+    top: 68px;
+  }
  
 }
 
 .Second-Floor-Window-Icon {
-  top: 102px;
- 
+  top: 52px;
+  @media screen and (min-width: 500px){
+    top: 102px;
+  }
 }
 
 .Fourth-Floor-Window-Icon {
-  top: 34px;
+  top: 17px;
+  @media screen and (min-width: 500px){
+    top: 34px;
+  }
 }
 
 .Floor-title {
@@ -716,17 +745,39 @@ $opacityHeaderColor: #dfe8e8c8;
 .Floor-Plan-Link {
   // border-bottom: 1px solid $darkColor;
   // border-top: 1px solid $darkColor;
-  margin: 30px 0;
-  padding: 30px 0;
+  // margin: 30px 0;
+  // padding: 30px 0;
   // margin: 0 30px;
+  
+  overflow: hidden;
+  // background-color: red;
+  display: flex;
+  align-items: center;
+
+  // !!Fix on screen width 500px after replacing pics with larder ones
+
+  @media screen and (min-width: 500px){
+    height: 250px;
+  }
+
+  @media screen and (min-width: 900px){
+    height: 500px;
+  }
 }
 
 .Floor-Plan-Extra-Container {
   position: relative;
+  
+  // padding: 30px;
+  // max-height: max-content;
+  // min-height: 400px;
+  // height: 450px;
+  // background-color: pink;
 }
 
 .Main-Image {
   width: 270px;
+  // width: 320px;
   min-height: 100px;
   
   visibility: hidden;
@@ -1163,6 +1214,10 @@ $opacityHeaderColor: #dfe8e8c8;
   filter: contrast(150%)
 }
 
+// .Floor-Plan-Hover-Image {
+//   background-color: #93384a;
+// }
+
 .Fourth-Part-Hover {
   filter: contrast(150%)
 }
@@ -1201,11 +1256,10 @@ $opacityHeaderColor: #dfe8e8c8;
   // background-color: red;
   @media screen and (min-width: 600px){
     padding-top: 90px;
-    // gap: 60px;
+    gap: 20px;
   }
   @media screen and (min-width: 1000px){
     padding-top: 120px;
-    gap: 50px;
   }
 }
 

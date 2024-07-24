@@ -508,45 +508,83 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  gap: 10px;
   background-color: #aebcc0;
   width: 100vw;
-  justify-content: center;
-  padding: 20px 10px 0 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 0 20px;
+}
+@media screen and (min-width: 540px) {
+  .Floor-title-container {
+    padding: 20px 100px 0 100px;
+  }
 }
 
 .Floor-title-icon-container {
   position: relative;
-  height: 200px;
+  height: 100px;
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 80px;
+}
+@media screen and (min-width: 500px) {
+  .Floor-title-icon-container {
+    height: 200px;
+  }
 }
 
 .House-icon {
   position: absolute;
   left: 0;
   right: 0;
+  height: 90px;
+}
+@media screen and (min-width: 500px) {
+  .House-icon {
+    height: auto;
+  }
 }
 
 .House-window-icon {
   position: absolute;
   left: 0;
   right: 0;
-  left: 15px;
-  width: 32px;
+  left: 7px;
+  width: 17px;
+  top: 0;
+}
+@media screen and (min-width: 500px) {
+  .House-window-icon {
+    width: 32px;
+    left: 15px;
+  }
 }
 
 .Third-Floor-Window-Icon {
-  top: 68px;
+  top: 35px;
+}
+@media screen and (min-width: 500px) {
+  .Third-Floor-Window-Icon {
+    top: 68px;
+  }
 }
 
 .Second-Floor-Window-Icon {
-  top: 102px;
+  top: 52px;
+}
+@media screen and (min-width: 500px) {
+  .Second-Floor-Window-Icon {
+    top: 102px;
+  }
 }
 
 .Fourth-Floor-Window-Icon {
-  top: 34px;
+  top: 17px;
+}
+@media screen and (min-width: 500px) {
+  .Fourth-Floor-Window-Icon {
+    top: 34px;
+  }
 }
 
 .Floor-title {
@@ -569,8 +607,19 @@
   }
 }
 .Floor-Plan-Link {
-  margin: 30px 0;
-  padding: 30px 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 500px) {
+  .Floor-Plan-Link {
+    height: 250px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Floor-Plan-Link {
+    height: 500px;
+  }
 }
 
 .Floor-Plan-Extra-Container {
@@ -1017,12 +1066,12 @@
 @media screen and (min-width: 600px) {
   .Floor-Details-Main-Container {
     padding-top: 90px;
+    gap: 20px;
   }
 }
 @media screen and (min-width: 1000px) {
   .Floor-Details-Main-Container {
     padding-top: 120px;
-    gap: 50px;
   }
 }
 
