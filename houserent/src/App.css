@@ -1179,10 +1179,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding: 35px;
-  height: 180px;
-  width: 300px;
+  padding: 10px;
   overflow: visible;
+}
+@media screen and (min-width: 350px) {
+  .Floor-Inner-Image {
+    padding: 25px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .Floor-Inner-Image {
+    padding: 35px;
+    height: 180px;
+    width: 300px;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -1310,14 +1320,9 @@
   gap: 20px;
 }
 
-.Contacts-Map-Container {
-  background-color: #aebcc0;
-  height: 300px;
-  width: 100%;
-}
 @media screen and (min-width: 1024px) {
-  .Contacts-Map-Container {
-    height: 420px;
+  .Contacts-Map {
+    height: 419px;
   }
 }
 
@@ -1327,7 +1332,7 @@
 }
 @media screen and (min-width: 430px) {
   .Contacts-Form-Title, .Contacts-Form-Button {
-    font-size: 100%;
+    font-size: 110%;
   }
 }
 

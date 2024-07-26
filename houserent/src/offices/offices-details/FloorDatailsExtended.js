@@ -42,7 +42,7 @@ useLayoutEffect(() => {
           gsap.to(".Floor-First-Photo", 
           { 
             duration: 1,
-            scale: 1.5
+            scale: 1.1
           }); 
         }
 
@@ -64,7 +64,7 @@ useLayoutEffect(() => {
           gsap.from(".Floor-First-Photo", 
           { 
             duration: 1,
-            scale: 1.5
+            scale: 1.1
           }); 
         }
         
@@ -91,7 +91,7 @@ useLayoutEffect(() => {
             gsap.to(".Floor-Second-Photo", 
           { 
             duration: 1,
-            scale: 1.5
+            scale: 1.1
           }); 
         }
         
@@ -111,7 +111,7 @@ useLayoutEffect(() => {
             gsap.from(".Floor-Second-Photo", 
           { 
             duration: 1,
-            scale: 1.5
+            scale: 1.1
           }); 
         }
 
@@ -139,7 +139,7 @@ useLayoutEffect(() => {
             gsap.to(".Floor-Third-Photo", 
           { 
             duration: 1,
-            scale: 1.5
+            scale: 1.1
           }); 
         } 
 
@@ -159,7 +159,7 @@ useLayoutEffect(() => {
             gsap.from(".Floor-Third-Photo", 
           { 
             duration: 1,
-            scale: 1.5
+            scale: 1.1
           });  
         }
 

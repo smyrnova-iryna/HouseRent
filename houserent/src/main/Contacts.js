@@ -55,7 +55,7 @@ const Contacts = ({data}) => {
                 {/* <iframe title='Map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.963426233021!2d35.05012627628134!3d48.45723127128056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2d9a46d6ee3%3A0x6772b458db38ac5a!2z0LLRg9C70LjRhtGPINCT0L7Qs9C-0LvRjywgMTUsINCU0L3RltC_0YDQviwg0JTQvdGW0L_RgNC-0L_QtdGC0YDQvtCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDQ5MDAw!5e0!3m2!1suk!2sua!4v1707670385063!5m2!1suk!2sua" 
                 width="600" height="450" style={{border: "0"}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe> */}
 
-                <iframe title='Map' src={data.contacts.mapUrl} width="600" height="450" style={{border: "0"}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <iframe className='Contacts-Map' title='Map' src={data.contacts.mapUrl} width="600" height="450" style={{border: "0"}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     {/* Google map */}
                 {/* </div>  */}
             </div>

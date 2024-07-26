@@ -1209,6 +1209,9 @@ $opacityHeaderColor: #dfe8e8c8;
 }
 
 
+// .Floor-Photo-List-Item {
+// }
+
 
 .Floor-Plan-Hover-Image:hover {
   filter: contrast(150%)
@@ -1344,10 +1347,18 @@ $opacityHeaderColor: #dfe8e8c8;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding: 35px;
-  height: 180px;
-  width: 300px;
+  padding: 10px;
+ 
   overflow: visible;
+  @media screen and (min-width: 350px) {
+    padding: 25px;
+  }
+
+  @media screen and (min-width: 600px) {
+    padding: 35px;
+    height: 180px;
+    width: 300px;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -1483,20 +1494,26 @@ $opacityHeaderColor: #dfe8e8c8;
   // border: 2px solid red;
 }
 
-.Contacts-Map-Container {
-  background-color: $darkColor;
-  height: 300px;
-  width: 100%;
+// .Contacts-Map-Container {
+//   background-color: $darkColor;
+//   height: 300px;
+//   width: 100%;
+//   @media screen and (min-width: 1024px) {
+//     height: 420px;
+//   }
+// }
+
+.Contacts-Map {
   @media screen and (min-width: 1024px) {
-    height: 420px;
-  }
+        height: 419px;
+      }
 }
 
 .Contacts-Form-Title , .Contacts-Form-Button {
   font-size: 90%;
   color: $darkColor;
   @media screen and (min-width: 430px) {
-    font-size: 100%;
+    font-size: 110%;
   }   
 }
 
