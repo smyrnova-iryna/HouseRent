@@ -1552,7 +1552,7 @@
   border: 2px solid #f6e145;
   padding: 5px;
   height: 60px;
-  color: #f6e145;
+  color: #2d3a4c;
 }
 .Footer-Link-Button :hover {
   color: #f6e145;
@@ -1560,6 +1560,7 @@
 
 .Footer-Link-Button:hover {
   background-color: #2d3a4c;
+  color: #f6e145;
 }
 
 .First-Link-Button {
@@ -1618,10 +1619,14 @@
     width: 380px;
   }
 }
+.Contacts-link-text:hover {
+  color: #dfe8e8;
+}
+
 .Footer-Site-Developer {
   text-decoration: underline;
 }
 
 .Site-Developer-Link:hover {
-  color: #f6e145;
+  color: #2d3a4c;
 }/*# sourceMappingURL=App.css.map */

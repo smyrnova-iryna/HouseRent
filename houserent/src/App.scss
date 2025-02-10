@@ -1741,11 +1741,12 @@ $opacityHeaderColor: #dfe8e8c8;
   border: 2px solid $secondDetailsColor;
   padding: 5px;
   height: 60px;
-  color: $secondDetailsColor;
+  color: $firstLightColor;
 }
 
 .Footer-Link-Button:hover {
   background-color: $firstLightColor;
+  color: $secondDetailsColor;
 }
 
 .First-Link-Button {
@@ -1813,13 +1814,16 @@ $opacityHeaderColor: #dfe8e8c8;
     width: 380px;
   }
 }
+.Contacts-link-text:hover  {
+  color: $thirdLightColor;
+}
 
 .Footer-Site-Developer {
   text-decoration: underline;
 }
 
 .Site-Developer-Link:hover {
-  color: $secondDetailsColor;
+  color: $firstLightColor;
 }
 
 // .Footer-First-Link {
