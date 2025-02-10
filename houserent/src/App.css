@@ -613,7 +613,7 @@
 }
 @media screen and (min-width: 500px) {
   .Floor-Plan-Link {
-    height: 250px;
+    min-height: 450px;
   }
 }
 @media screen and (min-width: 900px) {
@@ -624,6 +624,8 @@
 
 .Floor-Plan-Extra-Container {
   position: relative;
+  margin: 50px 0;
+  min-height: 120px;
 }
 
 .Main-Image {
@@ -1069,11 +1071,6 @@
     gap: 20px;
   }
 }
-@media screen and (min-width: 1000px) {
-  .Floor-Details-Main-Container {
-    padding-top: 120px;
-  }
-}
 
 .Floor-Details-Title-Container {
   display: flex;
@@ -1334,6 +1331,10 @@
   .Contacts-Form-Title, .Contacts-Form-Button {
     font-size: 110%;
   }
+}
+
+.Contacts-Form-Title {
+  color: #dfe8e8;
 }
 
 .Contacts-Form-Button {

@@ -10,6 +10,7 @@ $darkColor: #aebcc0;
 $opacityBlocksColor: #626c7481;
 $opacityHeaderColor: #dfe8e8c8;
 
+
 * {
     margin: 0;
     padding: 0;
@@ -757,7 +758,8 @@ $opacityHeaderColor: #dfe8e8c8;
   // !!Fix on screen width 500px after replacing pics with larder ones
 
   @media screen and (min-width: 500px){
-    height: 250px;
+    // height: 250px;
+    min-height: 450px;
   }
 
   @media screen and (min-width: 900px){
@@ -771,15 +773,20 @@ $opacityHeaderColor: #dfe8e8c8;
   // padding: 30px;
   // max-height: max-content;
   // min-height: 400px;
-  // height: 450px;
-  // background-color: pink;
+  // min-height: 210px;
+  margin: 50px 0;
+  min-height: 120px;
+
+  // @media screen and (min-width: 500px){
+  //   background-color: red;
+  //   min-height: 400px;
+  // }
 }
 
 .Main-Image {
   width: 270px;
   // width: 320px;
   min-height: 100px;
-  
   visibility: hidden;
 }
 
@@ -1261,9 +1268,6 @@ $opacityHeaderColor: #dfe8e8c8;
     padding-top: 90px;
     gap: 20px;
   }
-  @media screen and (min-width: 1000px){
-    padding-top: 120px;
-  }
 }
 
 .Floor-Details-Title-Container {
@@ -1515,6 +1519,10 @@ $opacityHeaderColor: #dfe8e8c8;
   @media screen and (min-width: 430px) {
     font-size: 110%;
   }   
+}
+
+.Contacts-Form-Title {
+  color: $thirdLightColor;
 }
 
 .Contacts-Form-Button {

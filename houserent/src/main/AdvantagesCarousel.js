@@ -65,14 +65,14 @@ const AdvantagesCarousel = ({data}) => {
                         <img className={`Slider-image Slider-image12 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_12.JPG")} alt="Carousel item 12" />
                         <img className={`Slider-image Slider-image11 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_11.JPG")} alt="Carousel item 11" />
                         <img className={`Slider-image Slider-image10 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_10.JPG")} alt="Carousel item 10" />
-                        <img className={`Slider-image Slider-image9 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_9.JPG")} alt="Carousel item 9" />
-                        <img className={`Slider-image Slider-image8 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_8.JPG")} alt="Carousel item 8" />
-                        <img className={`Slider-image Slider-image7 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_7.JPG")} alt="Carousel item 7" />
-                        <img className={`Slider-image Slider-image6 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_6.JPG")} alt="Carousel item 6" />
+                        <img className={`Slider-image Slider-image9 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_9.jpg")} alt="Carousel item 9" />
+                        <img className={`Slider-image Slider-image8 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_8.jpg")} alt="Carousel item 8" />
+                        <img className={`Slider-image Slider-image7 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_7.jpg")} alt="Carousel item 7" />
+                        <img className={`Slider-image Slider-image6 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_6.jpg")} alt="Carousel item 6" />
                         <img className={`Slider-image Slider-image5 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_5.jpg")} alt="Carousel item 5" />
-                        <img className={`Slider-image Slider-image4 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_4.JPG")} alt="Carousel item 4" />
+                        <img className={`Slider-image Slider-image4 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_4.jpg")} alt="Carousel item 4" />
                         <img className={`Slider-image Slider-image3 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_3.jpg")} alt="Carousel item 3" />
-                        <img className={`Slider-image Slider-image2 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_2.JPG")} alt="Carousel item 2" />
+                        <img className={`Slider-image Slider-image2 ${sliderVisibility}`} src={require("../data/carousel/carousel_photo_2.jpg")} alt="Carousel item 2" />
                         <img className='Slider-image Slider-image1' src={require("../data/carousel/carousel_photo_1.jpg")} alt="Carousel item 1" />
                     
         </div>
