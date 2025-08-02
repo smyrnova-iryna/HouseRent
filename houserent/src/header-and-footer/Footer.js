@@ -14,7 +14,25 @@ const Footer = ({data, handleToggle, navigateToTheTop, linkScroll}) => {
     const fullEmail = "mailto:" + data.contacts.email;
 
     return (
-        <footer className='Footer-Container'>
+        <footer className='Footer-Container'>  
+            <div className='Footer-Menu-Container'>
+                    <Link className='Contacts-item Contacts-link Footer-Contact-Link Footer-Contact-Nav-Link' to={data.menuPaths.main} 
+                    onClick={() => {window.scrollTo({top: 0})}}>{data.menuItems.main}</Link>
+                    <HashLink smooth to={data.menuPaths.advantages} className='Contacts-item Contacts-link Footer-Contact-Link 
+                    Footer-Contact-Nav-Link'>{data.menuItems.advantages}</HashLink>
+                    <HashLink className='Contacts-item Contacts-link Footer-Contact-Link Footer-Contact-Nav-Link' to={data.menuPaths.offices}
+                     onClick={navigateToTheTop}>{data.menuItems.offices}</HashLink>
+                    <HashLink smooth to={data.menuPaths.contacts} className='Contacts-item Contacts-link Footer-Contact-Link 
+                    Footer-Contact-Nav-Link'>{data.menuItems.contacts}</HashLink>
+            </div>  
+            <div className='Footer-Buttons-Container'>
+                <HashLink smooth className='Footer-Link-Button First-Link-Button' to={data.menuPaths.secondFloor} onClick={navigateToTheTop}>{data.menuItems.secondFloor}
+                <ArrowForwardIcon className="Footer-link-Icon"/></HashLink>
+                <HashLink smooth className='Footer-Link-Button Second-Link-Button' to={data.menuPaths.thirdFloor}onClick={navigateToTheTop}>{data.menuItems.thirdFloor}
+                <ArrowForwardIcon className="Footer-link-Icon"/></HashLink>
+                <HashLink smooth className='Footer-Link-Button Third-Link-Button' to={data.menuPaths.fourthFloor} onClick={navigateToTheTop}>{data.menuItems.fourthFloor}
+                <ArrowForwardIcon className="Footer-link-Icon"/></HashLink>
+            </div> 
             <div className='Footer-Contacts-Container'>
                     <a className="Contacts-item Contacts-link Footer-Contact-Link Footer-Contact-Item" href={fullPhoneNumber} target="_blank" rel="noopener noreferrer">
                         <span className="Contacts-link-text"><PhoneIcon className="Contacts-link-Icon"/>{data.contacts.phoneNumber}</span>
@@ -34,24 +52,6 @@ const Footer = ({data, handleToggle, navigateToTheTop, linkScroll}) => {
                     {/* <a className="Contacts-item Contacts-link Footer-Contact-Link Footer-Contact-Item" href={fullPhoneNumber} target="_blank" rel="noopener noreferrer">
                         <span className="Contacts-link-text"><CodeIcon className="Contacts-link-Icon"/>{data.footer.siteDeveloper}</span>
                     </a> */}
-            </div>   
-            <div className='Footer-Menu-Container'>
-                    <Link className='Contacts-item Contacts-link Footer-Contact-Link Footer-Contact-Nav-Link' to={data.menuPaths.main} 
-                    onClick={() => {window.scrollTo({top: 0})}}>{data.menuItems.main}</Link>
-                    <HashLink smooth to={data.menuPaths.advantages} className='Contacts-item Contacts-link Footer-Contact-Link 
-                    Footer-Contact-Nav-Link'>{data.menuItems.advantages}</HashLink>
-                    <HashLink className='Contacts-item Contacts-link Footer-Contact-Link Footer-Contact-Nav-Link' to={data.menuPaths.offices}
-                     onClick={navigateToTheTop}>{data.menuItems.offices}</HashLink>
-                    <HashLink smooth to={data.menuPaths.contacts} className='Contacts-item Contacts-link Footer-Contact-Link 
-                    Footer-Contact-Nav-Link'>{data.menuItems.contacts}</HashLink>
-            </div>  
-            <div className='Footer-Buttons-Container'>
-                <HashLink smooth className='Footer-Link-Button First-Link-Button' to={data.menuPaths.secondFloor} onClick={navigateToTheTop}>{data.menuItems.secondFloor}
-                <ArrowForwardIcon className="Footer-link-Icon"/></HashLink>
-                <HashLink smooth className='Footer-Link-Button Second-Link-Button' to={data.menuPaths.thirdFloor}onClick={navigateToTheTop}>{data.menuItems.thirdFloor}
-                <ArrowForwardIcon className="Footer-link-Icon"/></HashLink>
-                <HashLink smooth className='Footer-Link-Button Third-Link-Button' to={data.menuPaths.fourthFloor} onClick={navigateToTheTop}>{data.menuItems.fourthFloor}
-                <ArrowForwardIcon className="Footer-link-Icon"/></HashLink>
             </div> 
         </footer>
     )

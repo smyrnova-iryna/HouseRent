@@ -31,7 +31,7 @@ useLayoutEffect(() => {
           gsap.to(".Floor-First-Photo", 
           { 
             duration: 1,
-            scale: 2.1
+            scale: 1.8
           }); 
           // gsap.to(".Floor-Inner-Firt-Image", 
           // { 
@@ -58,7 +58,7 @@ useLayoutEffect(() => {
           gsap.from(".Floor-First-Photo", 
           { 
             duration: 1,
-            scale: 2.1
+            scale: 1.8
           });
         } else {
           gsap.from(".Floor-First-Photo", 
@@ -85,7 +85,7 @@ useLayoutEffect(() => {
             gsap.to(".Floor-Second-Photo", 
           { 
             duration: 1,
-            scale: 2.1
+            scale: 1.8
           }); 
         } else {
             gsap.to(".Floor-Second-Photo", 
@@ -105,7 +105,7 @@ useLayoutEffect(() => {
           gsap.from(".Floor-Second-Photo", 
           { 
             duration: 1,
-            scale: 2.1
+            scale: 1.8
           }); 
         } else {
             gsap.from(".Floor-Second-Photo", 
@@ -133,7 +133,7 @@ useLayoutEffect(() => {
           gsap.to(".Floor-Third-Photo", 
           { 
             duration: 1,
-            scale: 2.1
+            scale: 1.8
           });
         } else {
             gsap.to(".Floor-Third-Photo", 

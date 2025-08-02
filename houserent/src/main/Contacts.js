@@ -27,7 +27,7 @@ const Contacts = ({data}) => {
 
     return (
         <div id="contacts" className='Contacts-Container'>
-            <div className='Contacts-Extra-Container'>
+            {/* <div className='Contacts-Extra-Container'> */}
                 <div className='Contacts-Information-Container'>
                     <a className="Contacts-item Contacts-link" href={fullPhoneNumber} target="_blank" rel="noopener noreferrer">
                         <span className="Contacts-link-text"><PhoneIcon className="Contacts-link-Icon"/>{data.contacts.phoneNumber}</span>
@@ -45,7 +45,7 @@ const Contacts = ({data}) => {
                     <a className="Contacts-item Contacts-link" href={fullEmail} target="_blank" rel="noopener noreferrer">
                         <span className="Contacts-link-text"><EmailIcon className="Contacts-link-Icon"/>{data.contacts.email}</span>
                     </a>
-                    <p className="Contacts-item" >
+                    <p className="Contacts-item Contacts-link-text-address" >
                         <span className="Contacts-link-text"><RoomIcon className="Contacts-link-Icon"/>{data.contacts.address}</span>
                     </p>
                 </div>
@@ -58,7 +58,7 @@ const Contacts = ({data}) => {
                 <iframe className='Contacts-Map' title='Map' src={data.contacts.mapUrl} width="600" height="450" style={{border: "0"}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     {/* Google map */}
                 {/* </div>  */}
-            </div>
+            {/* </div> */}
             <div className='Contacts-Form-Container'>
                     <p className='Contacts-Form-Title'>{data.contacts.feedback.heading}</p>
                     <form className='Contacts-Form'>
