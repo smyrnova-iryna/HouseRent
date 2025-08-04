@@ -153,7 +153,7 @@ useLayoutEffect(() => {
             gsap.from(".Floor-Third-Photo", 
             { 
               duration: 1,
-              scale: 2.2
+              scale: 1.8
             }); 
         } else {
             gsap.from(".Floor-Third-Photo", 
