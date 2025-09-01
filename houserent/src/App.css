@@ -1236,6 +1236,10 @@
     width: 800px;
     height: 220px;
   }
+
+  .Fourth-Floor-Image-Block {
+    margin-top: 50px;
+  }
   .Floor-Inner-Image {
     height: 190px;
     width: 260px;
@@ -1329,6 +1333,10 @@
 @media screen and (min-width: 1024px) {
   .Contacts-Extra-Container {
     width: 600px;
+  }
+
+  .Floor-Details-Plan-Picture {
+    width: 70%;
   }
 }
 

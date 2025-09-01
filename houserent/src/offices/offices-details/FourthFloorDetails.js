@@ -431,7 +431,7 @@ useLayoutEffect(() => {
                       )}
                 </ul>
             </div>
-            <div className="Floor-Inner-Image-Extra-Container">
+            <div className="Floor-Inner-Image-Extra-Container Fourth-Floor-Image-Block">
                       <p className="Floor-Inner-Image Floor-Inner-Firt-Image" onMouseEnter={() => {setAnimateFirstPhotoTo(true); setAnimateFirstPhotoFrom(false)}} 
                          onMouseLeave={() => {setAnimateFirstPhotoFrom(true); setAnimateFirstPhotoTo(false)}}>
                          <img

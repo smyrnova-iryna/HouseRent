@@ -252,7 +252,7 @@ useLayoutEffect(() => {
                 </ul>
             </div>
             <div className="Floor-Details-Content-Container">
-                <img src={require(`../../data/floors_inner_plans/${details.plan}`)} alt="Floor plan"></img>
+                <img className='Floor-Details-Plan-Picture' src={require(`../../data/floors_inner_plans/${details.plan}`)} alt="Floor plan"></img>
                 <ul>
                     {details.advantages.map((item) => 
                       <li className="Floor-Advantages-List-Item" key={item}>
