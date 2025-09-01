@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/HouseRent/static/css/main.0068559a.css",
-    "main.js": "/HouseRent/static/js/main.3d7b837d.js",
+    "main.css": "/HouseRent/static/css/main.76650fa3.css",
+    "main.js": "/HouseRent/static/js/main.2360f113.js",
     "static/js/173.94d75f18.chunk.js": "/HouseRent/static/js/173.94d75f18.chunk.js",
     "static/js/787.0f787131.chunk.js": "/HouseRent/static/js/787.0f787131.chunk.js",
     "static/media/area_9_2.JPG": "/HouseRent/static/media/area_9_2.40f53e49d54a7c807731.JPG",
@@ -84,14 +84,15 @@
     "static/media/area_41_42_2.jpg": "/HouseRent/static/media/area_41_42_2.061f321704a4a4f4f0f5.jpg",
     "static/media/area_37_39_4.jpg": "/HouseRent/static/media/area_37_39_4.95dd40fca638b1444206.jpg",
     "static/media/area_41_42_3.jpg": "/HouseRent/static/media/area_41_42_3.b80bbe1db4d2b99f9932.jpg",
-    "static/media/area_43_50_plan.png": "/HouseRent/static/media/area_43_50_plan.ac7f361d18e714acdf34.png",
+    "static/media/area_32_35_plan.png": "/HouseRent/static/media/area_32_35_plan.5b0240300fbeaea3fe42.png",
+    "static/media/area_37_39_plan.png": "/HouseRent/static/media/area_37_39_plan.0ab5708045d67f95279c.png",
+    "static/media/area_30_31_plan.png": "/HouseRent/static/media/area_30_31_plan.5dda50e627a7cb55958c.png",
+    "static/media/area_41_42_plan.png": "/HouseRent/static/media/area_41_42_plan.a3f4a9c7fe128d9a442b.png",
+    "static/media/area_40_plan.png": "/HouseRent/static/media/area_40_plan.ec1d9817cb6357757db8.png",
+    "static/media/area_43_50_plan.png": "/HouseRent/static/media/area_43_50_plan.d7e4c38b837a9e52de96.png",
     "static/media/fourth_floor_plan.png": "/HouseRent/static/media/fourth_floor_plan.ec5fb0f3122b08b9c8b9.png",
-    "static/media/area_41_42_plan.png": "/HouseRent/static/media/area_41_42_plan.e9fdb3f5289b835d2fe0.png",
-    "static/media/area_32_35_plan.png": "/HouseRent/static/media/area_32_35_plan.3190c219c138c4864bcc.png",
     "static/media/area_11-12_14_plan.png": "/HouseRent/static/media/area_11-12_14_plan.c01add5ce6620d72002c.png",
-    "static/media/area_37_39_plan.png": "/HouseRent/static/media/area_37_39_plan.141c69f3ae42d908814d.png",
     "static/media/area_7_8_plan.png": "/HouseRent/static/media/area_7_8_plan.486799d73ed285953104.png",
-    "static/media/area_30_31_plan.png": "/HouseRent/static/media/area_30_31_plan.f02fae6eca604bbbf826.png",
     "static/media/area_22_23_plan.png": "/HouseRent/static/media/area_22_23_plan.abca60e4331eaf54e248.png",
     "static/media/area_19_20_plan.png": "/HouseRent/static/media/area_19_20_plan.3f63fd9fa56518ee3b18.png",
     "static/media/area_18_plan.png": "/HouseRent/static/media/area_18_plan.6459c8c16d0acd5c2e4d.png",
@@ -99,18 +100,17 @@
     "static/media/area_21_plan.png": "/HouseRent/static/media/area_21_plan.3a16f36ecf3996f0c182.png",
     "static/media/area_15_plan.png": "/HouseRent/static/media/area_15_plan.aad04c4558607b22257e.png",
     "static/media/area_17_plan.png": "/HouseRent/static/media/area_17_plan.4647f1bdcf172cf7e942.png",
-    "static/media/area_40_plan.png": "/HouseRent/static/media/area_40_plan.ce9459f6d5599d94e93b.png",
     "static/media/area_16_plan.png": "/HouseRent/static/media/area_16_plan.ef9522b1eeaeebce8a12.png",
     "static/media/area_10_plan.png": "/HouseRent/static/media/area_10_plan.0b7ac55086437f5fb778.png",
     "static/media/area_9_plan.png": "/HouseRent/static/media/area_9_plan.adb754b89974c7624bca.png",
     "index.html": "/HouseRent/index.html",
-    "main.0068559a.css.map": "/HouseRent/static/css/main.0068559a.css.map",
-    "main.3d7b837d.js.map": "/HouseRent/static/js/main.3d7b837d.js.map",
+    "main.76650fa3.css.map": "/HouseRent/static/css/main.76650fa3.css.map",
+    "main.2360f113.js.map": "/HouseRent/static/js/main.2360f113.js.map",
     "173.94d75f18.chunk.js.map": "/HouseRent/static/js/173.94d75f18.chunk.js.map",
     "787.0f787131.chunk.js.map": "/HouseRent/static/js/787.0f787131.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0068559a.css",
-    "static/js/main.3d7b837d.js"
+    "static/css/main.76650fa3.css",
+    "static/js/main.2360f113.js"
   ]
 }
