@@ -96,6 +96,7 @@ const dataRu = {
                 secondFloor: {
                     title: "Второй этаж",
                     backLinkText: "Вернуться на второй этаж",
+                    forwardLinkText: "Перейти на третий этаж",
                     area_7_8: {
                         title: "ОФИС (каб. № 7-8)",
                         photos: ["area_7_8_1.JPG", "area_7_8_2.JPG", "area_7_8_3.JPG"],
@@ -320,6 +321,7 @@ const dataRu = {
                 thirdFloor: {
                     title: "Третий этаж",
                     backLinkText: "Вернуться на третий этаж",
+                    forwardLinkText: "Перейти на четвертый этаж",
                     area_30_31: {
                         title: "ОФИС (каб. № 30-31)",
                         photos: ["area_30_31_1.JPG", "area_30_31_2.JPG", "area_30_31_3.JPG"],

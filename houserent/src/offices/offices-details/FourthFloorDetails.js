@@ -57,12 +57,30 @@ const comp = useRef();
 useLayoutEffect(() => {
     if (animateFirstPhotoTo === true) {
       let ctxTo = gsap.context(() => {
+        if(window.innerWidth >= 1260) {
+          gsap.to(".Floor-First-Photo", 
+          { 
+            duration: 1,
+            scale: 1.8
+          }); 
+          // gsap.to(".Floor-Inner-Firt-Image", 
+          // { 
+          //   duration: 1,
+          //   scale: 1.6
+          // }); 
+        } else {
+          gsap.to(".Floor-First-Photo", 
+          { 
+            duration: 1,
+            scale: 1.1
+          }); 
+        }
 
-        gsap.to(".Floor-First-Photo", 
-        { 
-          duration: 1,
-          scale: 2.1
-        }); 
+        // gsap.to(".Floor-First-Photo", 
+        // { 
+        //   duration: 1,
+        //   scale: 2.1
+        // }); 
 
       }, comp); 
 
@@ -71,11 +89,19 @@ useLayoutEffect(() => {
     } else if (animateFirstPhotoFrom === true) {
       let ctxFrom = gsap.context(() => {
 
-        gsap.from(".Floor-First-Photo", 
-        { 
-          duration: 1,
-          scale: 1.5
-        }); 
+        if(window.innerWidth >= 1260) {
+          gsap.from(".Floor-First-Photo", 
+          { 
+            duration: 1,
+            scale: 1.8
+          });
+        } else {
+          gsap.from(".Floor-First-Photo", 
+          { 
+            duration: 1,
+            scale: 1.1
+          }); 
+        }
 
       }, comp); 
 
@@ -90,11 +116,24 @@ useLayoutEffect(() => {
     if (animateSecondPhotoTo === true) {
       let ctxTo = gsap.context(() => {
 
-        gsap.to(".Floor-Second-Photo", 
+        // gsap.to(".Floor-Second-Photo", 
+        // { 
+        //   duration: 1,
+        //   scale: 2.1
+        // }); 
+        if(window.innerWidth >= 1260) {
+          gsap.to(".Floor-Second-Photo", 
         { 
           duration: 1,
-          scale: 2.1
+          scale: 1.8
         }); 
+      } else {
+          gsap.to(".Floor-Second-Photo", 
+        { 
+          duration: 1,
+          scale: 1.1
+        }); 
+      }
 
       }, comp); 
 
@@ -103,11 +142,25 @@ useLayoutEffect(() => {
     } else if (animateSecondPhotoFrom === true) {
       let ctxFrom = gsap.context(() => {
 
-        gsap.from(".Floor-Second-Photo", 
-        { 
-          duration: 1,
-          scale: 1.5
-        }); 
+        // gsap.from(".Floor-Second-Photo", 
+        // { 
+        //   duration: 1,
+        //   scale: 1.5
+        // }); 
+
+        if(window.innerWidth >= 1260) {
+                  gsap.from(".Floor-Second-Photo", 
+                  { 
+                    duration: 1,
+                    scale: 1.8
+                  }); 
+                } else {
+                    gsap.from(".Floor-Second-Photo", 
+                  { 
+                    duration: 1,
+                    scale: 1.1
+                  }); 
+                }
 
       }, comp); 
 
@@ -123,11 +176,19 @@ useLayoutEffect(() => {
     if (animateThirdPhotoTo === true) {
       let ctxTo = gsap.context(() => {
 
-        gsap.to(".Floor-Third-Photo", 
-        { 
-          duration: 1,
-          scale: 2.1
-        }); 
+        if(window.innerWidth >= 1260) {
+          gsap.to(".Floor-Third-Photo", 
+          { 
+            duration: 1,
+            scale: 1.8
+          });
+        } else {
+            gsap.to(".Floor-Third-Photo", 
+          { 
+            duration: 1,
+            scale: 1.1
+          }); 
+        } 
 
       }, comp); 
 
@@ -136,11 +197,19 @@ useLayoutEffect(() => {
     } else if (animateThirdPhotoFrom === true) {
       let ctxFrom = gsap.context(() => {
 
-        gsap.from(".Floor-Third-Photo", 
+        if(window.innerWidth >= 1260) {
+          gsap.from(".Floor-Third-Photo", 
+          { 
+            duration: 1,
+            scale: 1.8
+          }); 
+      } else {
+          gsap.from(".Floor-Third-Photo", 
         { 
           duration: 1,
-          scale: 1.5
-        }); 
+          scale: 1.1
+        });  
+      }
 
       }, comp); 
 
@@ -150,16 +219,24 @@ useLayoutEffect(() => {
     
   }, [animateThirdPhotoTo, animateThirdPhotoFrom]);
 
-    
+
   useLayoutEffect(() => {
     if (animateFourthPhotoTo === true) {
       let ctxTo = gsap.context(() => {
 
-        gsap.to(".Floor-Fourth-Photo", 
-        { 
-          duration: 1,
-          scale: 2.1
-        }); 
+        if(window.innerWidth >= 1260) {
+          gsap.to(".Floor-Fourth-Photo", 
+          { 
+            duration: 1,
+            scale: 1.8
+          });
+        } else {
+            gsap.to(".Floor-Fourth-Photo", 
+          { 
+            duration: 1,
+            scale: 1.1
+          }); 
+        } 
 
       }, comp); 
 
@@ -168,11 +245,19 @@ useLayoutEffect(() => {
     } else if (animateFourthPhotoFrom === true) {
       let ctxFrom = gsap.context(() => {
 
-        gsap.from(".Floor-Fourth-Photo", 
+        if(window.innerWidth >= 1260) {
+          gsap.from(".Floor-Fourth-Photo", 
+          { 
+            duration: 1,
+            scale: 1.8
+          }); 
+      } else {
+          gsap.from(".Floor-Fourth-Photo", 
         { 
           duration: 1,
-          scale: 1.5
-        }); 
+          scale: 1.1
+        });  
+      }
 
       }, comp); 
 
@@ -183,15 +268,55 @@ useLayoutEffect(() => {
   }, [animateFourthPhotoTo, animateFourthPhotoFrom]);
 
     
+  // useLayoutEffect(() => {
+  //   if (animateFourthPhotoTo === true) {
+  //     let ctxTo = gsap.context(() => {
+
+  //       gsap.to(".Floor-Fourth-Photo", 
+  //       { 
+  //         duration: 1,
+  //         scale: 2.1
+  //       }); 
+
+  //     }, comp); 
+
+  //     return () => ctxTo.revert(); 
+
+  //   } else if (animateFourthPhotoFrom === true) {
+  //     let ctxFrom = gsap.context(() => {
+
+  //       gsap.from(".Floor-Fourth-Photo", 
+  //       { 
+  //         duration: 1,
+  //         scale: 1.5
+  //       }); 
+
+  //     }, comp); 
+
+  //     return () => ctxFrom.revert(); 
+
+  //   }
+    
+  // }, [animateFourthPhotoTo, animateFourthPhotoFrom]);
+
+    
   useLayoutEffect(() => {
     if (animateFifthPhotoTo === true) {
       let ctxTo = gsap.context(() => {
 
-        gsap.to(".Floor-Fifth-Photo", 
-        { 
-          duration: 1,
-          scale: 2.1
-        }); 
+        if(window.innerWidth >= 1260) {
+          gsap.to(".Floor-Fifth-Photo", 
+          { 
+            duration: 1,
+            scale: 1.8
+          }); 
+      } else {
+        gsap.from(".Floor-Fifth-Photo", 
+      { 
+        duration: 1,
+        scale: 1.1
+      });  
+    }
 
       }, comp); 
 
@@ -199,12 +324,19 @@ useLayoutEffect(() => {
 
     } else if (animateFifthPhotoFrom === true) {
       let ctxFrom = gsap.context(() => {
-
-        gsap.from(".Floor-Fifth-Photo", 
-        { 
-          duration: 1,
-          scale: 1.5
-        }); 
+        if(window.innerWidth >= 1260) {
+          gsap.from(".Floor-Fifth-Photo", 
+          { 
+            duration: 1,
+            scale: 1.5
+          }); 
+        } else {
+          gsap.from(".Floor-Fifth-Photo", 
+            { 
+              duration: 1,
+              scale: 1.1
+            }); 
+        }
 
       }, comp); 
 
@@ -215,15 +347,54 @@ useLayoutEffect(() => {
   }, [animateFifthPhotoTo, animateFifthPhotoFrom]);
 
 
+  // useLayoutEffect(() => {
+  //   if (animateSixthPhotoTo === true) {
+  //     let ctxTo = gsap.context(() => {
+
+  //       gsap.to(".Floor-Sixth-Photo", 
+  //       { 
+  //         duration: 1,
+  //         scale: 2.1
+  //       }); 
+
+  //     }, comp); 
+
+  //     return () => ctxTo.revert(); 
+
+  //   } else if (animateSixthPhotoFrom === true) {
+  //     let ctxFrom = gsap.context(() => {
+
+  //       gsap.from(".Floor-Sixth-Photo", 
+  //       { 
+  //         duration: 1,
+  //         scale: 1.5
+  //       }); 
+
+  //     }, comp); 
+
+  //     return () => ctxFrom.revert(); 
+
+  //   }
+    
+  // }, [animateSixthPhotoTo, animateSixthPhotoFrom]);
+
   useLayoutEffect(() => {
     if (animateSixthPhotoTo === true) {
-      let ctxTo = gsap.context(() => {
 
-        gsap.to(".Floor-Sixth-Photo", 
-        { 
-          duration: 1,
-          scale: 2.1
-        }); 
+      let ctxTo = gsap.context(() => {
+        if(window.innerWidth >= 1260) {
+          gsap.to(".Floor-Sixth-Photo", 
+          { 
+            duration: 1,
+            scale: 1.8
+          });
+        } else {
+            gsap.to(".Floor-Sixth-Photo", 
+          { 
+            duration: 1,
+            scale: 1.1
+          }); 
+        } 
 
       }, comp); 
 
@@ -231,12 +402,19 @@ useLayoutEffect(() => {
 
     } else if (animateSixthPhotoFrom === true) {
       let ctxFrom = gsap.context(() => {
-
-        gsap.from(".Floor-Sixth-Photo", 
-        { 
-          duration: 1,
-          scale: 1.5
-        }); 
+        if(window.innerWidth >= 1260) {
+            gsap.from(".Floor-Sixth-Photo", 
+            { 
+              duration: 1,
+              scale: 1.8
+            }); 
+        } else {
+            gsap.from(".Floor-Sixth-Photo", 
+          { 
+            duration: 1,
+            scale: 1.1
+          });  
+        }
 
       }, comp); 
 
@@ -248,15 +426,54 @@ useLayoutEffect(() => {
 
 
   
+  // useLayoutEffect(() => {
+  //   if (animateSeventhPhotoTo === true) {
+  //     let ctxTo = gsap.context(() => {
+
+  //       gsap.to(".Floor-Seventh-Photo", 
+  //       { 
+  //         duration: 1,
+  //         scale: 2.1
+  //       }); 
+
+  //     }, comp); 
+
+  //     return () => ctxTo.revert(); 
+
+  //   } else if (animateSeventhPhotoFrom === true) {
+  //     let ctxFrom = gsap.context(() => {
+
+  //       gsap.from(".Floor-Seventh-Photo", 
+  //       { 
+  //         duration: 1,
+  //         scale: 1.5
+  //       }); 
+
+  //     }, comp); 
+
+  //     return () => ctxFrom.revert(); 
+
+  //   }
+    
+  // }, [animateSeventhPhotoTo, animateSeventhPhotoFrom]);
+
   useLayoutEffect(() => {
     if (animateSeventhPhotoTo === true) {
-      let ctxTo = gsap.context(() => {
 
-        gsap.to(".Floor-Seventh-Photo", 
-        { 
-          duration: 1,
-          scale: 2.1
-        }); 
+      let ctxTo = gsap.context(() => {
+        if(window.innerWidth >= 1260) {
+          gsap.to(".Floor-Seventh-Photo", 
+          { 
+            duration: 1,
+            scale: 1.8
+          });
+        } else {
+            gsap.to(".Floor-Seventh-Photo", 
+          { 
+            duration: 1,
+            scale: 1.1
+          }); 
+        } 
 
       }, comp); 
 
@@ -264,12 +481,19 @@ useLayoutEffect(() => {
 
     } else if (animateSeventhPhotoFrom === true) {
       let ctxFrom = gsap.context(() => {
-
-        gsap.from(".Floor-Seventh-Photo", 
-        { 
-          duration: 1,
-          scale: 1.5
-        }); 
+        if(window.innerWidth >= 1260) {
+            gsap.from(".Floor-Seventh-Photo", 
+            { 
+              duration: 1,
+              scale: 1.8
+            }); 
+        } else {
+            gsap.from(".Floor-Seventh-Photo", 
+          { 
+            duration: 1,
+            scale: 1.1
+          });  
+        }
 
       }, comp); 
 
@@ -280,15 +504,54 @@ useLayoutEffect(() => {
   }, [animateSeventhPhotoTo, animateSeventhPhotoFrom]);
 
 
+  // useLayoutEffect(() => {
+  //   if (animateEighthPhotoTo === true) {
+  //     let ctxTo = gsap.context(() => {
+
+  //       gsap.to(".Floor-Eighth-Photo", 
+  //       { 
+  //         duration: 1,
+  //         scale: 2.1
+  //       }); 
+
+  //     }, comp); 
+
+  //     return () => ctxTo.revert(); 
+
+  //   } else if (animateEighthPhotoFrom === true) {
+  //     let ctxFrom = gsap.context(() => {
+
+  //       gsap.from(".Floor-Eighth-Photo", 
+  //       { 
+  //         duration: 1,
+  //         scale: 1.5
+  //       }); 
+
+  //     }, comp); 
+
+  //     return () => ctxFrom.revert(); 
+
+  //   }
+    
+  // }, [animateEighthPhotoTo, animateEighthPhotoFrom]);
+
   useLayoutEffect(() => {
     if (animateEighthPhotoTo === true) {
-      let ctxTo = gsap.context(() => {
 
-        gsap.to(".Floor-Eighth-Photo", 
-        { 
-          duration: 1,
-          scale: 2.1
-        }); 
+      let ctxTo = gsap.context(() => {
+        if(window.innerWidth >= 1260) {
+          gsap.to(".Floor-Eighth-Photo", 
+          { 
+            duration: 1,
+            scale: 1.8
+          });
+        } else {
+            gsap.to(".Floor-Eighth-Photo", 
+          { 
+            duration: 1,
+            scale: 1.1
+          }); 
+        } 
 
       }, comp); 
 
@@ -296,12 +559,19 @@ useLayoutEffect(() => {
 
     } else if (animateEighthPhotoFrom === true) {
       let ctxFrom = gsap.context(() => {
-
-        gsap.from(".Floor-Eighth-Photo", 
-        { 
-          duration: 1,
-          scale: 1.5
-        }); 
+        if(window.innerWidth >= 1260) {
+            gsap.from(".Floor-Eighth-Photo", 
+            { 
+              duration: 1,
+              scale: 1.8
+            }); 
+        } else {
+            gsap.from(".Floor-Eighth-Photo", 
+          { 
+            duration: 1,
+            scale: 1.1
+          });  
+        }
 
       }, comp); 
 
@@ -312,15 +582,55 @@ useLayoutEffect(() => {
   }, [animateEighthPhotoTo, animateEighthPhotoFrom]);
 
 
+  // useLayoutEffect(() => {
+  //   if (animateNinethPhotoTo === true) {
+  //     let ctxTo = gsap.context(() => {
+
+  //       gsap.to(".Floor-Nineth-Photo", 
+  //       { 
+  //         duration: 1,
+  //         scale: 2.1
+  //       }); 
+
+  //     }, comp); 
+
+  //     return () => ctxTo.revert(); 
+
+  //   } else if (animateNinethPhotoFrom === true) {
+  //     let ctxFrom = gsap.context(() => {
+
+  //       gsap.from(".Floor-Nineth-Photo", 
+  //       { 
+  //         duration: 1,
+  //         scale: 1.5
+  //       }); 
+
+  //     }, comp); 
+
+  //     return () => ctxFrom.revert(); 
+
+  //   }
+    
+  // }, [animateNinethPhotoTo, animateNinethPhotoFrom]);
+
+
   useLayoutEffect(() => {
     if (animateNinethPhotoTo === true) {
-      let ctxTo = gsap.context(() => {
 
-        gsap.to(".Floor-Nineth-Photo", 
-        { 
-          duration: 1,
-          scale: 2.1
-        }); 
+      let ctxTo = gsap.context(() => {
+        if(window.innerWidth >= 1260) {
+          gsap.to(".Floor-Nineth-Photo", 
+          { 
+            duration: 1,
+            scale: 1.8
+          });
+        } else {
+            gsap.to(".Floor-Nineth-Photo", 
+          { 
+            duration: 1,
+            scale: 1.1
+          }); 
+        } 
 
       }, comp); 
 
@@ -328,12 +638,19 @@ useLayoutEffect(() => {
 
     } else if (animateNinethPhotoFrom === true) {
       let ctxFrom = gsap.context(() => {
-
-        gsap.from(".Floor-Nineth-Photo", 
-        { 
-          duration: 1,
-          scale: 1.5
-        }); 
+        if(window.innerWidth >= 1260) {
+            gsap.from(".Floor-Nineth-Photo", 
+            { 
+              duration: 1,
+              scale: 1.8
+            }); 
+        } else {
+            gsap.from(".Floor-Nineth-Photo", 
+          { 
+            duration: 1,
+            scale: 1.1
+          });  
+        }
 
       }, comp); 
 
@@ -342,8 +659,6 @@ useLayoutEffect(() => {
     }
     
   }, [animateNinethPhotoTo, animateNinethPhotoFrom]);
-
-
 
   useLayoutEffect(() => {
   
@@ -374,12 +689,15 @@ useLayoutEffect(() => {
 
     return (
         <div className="Floor-Details-Main-Container" ref={comp}>
-          <div className="Floor-Details-Back-Link-Wrap">
-            <HashLink smooth className="Floor-Details-Back-Link" to={data.menuPaths.fourthFloor}>
-              <ArrowBackIcon/>
-              {data.offices.fourthFloor.backLinkText}
-            </HashLink>
+          <div className="Floor-Details-Back-Link-Wrap-Outter">
+            <div className="Floor-Details-Back-Link-Wrap">
+              <HashLink smooth className="Floor-Details-Back-Link" to={data.menuPaths.fourthFloor}>
+                <ArrowBackIcon/>
+                {data.offices.fourthFloor.backLinkText}
+              </HashLink>
+            </div>
           </div>
+          <div className="Floor-Details-Title-Container-Outter">
             <div className="Floor-Details-Title-Container">
                 <p className="Floor-Details-Title">{details.title}</p>
                 <ul className="Floor-Details-Status">
@@ -420,6 +738,7 @@ useLayoutEffect(() => {
                           {details.statusTitle[11]}
                       </li> 
                 </ul>
+            </div>
             </div>
             <div className="Floor-Details-Content-Container">
                 <img src={require(`../../data/floors_inner_plans/${details.plan}`)} alt="Floor plan"></img>

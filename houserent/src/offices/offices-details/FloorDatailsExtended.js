@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 import { HashLink } from 'react-router-hash-link';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
-const FloorDatailsExtended = ({data, details, backLinkText, backLink}) => {
+const FloorDatailsExtended = ({data, details, backLinkText, backLink, forwardLinkText, forwardLink}) => {
 
 const [animateFirstPhotoTo, setAnimateFirstPhotoTo] = useState(false);
 
@@ -197,59 +197,60 @@ useLayoutEffect(() => {
 
 
 
-
-
-//9
   
 
     return (
         <div className="Floor-Details-Main-Container" ref={comp}>
-            <div className="Floor-Details-Back-Link-Wrap">
-              <HashLink smooth className="Floor-Details-Back-Link" to={backLink}>
-                <ArrowBackIcon/>
-                {backLinkText}
-              </HashLink>
+            <div className="Floor-Details-Back-Link-Wrap-Outter">
+              <div className="Floor-Details-Back-Link-Wrap">
+                <HashLink smooth className="Floor-Details-Back-Link" to={backLink}>
+                  <ArrowBackIcon/>
+                  {backLinkText}
+                </HashLink>
+              </div>
             </div>
-            <div className="Floor-Details-Title-Container">
-                <p className="Floor-Details-Title">{details.title}</p>
-                <ul className="Floor-Details-Status">
-                      <li className="Floor-Details-Status-Item">
-                          {details.statusTitle[0]}
-                      </li> 
-                      <li className="Floor-Details-Status-Item">
-                          {details.statusTitle[1]}
-                      </li> 
-                      <li className="Floor-Details-Status-Item">
-                          {details.statusTitle[2]}
-                      </li> 
-                      <li className="Floor-Details-Status-Item">
-                          {details.statusTitle[3]}
-                      </li> 
-                      <li className="Floor-Details-Status-Item">
-                          {details.statusTitle[4]}
-                      </li> 
-                      <li className="Floor-Details-Status-Item">
-                          {details.statusTitle[5]}
-                      </li> 
-                      <li className="Floor-Details-Status-Item">
-                          {details.statusTitle[6]}
-                      </li> 
-                      <li className="Floor-Details-Status-Item">
-                          {details.statusTitle[7]}
-                      </li> 
-                       <li className="Floor-Details-Status-Item">
-                          {details.statusTitle[8]}
-                      </li> 
-                       <li className="Floor-Details-Status-Item">
-                          {details.statusTitle[9]}
-                      </li> 
-                       <li className="Floor-Details-Status-Item">
-                          {details.statusTitle[10]}
-                      </li> 
-                       <li className="Floor-Details-Status-Item">
-                          {details.statusTitle[11]}
-                      </li> 
-                </ul>
+            <div className="Floor-Details-Title-Container-Outter">
+              <div className="Floor-Details-Title-Container">
+                  <p className="Floor-Details-Title">{details.title}</p>
+                  <ul className="Floor-Details-Status">
+                        <li className="Floor-Details-Status-Item">
+                            {details.statusTitle[0]}
+                        </li> 
+                        <li className="Floor-Details-Status-Item">
+                            {details.statusTitle[1]}
+                        </li> 
+                        <li className="Floor-Details-Status-Item">
+                            {details.statusTitle[2]}
+                        </li> 
+                        <li className="Floor-Details-Status-Item">
+                            {details.statusTitle[3]}
+                        </li> 
+                        <li className="Floor-Details-Status-Item">
+                            {details.statusTitle[4]}
+                        </li> 
+                        <li className="Floor-Details-Status-Item">
+                            {details.statusTitle[5]}
+                        </li> 
+                        <li className="Floor-Details-Status-Item">
+                            {details.statusTitle[6]}
+                        </li> 
+                        <li className="Floor-Details-Status-Item">
+                            {details.statusTitle[7]}
+                        </li> 
+                        <li className="Floor-Details-Status-Item">
+                            {details.statusTitle[8]}
+                        </li> 
+                        <li className="Floor-Details-Status-Item">
+                            {details.statusTitle[9]}
+                        </li> 
+                        <li className="Floor-Details-Status-Item">
+                            {details.statusTitle[10]}
+                        </li> 
+                        <li className="Floor-Details-Status-Item">
+                            {details.statusTitle[11]}
+                        </li> 
+                  </ul>
+              </div>
             </div>
             <div className="Floor-Details-Content-Container">
                 <img className='Floor-Details-Plan-Picture' src={require(`../../data/floors_inner_plans/${details.plan}`)} alt="Floor plan"></img>

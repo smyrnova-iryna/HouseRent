@@ -96,6 +96,7 @@ const dataEn = {
                 secondFloor: {
                     title: "Second floor",
                     backLinkText: "Back to the second floor",
+                    forwardLinkText: "Go to the third floor",
                     area_7_8: {
                         title: "OFFICE (rooms № 7-8)",
                         photos: ["area_7_8_1.JPG", "area_7_8_2.JPG", "area_7_8_3.JPG"],
@@ -320,6 +321,7 @@ const dataEn = {
                 thirdFloor: {
                     title: "Third floor",
                     backLinkText: "Back to the third floor",
+                    forwardLinkText: "Go to the fourth floor",
                     area_30_31: {
                         title: "OFFICE (rooms № 30-31)",
                         photos: ["area_30_31_1.JPG", "area_30_31_2.JPG", "area_30_31_3.JPG"],

@@ -96,6 +96,7 @@ const dataUkr = {
                 secondFloor: {
                         title: "Другий поверх",
                         backLinkText: "Повернутись на другий поверх",
+                        forwardLinkText: "Перейти на третій поверх",
                         area_7_8: {
                                 title: "ОФІС (каб. № 7-8)",
                                 photos: ["area_7_8_1.JPG", "area_7_8_2.JPG", "area_7_8_3.JPG"],
@@ -320,6 +321,7 @@ const dataUkr = {
                 thirdFloor: {
                     title: "Третій поверх",
                     backLinkText: "Повернутись на третій поверх",
+                    forwardLinkText: "Перейти на четвертий поверх",
                     area_30_31: {
                         title: "ОФІС (каб. № 30-31)",
                         photos: ["area_30_31_1.JPG", "area_30_31_2.JPG", "area_30_31_3.JPG"],
