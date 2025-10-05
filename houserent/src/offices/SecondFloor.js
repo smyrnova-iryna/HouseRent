@@ -50,7 +50,7 @@ const SecondFloor = ({data, navigateToTheTop}) => {
                 </div>
             </div>
             <div className='Floor-Plan-Link' to={data.menuPaths.floorPages.fourthFloor}>
-                <div className='Floor-Plan-Extra-Container'>
+                <div className='Floor-Plan-Extra-Container Floor-Plan-Extra-Container-Larger'>
                     <img className="Floor-Plan-Image Main-Image" src={require("../data/floors_plans/second_floor_outer.png")} alt="Fourth floor plan"></img>
                     <Link to={data.menuPaths.floorPages.secondFloor.area_11_12_14} onClick={() => {window.scrollTo({top: 0})}}>
                         <Tooltip title={data.offices.secondFloor.area_11_12_14.tooltipStatusTitle} placement="top">

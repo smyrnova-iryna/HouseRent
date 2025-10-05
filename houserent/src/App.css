@@ -644,6 +644,10 @@
   min-height: 120px;
 }
 
+.Floor-Plan-Extra-Container-Larger {
+  margin: 50px 0 70px 0;
+}
+
 .Main-Image {
   width: 270px;
   min-height: 100px;
