@@ -1082,7 +1082,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
+  /* gap: 30px; */
   flex-direction: column;
   padding-top: 60px;
   justify-content: flex-start;
