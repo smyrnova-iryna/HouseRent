@@ -673,7 +673,7 @@ useLayoutEffect(() => {
         y: -50,
         ease: "bounce.out",
         stagger: 0.5,
-        repeat: -1
+        // repeat: -1
       }); 
 
 
